@@ -1,0 +1,268 @@
+/* ================================= */
+/* ============ styling ============ */
+/* ================================= */
+
+
+
+/* ================================= */
+/* ======== initial set up ========= */
+/* ================================= */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Red Hat Display', sans-serif;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --text: black;
+  --highlight: hsl(56, 100%, 46%);
+  --btn: hsl(182, 47%, 58%);
+  --hover-btn: hsl(182, 47%, 40%);
+  --speed: 300ms;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+p {
+  font-size: 20px;
+}
+
+a {
+  color: (var(--text));
+  text-decoration: none;
+  font-size: 20px;
+}
+
+img {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: black;
+}
+
+main {
+  width: 100%;
+  background-color: black;
+  justify-content: center;
+}
+
+.box-container {
+  justify-self: center;
+  margin: 0 auto 300px auto;
+  padding: 0;
+  width: 100%;
+  max-width: 1200px;
+  background-color: black;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  border-bottom: 1px solid white;
+  z-index: 0;
+}
+
+.hi {
+  padding: 800px 0;
+  color: white;
+}
+
+.button {
+  background-color: var(--btn);
+  height: 36px;
+  padding: 5px 20px;
+  width: max-content;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 20px;
+  color: black;
+  transition: var(--speed);
+}
+
+.button:hover {
+  background-color: var(--hover-btn);
+  transition: var(--speed);
+}
+
+.social-container {
+  display: grid;
+  grid: 80px / 1fr 1fr 1fr;
+  column-gap: 20px;
+  justify-self: center;
+  align-items: center;
+  width: min-content;
+}
+
+.social-container .fa {
+  background-color: white;
+  font-size: 22px;
+  color: black;
+  text-align: center;
+  padding: 4px 6px;
+  border-radius: 24px;
+  width: min-content;
+  justify-self: center;
+  transition: var(--speed);
+}
+
+.social-container .fa:hover {
+  background-color: var(--highlight);
+  transition: var(--speed);
+}
+
+
+
+/* ================================= */
+/* =========== navigation ========== */
+/* ================================= */
+
+nav {
+  background-color: black;
+  color: white;
+  display: grid;
+  grid: 60px / auto auto min-content min-content;
+  column-gap: 40px;
+  padding: 0 20px;
+  width: 100%;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  max-width: 1200px;
+  margin: 0 auto;
+  border-bottom: 1px solid white;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  transition: var(--speed);
+  z-index: 10;
+}
+
+nav .link {
+  transition: var(--speed);
+}
+
+nav .link:hover {
+  color: var(--highlight);
+  transition: var(--speed);
+}
+
+.nav-name-container {
+  display: grid;
+  grid: 60px / min-content auto;
+  column-gap: 40px;
+  align-items: center;
+  justify-self: left;
+}
+
+.nav-links-container {
+  display: grid;
+  grid: 60px / repeat(4, min-content);
+  column-gap: 20px;
+  justify-self: right;
+  align-items: center;
+  text-align: center;
+}
+
+
+
+/* ================================= */
+/* ============ header ============= */
+/* ================================= */
+
+header {
+  display: grid;
+  grid: auto / 1fr 1fr;
+  color: white;
+  height: 100vh;
+  margin-bottom: 10px;
+  justify-self: center;
+  align-items: center;
+  margin: 0 80px;
+}
+
+.intro-container {
+  margin-top: 40px;
+  color: white;
+  justify-self: left;
+  padding-left: 10px;
+  max-width: 450px;
+}
+
+header figure {
+  justify-self: right;
+}
+
+
+
+/* ================================= */
+/* ============= about ============= */
+/* ================================= */
+
+.about {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  margin-top: 100px;
+}
+
+.about-container {
+  color: white;
+  display: grid;
+  grid: repeat(4, min-content) / 1fr;
+  row-gap: 20px;
+  text-align: center;
+  justify-content: center;
+  justify-self: center;
+  margin: 0 80px;
+  max-width: 500px;
+}
+
+.about .button {
+  justify-self: center;
+}
+
+
+
+/* ================================= */
+/* ============ contact ============ */
+/* ================================= */
+
+.contact {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  margin: 400px 0 200px 0;
+}
+
+.contact-container {
+  color: white;
+  display: grid;
+  grid: repeat(6, min-content) / 1fr;
+  text-align: center;
+  justify-content: center;
+  justify-self: center;
+}
+
+.contact h1 {
+  margin-bottom: 20px;
+}
+/* 
+.contact-container p:nth-child(3) {
+  margin-top: 20px;
+} */
+
+.contact .button {
+  justify-self: center;
+}
+
