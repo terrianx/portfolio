@@ -15,6 +15,7 @@ export default function App() {
             <About></About>
             <Contact></Contact>
           </div>
+          <Footer></Footer>
         </main>
         <Routes>
           {/* include routes here */}
@@ -120,5 +121,39 @@ function Contact() {
         <a href="#" className="button">Back to Top</a>
       </div>
     </section>
+  );
+}
+
+function Footer() {
+  return (
+    <footer>
+      <div className="footer-container">
+        <h1 className="footer-name">Yu Xiao</h1>
+        <div className="footer-item">
+          <h1>Navigation</h1>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Resume</a></li>
+            <li><a href="#">Projects</a></li>
+          </ul>
+        </div>
+        <div className="footer-item">
+          <h1>Social</h1>
+          <ul>
+            <li><a href="#">GitHub</a></li>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">Instagram</a></li>
+          </ul>
+        </div>
+        <div className="footer-item">
+          <h1>Contact</h1>
+          <ul>
+            <li><a href="#">txiaopk@gmail.com</a></li>
+            <li><a href="#">978-888-8886</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
   );
 }

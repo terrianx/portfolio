@@ -60,7 +60,7 @@ main {
 
 .box-container {
   justify-self: center;
-  margin: 0 auto 300px auto;
+  margin: 0 auto 100px auto;
   padding: 0;
   width: 100%;
   max-width: 1200px;
@@ -266,3 +266,37 @@ header figure {
   justify-self: center;
 }
 
+
+
+/* ================================= */
+/* ============= footer ============ */
+/* ================================= */
+
+footer {
+  padding: 0 200px 100px 200px;
+  justify-content: center;
+}
+
+.footer-container {
+  display: grid;
+  grid: 1fr / 1fr 1fr 1fr 1fr;
+  color: white;
+}
+
+.footer-name {
+  font-size: 36px;
+}
+
+footer h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.footer-container a {
+  transition: var(--speed);
+}
+
+.footer-container a:hover {
+  transition: var(--speed);
+  color: var(--highlight);
+}
