@@ -25,6 +25,12 @@ export default function App() {
   );
 }
 
+function Button(props) {
+  return (
+    <a href={props.href} className="button">{props.text}</a>
+  );
+}
+
 function Nav() {
   return (
     <nav>
@@ -39,7 +45,7 @@ function Nav() {
         <a href="#" className="link">Projects</a>
       </div>
       <Social></Social>
-      <a href="#" className="button">Contact</a>
+      <Button href="#" text="Contact"></Button>
     </nav>
   );
 }
@@ -102,8 +108,8 @@ function About() {
           and am open to relocation! Check out 
           my experience and projects below:
         </p>
-        <a href="#" className="button">Resume</a>
-        <a href="#" className="button">Projects</a>
+        <Button href="#" text="Resume"></Button>
+        <Button href="#" text="Projects"></Button>
       </div>
     </section>
   );
@@ -118,7 +124,7 @@ function Contact() {
         <p>txiaopk@gmail.com</p>
         <p>978-888-8886</p>
         <Social></Social>
-        <a href="#" className="button">Back to Top</a>
+        <Button href="#" text="Back to Top"></Button>
       </div>
     </section>
   );
