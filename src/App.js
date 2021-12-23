@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { 
-  BrowserRouter as Router, Routes, Route, Link 
+  BrowserRouter as Router, Switch, Route 
 } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
 import './App.css';
 
 export default function App() {
@@ -9,18 +10,34 @@ export default function App() {
     <>
       <Router>
         <main>
+          <Nav></Nav>
           <div className="box-container">
-            <Nav></Nav>
-            <Header></Header>
-            <About></About>
-            <Contact></Contact>
+            <Switch>
+              <Route exact path="/"><Home /></Route>
+              <Route exact path="/resume"><Resume /></Route>
+            </Switch>
           </div>
           <Footer></Footer>
         </main>
-        <Routes>
-          {/* include routes here */}
-        </Routes>
       </Router>
+    </>
+  );
+}
+
+function Home() {
+  return (
+    <>
+      <Header />
+      <About />
+      <Contact />
+    </>
+  );
+}
+
+function Resume() {
+  return (
+    <>
+      <Contact />
     </>
   );
 }
@@ -36,12 +53,12 @@ function Nav() {
     <nav>
       <div className="nav-name-container">
         <Logo></Logo>
-        <a href="#" className="link">Yu Xiao</a>
+        <Link exact to="/" className="link">Yu Xiao</Link>
       </div>
       <div className="nav-links-container">
-        <a href="#" className="link">Home</a>
-        <a href="#" className="link">About</a>
-        <a href="#" className="link">Resume</a>
+        <Link to="/"><a className="link">Home</a></Link>
+        <Link to="/#about"><a className="link">About</a></Link>
+        <Link to="/resume"><a className="link">Resume</a></Link>
         <a href="#" className="link">Projects</a>
       </div>
       <Social></Social>
@@ -94,24 +111,27 @@ function Header() {
 
 function About() {
   return (
-    <section className="about">
-      <div className="about-container">
-        <h1>About Me</h1>
-        <p>Curious and self learner with
-          a hope to make the world a better
-          place. I have experience in
-          programming, front-end web development,
-          and graphic design through my time at
-          the University of Michigan studying 
-          computer science and independent
-          projects. I come from Greater Boston
-          and am open to relocation! Check out 
-          my experience and projects below:
-        </p>
-        <Button href="#" text="Resume"></Button>
-        <Button href="#" text="Projects"></Button>
-      </div>
-    </section>
+    <>
+      <span className="anchor" id="about"></span>
+      <section className="about">
+        <div className="about-container">
+          <h1>About Me</h1>
+          <p>Curious and self learner with
+            a hope to make the world a better
+            place. I have experience in
+            programming, front-end web development,
+            and graphic design through my time at
+            the University of Michigan studying 
+            computer science and independent
+            projects. I come from Greater Boston
+            and am open to relocation! Check out 
+            my experience and projects below:
+          </p>
+          <Button href="#" text="Resume"></Button>
+          <Button href="#" text="Projects"></Button>
+        </div>
+      </section>
+    </>
   );
 }
 

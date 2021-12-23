@@ -43,6 +43,11 @@ a {
   font-size: 20px;
 }
 
+.anchor {
+  position: absolute;
+  transform: translateY(-20vh);
+}
+
 img {
   padding: 0;
   margin: 0;
@@ -167,7 +172,7 @@ nav .link:hover {
 
 .nav-links-container {
   display: grid;
-  grid: 60px / repeat(4, min-content);
+  grid: 60px / repeat(4, 1fr);
   column-gap: 20px;
   justify-self: right;
   align-items: center;
@@ -242,7 +247,7 @@ header figure {
   width: 100%;
   justify-content: center;
   display: flex;
-  margin: 400px 0 200px 0;
+  padding: 400px 0 200px 0;
 }
 
 .contact-container {
@@ -257,10 +262,6 @@ header figure {
 .contact h1 {
   margin-bottom: 20px;
 }
-/* 
-.contact-container p:nth-child(3) {
-  margin-top: 20px;
-} */
 
 .contact .button {
   justify-self: center;
