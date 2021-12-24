@@ -61,7 +61,7 @@ body {
 main {
   width: 100%;
   background-color: black;
-  justify-content: center;
+  justify-items: center;
 }
 
 .box-container {
@@ -88,7 +88,7 @@ main {
   height: 36px;
   padding: 5px 20px;
   width: max-content;
-  justify-content: center;
+  justify-items: center;
   align-items: center;
   text-align: center;
   border-radius: 20px;
@@ -238,7 +238,7 @@ header figure {
   grid: repeat(4, min-content) / 1fr;
   row-gap: 20px;
   text-align: center;
-  justify-content: center;
+  justify-items: center;
   justify-self: center;
   margin: 0 80px;
   max-width: 500px;
@@ -266,7 +266,7 @@ header figure {
   display: grid;
   grid: repeat(6, min-content) / 1fr;
   text-align: center;
-  justify-content: center;
+  justify-items: center;
   justify-self: center;
 }
 
@@ -321,4 +321,21 @@ footer h1 {
   color: white;
   justify-self: center;
   grid-column: 1 / 5;
+}
+
+/* resume */
+.resume {
+  display: grid;
+  grid: repeat(3, min-content) / 1fr;
+  grid-row-gap: 20px;
+  justify-items: center;
+  padding: 200px 100px;
+  color: white;
+  text-align: center;
+  
+}
+
+.resume-pdf {
+  justify-self: center;
+  border: 1px solid white;
 }

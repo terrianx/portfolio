@@ -51,7 +51,7 @@ function Logo() {
       <Link to="/#">
         <img src="./assets/sig.png" 
             alt="Yu Xiao signature" 
-            height="20" 
+            height="20px" 
             className="logo"/>
       </Link>
     </div>
@@ -192,9 +192,17 @@ function Contact() {
 // resume page components
 function Resume() {
   return (
-    <>
-      <Contact />
-    </>
+    <section className="resume">
+      <h1>Resume</h1>
+      <a href="./assets/YuXiaoResume.pdf" 
+         download="YuXiaoResume"
+         className="button">Download</a>
+      <embed src="./assets/YuXiaoResume.pdf#toolbar=0"
+            type="application/pdf"
+            width="825px"
+            height="1064px"
+            className="resume-pdf"/>
+    </section>
   );
 }
 
