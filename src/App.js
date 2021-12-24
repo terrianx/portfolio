@@ -36,8 +36,8 @@ function Nav() {
       <div className="nav-links-container">
         <Link to="/#" className="link">Home</Link>
         <Link to="/#about" className="link">About</Link>
-        <Link to="/resume" className="link">Resume</Link>
-        <Link to="/projects" className="link">Projects</Link>
+        <Link to="/resume#" className="link">Resume</Link>
+        <Link to="/projects#" className="link">Projects</Link>
       </div>
       <Social />
       <Button to="/#contact" text="Contact" />
@@ -84,8 +84,8 @@ function Footer() {
           <ul>
             <li><Link to="/#" className="link">Home</Link></li>
             <li><Link to="/#about" className="link">About</Link></li>
-            <li><Link to="/resume" className="link">Resume</Link></li>
-            <li><Link to="/projects" className="link">Projects</Link></li>
+            <li><Link to="/resume#" className="link">Resume</Link></li>
+            <li><Link to="/projects#" className="link">Projects</Link></li>
           </ul>
         </div>
         <div className="footer-item">
@@ -163,8 +163,8 @@ function About() {
             and am open to relocation! Check out 
             my experience and projects below:
           </p>
-          <Button to="/resume" text="Resume" />
-          <Button to="/projects" text="Projects" />
+          <Button to="/resume#" text="Resume" />
+          <Button to="/projects#" text="Projects" />
         </div>
       </section>
     </>
