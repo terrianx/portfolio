@@ -44,7 +44,7 @@ function Resume() {
 
 function Button(props) {
   return (
-    <a href={props.href} className="button">{props.text}</a>
+    <Link to={props.to} className="button">{props.text}</Link>
   );
 }
 
@@ -53,37 +53,46 @@ function Nav() {
     <nav>
       <div className="nav-name-container">
         <Logo></Logo>
-        <Link exact to="/" className="link">Yu Xiao</Link>
+        <Link to="/#" className="link">Yu Xiao</Link>
       </div>
       <div className="nav-links-container">
-        <Link to="/"><a className="link">Home</a></Link>
-        <Link to="/#about"><a className="link">About</a></Link>
-        <Link to="/resume"><a className="link">Resume</a></Link>
-        <a href="#" className="link">Projects</a>
+        <Link to="/#" className="link">Home</Link>
+        <Link to="/#about" className="link">About</Link>
+        <Link to="/resume" className="link">Resume</Link>
+        <Link to="/projects" className="link">Projects</Link>
       </div>
       <Social></Social>
-      <Button href="#" text="Contact"></Button>
+      <Button to="/#contact" text="Contact"></Button>
     </nav>
   );
 }
 
 function Logo() {
   return (
-    <img src="./images/sig.png" 
-          alt="Yu Xiao signature" 
-          height="20" 
-          className="button"
-    />
+    <div>
+      <Link to="/#">
+        <img src="./images/sig.png" 
+            alt="Yu Xiao signature" 
+            height="20" 
+            className="logo"/>
+      </Link>
+    </div>
   );
 }
 
 function Social() {
   return (
     <div className="social-container">
-        <a href="#" className="fa fa-github"></a>
-        <a href="#" className="fa fa-linkedin"></a>
-        <a href="#" className="fa fa-instagram"></a>
-      </div>
+      <a className="fa fa-github"
+         href="https://github.com/ytxpk" 
+         target="_blank"></a>
+      <a className="fa fa-linkedin"
+         href="https://www.linkedin.com/in/yuxiao8/" 
+         target="_blank"></a>
+      <a className="fa fa-instagram"
+         href="https://www.instagram.com/tx_pk/" 
+         target="_blank"></a>
+    </div>
   );
 }
 
@@ -98,7 +107,7 @@ function Header() {
           through technology.
         </p>
         <Social></Social>
-        <a href="#" className="button">Contact</a>
+        <Button to="/#contact" text="Contact"></Button>
       </div>
       <figure>
         <img src="./images/header-1.png" 
@@ -127,8 +136,8 @@ function About() {
             and am open to relocation! Check out 
             my experience and projects below:
           </p>
-          <Button href="#" text="Resume"></Button>
-          <Button href="#" text="Projects"></Button>
+          <Button to="/resume" text="Resume"></Button>
+          <Button to="/projects" text="Projects"></Button>
         </div>
       </section>
     </>
@@ -137,16 +146,19 @@ function About() {
 
 function Contact() {
   return (
-    <section className="contact">
-      <div className="contact-container">
-        <h1>Contact</h1>
-        {/* <p>(Click below to copy)</p> */}
-        <p>txiaopk@gmail.com</p>
-        <p>978-888-8886</p>
-        <Social></Social>
-        <Button href="#" text="Back to Top"></Button>
-      </div>
-    </section>
+    <>
+      <span className="anchor" id="contact"></span>
+      <section className="contact">
+        <div className="contact-container">
+          <h1>Contact</h1>
+          {/* <p>(Click below to copy)</p> */}
+          <p>txiaopk@gmail.com</p>
+          <p>978-888-8886</p>
+          <Social></Social>
+          <Button to="/#" text="Back to Top"></Button>
+        </div>
+      </section>
+    </>
   );
 }
 
@@ -154,31 +166,35 @@ function Footer() {
   return (
     <footer>
       <div className="footer-container">
-        <h1 className="footer-name">Yu Xiao</h1>
+        <Link to="/#"><h1 className="footer-name">Yu Xiao</h1></Link>
         <div className="footer-item">
           <h1>Navigation</h1>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Resume</a></li>
-            <li><a href="#">Projects</a></li>
+            <li><Link to="/#" className="link">Home</Link></li>
+            <li><Link to="/#about" className="link">About</Link></li>
+            <li><Link to="/resume" className="link">Resume</Link></li>
+            <li><Link to="/projects" className="link">Projects</Link></li>
           </ul>
         </div>
         <div className="footer-item">
           <h1>Social</h1>
           <ul>
-            <li><a href="#">GitHub</a></li>
-            <li><a href="#">LinkedIn</a></li>
-            <li><a href="#">Instagram</a></li>
+            <li><a href="https://github.com/ytxpk" 
+                   target="_blank">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/yuxiao8/" 
+                   target="_blank">LinkedIn</a></li>
+            <li><a href="https://www.instagram.com/tx_pk/" 
+                   target="_blank">Instagram</a></li>
           </ul>
         </div>
         <div className="footer-item">
           <h1>Contact</h1>
           <ul>
-            <li><a href="#">txiaopk@gmail.com</a></li>
-            <li><a href="#">978-888-8886</a></li>
+            <li><p>txiaopk@gmail.com</p></li>
+            <li><p>978-888-8886</p></li>
           </ul>
         </div>
+        <p className="copyright">© Yu Xiao 2021. All rights reserved</p>
       </div>
     </footer>
   );

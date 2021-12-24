@@ -19,7 +19,8 @@
   --text: black;
   --highlight: hsl(56, 100%, 46%);
   --btn: hsl(182, 47%, 58%);
-  --hover-btn: hsl(182, 47%, 40%);
+  /* --hover-btn: hsl(182, 47%, 40%); */
+  --hover-btn: black;
   --speed: 300ms;
 }
 
@@ -45,7 +46,7 @@ a {
 
 .anchor {
   position: absolute;
-  transform: translateY(-20vh);
+  transform: translateY(-10vh);
 }
 
 img {
@@ -81,7 +82,8 @@ main {
   color: white;
 }
 
-.button {
+.button,
+.logo {
   background-color: var(--btn);
   height: 36px;
   padding: 5px 20px;
@@ -92,11 +94,20 @@ main {
   border-radius: 20px;
   color: black;
   transition: var(--speed);
+  border: 1px solid var(--btn);
 }
 
 .button:hover {
   background-color: var(--hover-btn);
+  color: white;
+  border: 1px solid white;
   transition: var(--speed);
+}
+
+.logo:hover {
+  filter: invert(1);
+  background-color: white;
+  border: 1px solid black;
 }
 
 .social-container {
@@ -218,7 +229,7 @@ header figure {
   width: 100%;
   justify-content: center;
   display: flex;
-  margin-top: 100px;
+  padding: 200px 0;
 }
 
 .about-container {
@@ -247,7 +258,7 @@ header figure {
   width: 100%;
   justify-content: center;
   display: flex;
-  padding: 400px 0 200px 0;
+  padding: 200px 0;
 }
 
 .contact-container {
@@ -276,11 +287,14 @@ header figure {
 footer {
   padding: 0 200px 100px 200px;
   justify-content: center;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
 }
 
 .footer-container {
   display: grid;
-  grid: 1fr / 1fr 1fr 1fr 1fr;
+  grid: 1fr 1fr / 1fr 1fr 1fr 1fr;
   color: white;
 }
 
@@ -300,4 +314,11 @@ footer h1 {
 .footer-container a:hover {
   transition: var(--speed);
   color: var(--highlight);
+}
+
+.copyright {
+  margin-top: 100px;
+  color: white;
+  justify-self: center;
+  grid-column: 1 / 5;
 }
