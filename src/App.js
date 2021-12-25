@@ -216,6 +216,7 @@ function Contact() {
 function Resume() {
   return (
     <section className="resume">
+      <span className="diag-line"></span>
       <h1>Resume</h1>
       <div className="button-container">
         <a href="./assets/YuXiaoResume.pdf" 

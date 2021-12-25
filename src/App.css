@@ -17,11 +17,9 @@
 
 :root {
   --text: white;
-  --highlight: hsl(56, 100%, 46%);
+  --highlight: white;
   --btn: hsl(182, 47%, 58%);
   --clear: hsla(0, 0%, 0%, 0);
-  /* --hover-btn: hsl(182, 47%, 40%); */
-  --hover-btn: black;
   --speed: 300ms;
 }
 
@@ -115,6 +113,21 @@ main {
   transform: translate(4px, -4px);
 }
 
+.button:active {
+  background-color: white;
+}
+
+.logo:hover {
+  filter: invert(1);
+  background-color: white;
+  border: 1px solid black;
+  transform: translate(4px, -4px);
+}
+
+.logo:active {
+  background-color: black;
+}
+
 .outline {
   color: var(--clear);
   background-color: black;
@@ -123,13 +136,6 @@ main {
   z-index: 0;
   top: -4px;
   right: -4px;
-}
-
-.logo:hover {
-  filter: invert(1);
-  background-color: white;
-  border: 1px solid black;
-  transform: translate(4px, -4px);
 }
 
 .social-container {
@@ -166,6 +172,10 @@ main {
   background-color: var(--btn);
   transition: var(--speed);
   transform: translate(3px, -3px);
+}
+
+.social-button .fa:active {
+  background-color: white;
 }
 
 .social-outline {
@@ -251,7 +261,7 @@ header {
   grid: auto / 1fr 1fr;
   color: white;
   height: 100vh;
-  margin-bottom: 10px;
+  margin-bottom: -100px;
   justify-self: center;
   align-items: center;
   margin: 0 80px;
@@ -418,12 +428,20 @@ footer h1 {
 /* ================================= */
 .resume {
   display: grid;
-  grid: repeat(3, min-content) / 1fr;
+  grid: repeat(4, min-content) / 1fr;
   grid-row-gap: 20px;
   justify-items: center;
-  padding: 200px 100px;
+  padding: 200px 0 300px 0;
   color: white;
   text-align: center;
+  width: 100%;
+  position: relative;
+}
+
+.resume h1 {
+  padding: 0 0 20px 5px;
+  background-color: black;
+  z-index: 4;
 }
 
 .resume-pdf {
