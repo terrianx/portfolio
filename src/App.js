@@ -87,10 +87,16 @@ function Logo() {
   return (
     <div>
       <Link to="/#">
-        <img src="./assets/sig.png" 
-            alt="Yu Xiao signature" 
-            height="20px" 
-            className="logo"/>
+        <div className="button-container">
+          <img src="./assets/sig.png" 
+              alt="Yu Xiao signature" 
+              height="20px" 
+              className="logo"/>
+          <img src="./assets/sig.png" 
+              alt="Yu Xiao signature outline" 
+              height="20px" 
+              className="outline"/>
+        </div>
       </Link>
     </div>
   );
@@ -114,7 +120,10 @@ function Social() {
 
 function Button(props) {
   return (
-    <Link to={props.to} className="button">{props.children}</Link>
+    <div className="button-container">
+      <Link to={props.to} className="button">{props.children}</Link>
+      <p className="outline">{props.children}</p>
+    </div>
   );
 }
 
@@ -153,43 +162,41 @@ function Header() {
 
 function About() {
   return (
-    <>
+    <section className="about">
+      <div className="fade-box"></div>
       <span className="anchor" id="about"></span>
-      <section className="about">
-        <div className="about-container">
-          <h1>About Me</h1>
-          <p>Curious and self learner from Greater
-            Boston with a hope to make the world a 
-            better place. I have experience in
-            programming, front-end web development,
-            and graphic design through my time at
-            the University of Michigan studying 
-            computer science and independent
-            projects.
-          </p>
-          <Button to="/resume#">Resume</Button>
-          <Button to="/projects#">Projects</Button>
-        </div>
-      </section>
-    </>
+      <div className="about-container">
+        <span className="diag-line"></span>
+        <h1>About Me</h1>
+        <p>Curious and self learner from Greater
+          Boston with a hope to make the world a 
+          better place. I have experience in
+          programming, front-end web development,
+          and graphic design through my time at
+          the University of Michigan studying 
+          computer science and independent
+          projects.
+        </p>
+        <Button to="/resume#">Resume</Button>
+        <Button to="/projects#">Projects</Button>
+      </div>
+    </section>
   );
 }
 
 function Contact() {
   return (
-    <>
+    <section className="contact">
       <span className="anchor" id="contact"></span>
-      <section className="contact">
-        <div className="contact-container">
-          <h1>Contact</h1>
-          {/* <p>(Click below to copy)</p> */}
-          <p>txiaopk@gmail.com</p>
-          <p>978-888-8886</p>
-          <Social />
-          <Button to="/#">Back to Top</Button>
-        </div>
-      </section>
-    </>
+      <div className="contact-container">
+        <h1>Contact</h1>
+        {/* <p>(Click below to copy)</p> */}
+        <p>txiaopk@gmail.com</p>
+        <p>978-888-8886</p>
+        <Social />
+        <Button to="/#">Back to Top</Button>
+      </div>
+    </section>
   );
 }
 
@@ -198,9 +205,12 @@ function Resume() {
   return (
     <section className="resume">
       <h1>Resume</h1>
-      <a href="./assets/YuXiaoResume.pdf" 
-         download="YuXiaoResume"
-         className="button">Download</a>
+      <div className="button-container">
+        <a href="./assets/YuXiaoResume.pdf" 
+          download="YuXiaoResume"
+          className="button">Download</a>
+        <p className="outline">Download</p>
+      </div>
       <embed src="./assets/YuXiaoResume.pdf#toolbar=0"
             type="application/pdf"
             width="825px"
@@ -223,9 +233,9 @@ function Projects() {
                tech=" HTML, CSS, JS">
         <p>Hihihihihi hihihihihihihi</p>
         <ul>
-          <li>Hellow</li>
-          <li>bob</li>
-          <li>yo</li>
+          <li>- Hellow</li>
+          <li>- bob</li>
+          <li>- yo</li>
         </ul>
       </Project>
     </section>
@@ -237,8 +247,18 @@ function Project(props) {
     <div className="project">
       <h1>{props.title}</h1>
       <img src={props.src} alt={props.alt} width={props.width}/>
-      <Button to={props.site}>Site</Button>
-      <Button to={props.code}>Code</Button>
+      <div className="button-container">
+        <a href={props.site} 
+          className="button" 
+          target="_blank">Site</a>
+        <p className="outline">Site</p>
+      </div>
+      <div className="button-container">
+        <a href={props.code} 
+          className="button" 
+          target="_blank">Code</a>
+        <p className="outline">Code</p>
+      </div>
       <p>Technology used: {props.tech}</p>
       <div>{props.children}</div>
     </div>

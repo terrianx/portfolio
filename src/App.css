@@ -16,9 +16,10 @@
 }
 
 :root {
-  --text: black;
+  --text: white;
   --highlight: hsl(56, 100%, 46%);
   --btn: hsl(182, 47%, 58%);
+  --clear: hsla(0, 0%, 0%, 0);
   /* --hover-btn: hsl(182, 47%, 40%); */
   --hover-btn: black;
   --speed: 300ms;
@@ -46,7 +47,7 @@ a {
 
 .anchor {
   position: absolute;
-  transform: translateY(-10vh);
+  transform: translateY(10vh);
 }
 
 img {
@@ -82,8 +83,14 @@ main {
   color: white;
 }
 
+/* button */
+.button-container {
+  display: grid;
+}
+
 .button,
-.logo {
+.logo,
+.outline {
   background-color: var(--btn);
   height: 36px;
   padding: 5px 20px;
@@ -95,6 +102,9 @@ main {
   color: black;
   transition: var(--speed);
   border: 1px solid var(--btn);
+  grid-column: 1;
+  grid-row: 1;
+  z-index: 1;
 }
 
 .button:hover {
@@ -102,12 +112,24 @@ main {
   color: white;
   border: 1px solid white;
   transition: var(--speed);
+  transform: translate(4px, -4px);
+}
+
+.outline {
+  color: var(--clear);
+  background-color: black;
+  border: 1px solid white;
+  position: relative;
+  z-index: 0;
+  top: -4px;
+  right: -4px;
 }
 
 .logo:hover {
   filter: invert(1);
   background-color: white;
   border: 1px solid black;
+  transform: translate(4px, -4px);
 }
 
 .social-container {
@@ -136,6 +158,12 @@ main {
   transition: var(--speed);
 }
 
+.fade-box {
+  display: block;
+  height: 400px;
+  background-image: linear-gradient(var(--clear), black);
+  width: 100%;
+}
 
 
 /* ================================= */
@@ -205,8 +233,9 @@ header {
   justify-self: center;
   align-items: center;
   margin: 0 80px;
-  position: sticky;
   top: 0;
+  position: sticky;
+  z-index: 2;
 }
 
 .intro-container {
@@ -221,7 +250,15 @@ header figure {
   justify-self: right;
 }
 
-
+/* diagonal line */
+.diag-line {
+  padding: 0.5px;
+  background-color: white;
+  position: relative;
+  z-index: 3;
+  transform: skewY(-8deg) translateY(45px);
+  width: 100%;
+}
 
 /* ================================= */
 /* ============= about ============= */
@@ -230,21 +267,33 @@ header figure {
 .about {
   width: 100%;
   justify-content: center;
-  display: flex;
-  padding: 200px 0;
-  position: sticky;
-  top: -200px;
+  display: grid;
+  grid: repeat(3, min-content) / 1fr;
+  position: relative;
+  z-index: 4;
 }
 
 .about-container {
+  background-color: black;
+  width: 100%;
+  padding: 0 0 200px 0;
   color: white;
   display: grid;
-  grid: repeat(4, min-content) / 1fr;
+  grid: repeat(5, min-content) / 1fr;
   row-gap: 20px;
   text-align: center;
   justify-items: center;
   justify-self: center;
   margin: 0 80px;
+}
+
+.about h1 {
+  padding: 0 5px 50px 10px;
+  background-color: black;
+  z-index: 5;
+}
+
+.about p {
   max-width: 500px;
 }
 
@@ -261,8 +310,12 @@ header figure {
 .contact {
   width: 100%;
   justify-content: center;
-  display: flex;
-  padding: 200px 0;
+  display: grid;
+  grid: repeat(2, min-content) / 1fr;
+  padding: 300px 0 200px 0;
+  position: sticky;
+  z-index: 4;
+  background-color: black;
 }
 
 .contact-container {
@@ -272,6 +325,7 @@ header figure {
   text-align: center;
   justify-items: center;
   justify-self: center;
+  width: 100%;
 }
 
 .contact h1 {
@@ -340,7 +394,6 @@ footer h1 {
   padding: 200px 100px;
   color: white;
   text-align: center;
-  
 }
 
 .resume-pdf {
