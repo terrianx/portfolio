@@ -141,21 +141,43 @@ main {
   width: min-content;
 }
 
-.social-container .fa {
+.social-button {
+  display: grid;
+}
+
+.social-button .fa {
   background-color: white;
   font-size: 22px;
   color: black;
   text-align: center;
-  padding: 4px 6px;
+  padding: 4px 7px;
   border-radius: 24px;
-  width: min-content;
   justify-self: center;
   transition: var(--speed);
 }
 
-.social-container .fa:hover {
-  background-color: var(--highlight);
+.social-button .fa {
+  grid-row: 1;
+  grid-column: 1;
+  z-index: 2;
+}
+
+.social-button .fa:hover {
+  background-color: var(--btn);
   transition: var(--speed);
+  transform: translate(3px, -3px);
+}
+
+.social-outline {
+  grid-row: 1;
+  grid-column: 1;
+  padding: 15px;
+  border-radius: 24px;
+  background-color: black;
+  border: 1px solid white;
+  position: relative;
+  transform: translate(3px, -3px);
+  z-index: 1;
 }
 
 .fade-box {
@@ -312,8 +334,8 @@ header figure {
   justify-content: center;
   display: grid;
   grid: repeat(2, min-content) / 1fr;
-  padding: 300px 0 200px 0;
-  position: sticky;
+  padding: 200px 0 300px 0;
+  position: relative;
   z-index: 4;
   background-color: black;
 }
@@ -326,10 +348,18 @@ header figure {
   justify-items: center;
   justify-self: center;
   width: 100%;
+  padding: 0;
 }
 
 .contact h1 {
-  margin-bottom: 20px;
+  padding: 0 5px 10px 5px;
+  background-color: black;
+  z-index: 5;
+  transform: translateY(20px);
+}
+
+.info {
+  margin-top: 70px;
 }
 
 .contact .button {

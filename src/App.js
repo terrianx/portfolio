@@ -105,15 +105,24 @@ function Logo() {
 function Social() {
   return (
     <div className="social-container">
-      <a className="fa fa-github"
-         href="https://github.com/ytxpk" 
-         target="_blank"></a>
-      <a className="fa fa-linkedin"
-         href="https://www.linkedin.com/in/yuxiao8/" 
-         target="_blank"></a>
-      <a className="fa fa-instagram"
-         href="https://www.instagram.com/tx_pk/" 
-         target="_blank"></a>
+      <div className="social-button">
+        <a className="fa fa-github"
+          href="https://github.com/ytxpk" 
+          target="_blank"></a>
+        <p className="social-outline"></p>
+      </div>
+      <div className="social-button">
+        <a className="fa fa-linkedin"
+          href="https://www.linkedin.com/in/yuxiao8/" 
+          target="_blank"></a>
+        <p className="social-outline"></p>
+      </div>
+      <div className="social-button">
+        <a className="fa fa-instagram"
+          href="https://www.instagram.com/tx_pk/" 
+          target="_blank"></a>
+        <p className="social-outline"></p>
+      </div>
     </div>
   );
 }
@@ -189,10 +198,13 @@ function Contact() {
     <section className="contact">
       <span className="anchor" id="contact"></span>
       <div className="contact-container">
+        <span className="diag-line"></span>
         <h1>Contact</h1>
         {/* <p>(Click below to copy)</p> */}
-        <p>txiaopk@gmail.com</p>
-        <p>978-888-8886</p>
+        <div className="info">
+          <p>txiaopk@gmail.com</p>
+          <p>978-888-8886</p>
+        </div>
         <Social />
         <Button to="/#">Back to Top</Button>
       </div>
