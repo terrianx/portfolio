@@ -205,6 +205,8 @@ header {
   justify-self: center;
   align-items: center;
   margin: 0 80px;
+  position: sticky;
+  top: 0;
 }
 
 .intro-container {
@@ -230,6 +232,8 @@ header figure {
   justify-content: center;
   display: flex;
   padding: 200px 0;
+  position: sticky;
+  top: -200px;
 }
 
 .about-container {
@@ -323,7 +327,11 @@ footer h1 {
   grid-column: 1 / 5;
 }
 
-/* resume */
+
+
+/* ================================= */
+/* ============= resume ============ */
+/* ================================= */
 .resume {
   display: grid;
   grid: repeat(3, min-content) / 1fr;
@@ -338,4 +346,14 @@ footer h1 {
 .resume-pdf {
   justify-self: center;
   border: 1px solid white;
+}
+
+
+
+/* ================================= */
+/* ============= projects =========== */
+/* ================================= */
+.projects {
+  color: white;
+  padding-top: 300px;
 }

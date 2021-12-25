@@ -15,7 +15,7 @@ export default function App() {
             <Switch>
               <Route exact path="/"><Home /></Route>
               <Route exact path="/resume"><Resume /></Route>
-              <Route exact path="/projects"><Resume /></Route>
+              <Route exact path="/projects"><Projects /></Route>
             </Switch>
           </div>
           <Footer />
@@ -40,37 +40,8 @@ function Nav() {
         <Link to="/projects#" className="link">Projects</Link>
       </div>
       <Social />
-      <Button to="/#contact" text="Contact" />
+      <Button to="/#contact">Contact</Button>
     </nav>
-  );
-}
-
-function Logo() {
-  return (
-    <div>
-      <Link to="/#">
-        <img src="./assets/sig.png" 
-            alt="Yu Xiao signature" 
-            height="20px" 
-            className="logo"/>
-      </Link>
-    </div>
-  );
-}
-
-function Social() {
-  return (
-    <div className="social-container">
-      <a className="fa fa-github"
-         href="https://github.com/ytxpk" 
-         target="_blank"></a>
-      <a className="fa fa-linkedin"
-         href="https://www.linkedin.com/in/yuxiao8/" 
-         target="_blank"></a>
-      <a className="fa fa-instagram"
-         href="https://www.instagram.com/tx_pk/" 
-         target="_blank"></a>
-    </div>
   );
 }
 
@@ -112,6 +83,41 @@ function Footer() {
   );
 }
 
+function Logo() {
+  return (
+    <div>
+      <Link to="/#">
+        <img src="./assets/sig.png" 
+            alt="Yu Xiao signature" 
+            height="20px" 
+            className="logo"/>
+      </Link>
+    </div>
+  );
+}
+
+function Social() {
+  return (
+    <div className="social-container">
+      <a className="fa fa-github"
+         href="https://github.com/ytxpk" 
+         target="_blank"></a>
+      <a className="fa fa-linkedin"
+         href="https://www.linkedin.com/in/yuxiao8/" 
+         target="_blank"></a>
+      <a className="fa fa-instagram"
+         href="https://www.instagram.com/tx_pk/" 
+         target="_blank"></a>
+    </div>
+  );
+}
+
+function Button(props) {
+  return (
+    <Link to={props.to} className="button">{props.children}</Link>
+  );
+}
+
 // home page components
 function Home() {
   return (
@@ -134,7 +140,7 @@ function Header() {
           through technology.
         </p>
         <Social />
-        <Button to="/#contact" text="Contact" />
+        <Button to="/#contact">Contact</Button>
       </div>
       <figure>
         <img src="./assets/header-1.png" 
@@ -152,19 +158,17 @@ function About() {
       <section className="about">
         <div className="about-container">
           <h1>About Me</h1>
-          <p>Curious and self learner with
-            a hope to make the world a better
-            place. I have experience in
+          <p>Curious and self learner from Greater
+            Boston with a hope to make the world a 
+            better place. I have experience in
             programming, front-end web development,
             and graphic design through my time at
             the University of Michigan studying 
             computer science and independent
-            projects. I come from Greater Boston
-            and am open to relocation! Check out 
-            my experience and projects below:
+            projects.
           </p>
-          <Button to="/resume#" text="Resume" />
-          <Button to="/projects#" text="Projects" />
+          <Button to="/resume#">Resume</Button>
+          <Button to="/projects#">Projects</Button>
         </div>
       </section>
     </>
@@ -182,14 +186,14 @@ function Contact() {
           <p>txiaopk@gmail.com</p>
           <p>978-888-8886</p>
           <Social />
-          <Button to="/#" text="Back to Top" />
+          <Button to="/#">Back to Top</Button>
         </div>
       </section>
     </>
   );
 }
 
-// resume page components
+// resume page component
 function Resume() {
   return (
     <section className="resume">
@@ -206,8 +210,37 @@ function Resume() {
   );
 }
 
-function Button(props) {
+// project page components
+function Projects() {
   return (
-    <Link to={props.to} className="button">{props.text}</Link>
+    <section className="projects">
+      <Project title="FreshTea Website"
+               src="./assets/FreshTea.png"
+               width="600px"
+               alt="FreshTea Website home page"
+               site="https://yu-xiao-boba-shop.netlify.app/index.html"
+               code="https://github.com/ytxpk/boba-website"
+               tech=" HTML, CSS, JS">
+        <p>Hihihihihi hihihihihihihi</p>
+        <ul>
+          <li>Hellow</li>
+          <li>bob</li>
+          <li>yo</li>
+        </ul>
+      </Project>
+    </section>
+  );
+}
+
+function Project(props) {
+  return (
+    <div className="project">
+      <h1>{props.title}</h1>
+      <img src={props.src} alt={props.alt} width={props.width}/>
+      <Button to={props.site}>Site</Button>
+      <Button to={props.code}>Code</Button>
+      <p>Technology used: {props.tech}</p>
+      <div>{props.children}</div>
+    </div>
   );
 }
