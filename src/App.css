@@ -224,13 +224,13 @@ nav {
   z-index: 10;
 }
 
-nav .link {
+.link {
+  width: 100%;
   transition: var(--speed);
 }
 
-nav .link:hover {
-  color: var(--highlight);
-  transition: var(--speed);
+.link:hover {
+  color: var(--btn);
 }
 
 .nav-name-container {
@@ -405,13 +405,19 @@ footer h1 {
   margin-bottom: 20px;
 }
 
-.footer-container a {
+footer li,
+.footer-name {
   transition: var(--speed);
 }
 
-.footer-container a:hover {
+footer li:hover,
+.footer-name:hover {
+  color: var(--btn);
   transition: var(--speed);
-  color: var(--highlight);
+}
+
+footer li:not(:last-child) {
+  margin-bottom: 5px;
 }
 
 .copyright {
