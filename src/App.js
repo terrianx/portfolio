@@ -239,11 +239,13 @@ function Projects() {
     <section className="projects">
       <Project title="FreshTea Website"
                src="./assets/FreshTea.png"
-               width="600px"
+               width="700px"
+               height="auto"
                alt="FreshTea Website home page"
                site="https://yu-xiao-boba-shop.netlify.app/"
                code="https://github.com/ytxpk/boba-website"
-               tech=" HTML, CSS, JS">
+               tech=" HTML, CSS, JS"
+               class="fresh-tea">
         <p>I created this mock boba tea website to 
            gain working knowledge of front end web 
            development. Additionally, I am a fan of
@@ -262,11 +264,13 @@ function Projects() {
       </Project>
       <Project title="BlueAir Website"
                src="./assets/BlueAir.png"
-               width="600px"
+               width="700px"
+               height="auto"
                alt="Blue Website home page"
                site="https://yu-xiao-blue-air.netlify.app/"
                code="https://github.com/ytxpk/blue-air-website"
-               tech=" HTML, CSS, JS">
+               tech=" HTML, CSS, JS"
+               class="blue-air">
         <p>A mock website meant for a business that delivers 
            fresh air. Elegance and mobile usability was 
            a focus for this project. Through this project, 
@@ -287,23 +291,38 @@ function Projects() {
 
 function Project(props) {
   return (
-    <div className="project">
+    <div className={[props.class, "project"].join(' ')}>
+      <span className="diag-line"></span>
       <h1>{props.title}</h1>
-      <img src={props.src} alt={props.alt} width={props.width}/>
-      <div className="button-container">
-        <a href={props.site} 
-          className="button" 
-          target="_blank">Site</a>
-        <p className="outline">Site</p>
+      <div className="project-container">
+        <div className="img-container">
+          <span className="img-outline" 
+                width={props.width}
+                height={props.height}></span>
+          <img src={props.src} 
+               alt={props.alt} 
+               width={props.width}
+               height={props.height}/>
+        </div>
+        <div className="project-buttons">
+          <div className="button-container">
+            <a href={props.site} 
+              className="button" 
+              target="_blank">Site</a>
+            <p className="outline">Site</p>
+          </div>
+          <div className="button-container">
+            <a href={props.code} 
+              className="button" 
+              target="_blank">Code</a>
+            <p className="outline">Code</p>
+          </div>
+        </div>
+        <div className="project-text">
+          <p>Technology used: {props.tech}</p>
+          <div>{props.children}</div>
+        </div>
       </div>
-      <div className="button-container">
-        <a href={props.code} 
-          className="button" 
-          target="_blank">Code</a>
-        <p className="outline">Code</p>
-      </div>
-      <p>Technology used: {props.tech}</p>
-      <div>{props.children}</div>
     </div>
   );
 }

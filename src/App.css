@@ -29,6 +29,11 @@ ul {
   padding: 0;
 }
 
+li,
+lh {
+  font-size: 20px;
+}
+
 h1 {
   font-size: 36px;
 }
@@ -106,7 +111,7 @@ main {
 }
 
 .button:hover {
-  background-color: var(--hover-btn);
+  background-color: black;
   color: white;
   border: 1px solid white;
   transition: var(--speed);
@@ -131,7 +136,7 @@ main {
 .outline {
   color: var(--clear);
   background-color: black;
-  border: 1px solid white;
+  border: 1px solid var(--btn);
   position: relative;
   z-index: 0;
   top: -4px;
@@ -462,5 +467,81 @@ footer li:not(:last-child) {
 /* ================================= */
 .projects {
   color: white;
-  padding-top: 300px;
+  display: grid;
+  position: relative;
+  width: 100%;
+  justify-items: center;
+  justify-self: center;
+  margin: 0 auto;
+  top: 100px;
+}
+
+.project {
+  display: grid;
+  justify-items: center;
+  justify-self: center;
+  width: 100%;
+}
+
+.project .diag-line {
+  transform: skewY(8deg) translateY(140px);
+}
+
+.project h1 {
+  justify-self: left;
+  padding-left: 150px;
+  transform: rotate(8deg) translateY(40px);
+}
+
+.project-container {
+  display: grid;
+  grid: repeat(2, min-content) / 700px 1fr;
+  grid-row-gap: 40px;
+  justify-items: center;
+  width: 100%;
+  justify-self: center;
+  /* background-color: gray; */
+  padding: 200px 150px 300px 150px;
+}
+
+.img-container {
+  display: grid;
+}
+
+.img-outline {
+  width: auto;
+  height: auto;
+  position: relative;
+  transform: translate(10px, -10px);
+  grid-row: 1;
+  grid-column: 1;
+  z-index: 2;
+  border: 1px solid white;
+}
+
+.img-container img {
+  grid-row: 1;
+  grid-column: 1;
+  z-index: 4;
+}
+
+.project-buttons {
+  display: grid;
+  /* background-color: yellow; */
+  align-content: center;
+  padding: 0 20px;
+  justify-self: left;
+}
+
+.button-container {
+  padding: 10px 20px;
+}
+
+.project-text {
+  display: grid;
+  grid: repeat(2, min-content) / 1fr;
+}
+
+.project-text p {
+  padding-bottom: 20px;
 }
