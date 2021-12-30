@@ -279,8 +279,13 @@ header {
   margin-top: 40px;
   color: white;
   justify-self: left;
+  justify-content: left;
   padding-left: 10px;
   max-width: 450px;
+}
+
+.intro-container .button-container {
+  padding: 0;
 }
 
 header figure {
@@ -533,7 +538,7 @@ footer li:not(:last-child) {
   justify-self: left;
 }
 
-.button-container {
+.project-buttons .button-container {
   padding: 10px 20px;
 }
 
