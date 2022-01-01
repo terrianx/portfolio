@@ -40,7 +40,12 @@ function Nav() {
         <Link to="/projects#" className="link">Projects</Link>
       </div>
       <Social />
-      <Button to="/#contact">Contact</Button>
+      <Button to="/#contact" class="nav-contact">Contact</Button>
+      <div className="nav-resize">
+        <span className="nav-span"></span>
+        <span className="nav-span"></span>
+        <span className="nav-span"></span>
+      </div>
     </nav>
   );
 }
@@ -129,7 +134,7 @@ function Social() {
 
 function Button(props) {
   return (
-    <div className="button-container">
+    <div className={[props.class, "button-container"].join(' ')}>
       <Link to={props.to} className="button">{props.children}</Link>
       <p className="outline">{props.children}</p>
     </div>
@@ -163,7 +168,7 @@ function Header() {
       <figure>
         <img src="./assets/header-1.png" 
              alt="Samurai illustration"
-             width="450"/>
+             width="450px"/>
       </figure>
     </header>
   );
@@ -289,6 +294,7 @@ function Projects() {
           </pre>
         </ul>
       </Project>
+      <Button to="/projects#">Back to Top</Button>
     </section>
   );
 }

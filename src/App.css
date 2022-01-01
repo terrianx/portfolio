@@ -141,6 +141,27 @@ main {
   right: -4px;
 }
 
+.fade-box {
+  display: block;
+  height: 400px;
+  background-image: linear-gradient(var(--clear), black);
+  width: 100%;
+}
+
+/* diagonal line */
+.diag-line {
+  padding: 0.5px;
+  background-color: white;
+  position: relative;
+  z-index: 3;
+  transform: skewY(-8deg) translateY(45px);
+  width: 100%;
+}
+
+/* ================================= */
+/* ============= social ============ */
+/* ================================= */
+
 .social-container {
   display: grid;
   grid: 80px / 1fr 1fr 1fr;
@@ -192,14 +213,6 @@ main {
   transform: translate(3px, -3px);
   z-index: 1;
 }
-
-.fade-box {
-  display: block;
-  height: 400px;
-  background-image: linear-gradient(var(--clear), black);
-  width: 100%;
-}
-
 
 /* ================================= */
 /* =========== navigation ========== */
@@ -253,7 +266,44 @@ nav {
   text-align: center;
 }
 
+.nav-resize {
+  display: none;
+}
 
+/* responsiveness */
+@media screen and (max-width: 1000px) {
+  nav {
+    grid: 60px / auto min-content;
+  }
+
+  nav .social-container,
+  .nav-contact,
+  .nav-links-container {
+    display: none;
+    transition: var(--speed);
+  }
+
+  .nav-resize {
+    display: grid;
+    grid: 1fr 1fr 1fr / 1fr;
+    grid-row-gap: 5px;
+    padding: 10px;
+  }
+
+  .nav-resize:hover {
+    cursor: pointer;
+  }
+
+  .nav-resize:hover .nav-span {
+    background-color: var(--btn);
+  }
+
+  .nav-resize span {
+    background-color: white;
+    height: 1px;
+    width: 25px;
+  }
+}
 
 /* ================================= */
 /* ============ header ============= */
@@ -271,6 +321,7 @@ header {
   top: 0;
   position: sticky;
   z-index: 2;
+  transition: var(--speed);
 }
 
 .intro-container {
@@ -296,16 +347,92 @@ header {
 
 header figure {
   justify-self: right;
+  /* border: 1px solid blue; */
 }
 
-/* diagonal line */
-.diag-line {
-  padding: 0.5px;
-  background-color: white;
-  position: relative;
-  z-index: 3;
-  transform: skewY(-8deg) translateY(45px);
-  width: 100%;
+header img {
+  transition: var(--speed);
+}
+
+@media screen and (max-width: 1000px) {
+  header {
+    margin: 0 60px;
+  }
+
+  header img {
+    transition: var(--speed);
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  header {
+    margin: 0 20px;
+  }
+
+  header img {
+    width: 350px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  header {
+    grid: auto auto / 1fr;
+  }
+
+  header figure {
+    padding-top: 20px;
+    grid-row: 1;
+    justify-self: center;
+  }
+
+  header img {
+    max-width: 300px;
+    height: auto;
+  }
+
+  .intro-container {
+    display: grid;
+    padding: 0;
+    margin: 0;
+    justify-self: center;
+    justify-items: center;
+    align-self: top;
+    text-align: center;
+  }
+
+  footer {
+    display: none;
+  }
+
+  header h1 {
+    font-size: 30px;
+  }
+
+  header p,
+  header a {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  header {
+    margin: 0 10px;
+  }
+
+  header img {
+    max-height: 50vh;
+    width: auto;
+  }
+
+  header h1 {
+    font-size: 24px;
+  }
+
+  header p,
+  header a {
+    font-size: 16px;
+  }
 }
 
 /* ================================= */
@@ -495,7 +622,7 @@ footer li:not(:last-child) {
   justify-items: center;
   justify-self: center;
   margin: 0 auto;
-  top: 100px;
+  padding: 100px 0 200px 0;
 }
 
 .project {
@@ -522,7 +649,7 @@ footer li:not(:last-child) {
   justify-items: center;
   width: 100%;
   justify-self: center;
-  padding: 200px 150px 300px 150px;
+  padding: 200px 150px 200px 150px;
 }
 
 .img-container {
