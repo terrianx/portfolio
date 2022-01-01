@@ -256,10 +256,12 @@ function Projects() {
         </p>
         <ul>
           <lh>Features</lh>
-          <li>- Browser size responsiveness</li>
-          <li>- Customer review system</li>
-          <li>- Interactive menu with drinks, toppings, and options</li>
-          <li>- Cart system to store user order</li>
+          <pre>
+            <li>-   Browser size responsiveness</li>
+            <li>-   Customer review system</li>
+            <li>-   Interactive menu with drinks, toppings, and options</li>
+            <li>-   Cart system to store user order</li>
+          </pre>
         </ul>
       </Project>
       <Project title="BlueAir Website"
@@ -280,9 +282,11 @@ function Projects() {
         </p>
         <ul>
           <lh>Features</lh>
-          <li>- Animated links</li>
-          <li>- Fade in home page image</li>
-          <li>- Mobile responsiveness with hamburger menu</li>
+          <pre>
+            <li>-   Animated links</li>
+            <li>-   Fade in home page image</li>
+            <li>-   Mobile responsiveness with hamburger menu</li>
+          </pre>
         </ul>
       </Project>
     </section>
@@ -303,6 +307,7 @@ function Project(props) {
                alt={props.alt} 
                width={props.width}
                height={props.height}/>
+          <p>{props.tech}</p>
         </div>
         <div className="project-buttons">
           <div className="button-container">
@@ -319,7 +324,6 @@ function Project(props) {
           </div>
         </div>
         <div className="project-text">
-          <p>Technology used: {props.tech}</p>
           <div>{props.children}</div>
         </div>
       </div>
