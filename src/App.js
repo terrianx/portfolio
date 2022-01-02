@@ -54,7 +54,7 @@ function Footer() {
   return (
     <footer>
       <div className="footer-container">
-        <Link to="/#"><h1 className="footer-name">Yu Xiao</h1></Link>
+        <Link to="/#" className="footer-name"><h1>Yu Xiao</h1></Link>
         <div className="footer-item">
           <h1>Navigation</h1>
           <ul>
