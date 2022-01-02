@@ -509,7 +509,7 @@ header img {
   }
 
   .about .diag-line {
-    transform: skewY(-8deg) translateY(40px);
+    transform: skewY(-8deg) translateY(38px);
   }
   
   .about p,
@@ -566,7 +566,37 @@ header img {
 }
 
 
+/* responsiveness */
+@media screen and (max-width: 700px) {
+  .contact h1 {
+    font-size: 30px;
+    transition: var(--speed);
+  }
 
+  .contact p,
+  .contact .button,
+  .contact .outline {
+    font-size: 18px;
+    transition: var(--speed);
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .contact h1 {
+    padding: 0 5px 50px 5px;
+    font-size: 24px;
+  }
+
+  .contact .diag-line {
+    transform: skewY(-8deg) translateY(35px);
+  }
+  
+  .contact p,
+  .contact .button,
+  .contact .outline {
+    font-size: 16px;
+  }
+}
 /* ================================= */
 /* ============= footer ============ */
 /* ================================= */
