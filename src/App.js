@@ -136,7 +136,7 @@ function Button(props) {
   return (
     <div className={[props.class, "button-container"].join(' ')}>
       <Link to={props.to} className="button">{props.children}</Link>
-      <p className="outline">{props.children}</p>
+      <div className="outline">{props.children}</div>
     </div>
   );
 }

@@ -132,6 +132,7 @@ main {
 }
 
 .outline {
+  font-size: 20px;
   color: var(--clear);
   background-color: black;
   border: 1px solid var(--btn);
@@ -347,7 +348,6 @@ header {
 
 header figure {
   justify-self: right;
-  /* border: 1px solid blue; */
 }
 
 header img {
@@ -410,7 +410,8 @@ header img {
   }
 
   header p,
-  header a {
+  header a,
+  header .outline {
     font-size: 18px;
   }
 }
@@ -430,7 +431,8 @@ header img {
   }
 
   header p,
-  header a {
+  header a,
+  header .outline {
     font-size: 16px;
   }
 }
@@ -446,6 +448,7 @@ header img {
   grid: repeat(3, min-content) / 1fr;
   position: relative;
   z-index: 4;
+  transition: var(--speed);
 }
 
 .about-container {
@@ -466,19 +469,55 @@ header img {
   background-color: black;
   z-index: 5;
   color: var(--header);
+  transition: var(--speed);
 }
 
 .about p {
   max-width: 500px;
   color: var(--text);
   line-height: var(--line-height);
+  transition: var(--speed);
 }
 
 .about .button {
   justify-self: center;
 }
 
+/* responsiveness */
+@media screen and (max-width: 700px) {
+  .about h1 {
+    font-size: 30px;
+    transition: var(--speed);
+  }
 
+  .about p,
+  .about .button,
+  .about .outline {
+    font-size: 18px;
+    transition: var(--speed);
+  }
+
+  .about p {
+    padding: 0 40px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .about h1 {
+    padding: 0 5px 50px 5px;
+    font-size: 24px;
+  }
+
+  .about .diag-line {
+    transform: skewY(-8deg) translateY(40px);
+  }
+  
+  .about p,
+  .about .button,
+  .about .outline {
+    font-size: 16px;
+  }
+}
 
 /* ================================= */
 /* ============ contact ============ */
