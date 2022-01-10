@@ -229,11 +229,20 @@ function Resume() {
           className="button">Download</a>
         <p className="outline">Download</p>
       </div>
-      <embed src="./assets/YuXiaoResume.pdf#toolbar=0"
-            type="application/pdf"
-            width="825px"
-            height="1064px"
-            className="resume-pdf"/>
+      <div className="resume-content-container">
+        <object data="./assets/YuXiaoResume.pdf#toolbar=0"
+                type="application/pdf"
+                width="100%"
+                height="100%"
+                className="resume-pdf">
+          This browser does not support PDFs. 
+          Click 'Download' above to download and view.
+        </object>
+        <img src="./assets/YuXiaoResume.png" 
+             alt="Yu Xiao Resume" 
+             className="resume-png" 
+             width="100%" />
+      </div>
     </section>
   );
 }
