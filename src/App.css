@@ -378,11 +378,11 @@ header img {
 
 @media only screen and (max-width: 700px) {
   header {
-    grid: auto auto / 1fr;
+    grid: min-content 1fr / 1fr;
   }
 
   header figure {
-    padding-top: 20px;
+    padding-top: 50px;
     grid-row: 1;
     justify-self: center;
   }
