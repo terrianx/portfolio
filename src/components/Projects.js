@@ -1,5 +1,7 @@
 import Button from "./Button";
 
+import './Projects.css';
+
 // project page components
 export default function Projects() {
     return (

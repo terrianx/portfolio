@@ -1,57 +1,56 @@
-/* button */
 .button-container {
-    display: grid;
-  }
-  
-  .button,
-  .logo,
-  .outline {
-    background-color: var(--btn);
-    height: 36px;
-    padding: 5px 20px;
-    width: max-content;
-    justify-items: center;
-    align-items: center;
-    text-align: center;
-    border-radius: 20px;
-    color: black;
-    transition: var(--speed);
-    border: 1px solid var(--btn);
-    grid-column: 1;
-    grid-row: 1;
-    z-index: 1;
-  }
-  
-  .button:hover {
-    background-color: black;
-    color: white;
-    border: 1px solid white;
-    transition: var(--speed);
-    transform: translate(4px, -4px);
-  }
-  
-  .button:active {
-    background-color: white;
-  }
-  
-  .logo:hover {
-    filter: invert(1);
-    background-color: white;
-    border: 1px solid black;
-    transform: translate(4px, -4px);
-  }
-  
-  .logo:active {
-    background-color: black;
-  }
-  
-  .outline {
-    font-size: 20px;
-    color: var(--clear);
-    background-color: black;
-    border: 1px solid var(--btn);
-    position: relative;
-    z-index: 0;
-    top: -4px;
-    right: -4px;
-  }
+  display: grid;
+}
+
+.button,
+.logo,
+.outline {
+  background-color: var(--btn);
+  height: 36px;
+  padding: 5px 20px;
+  width: max-content;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 20px;
+  color: black;
+  transition: var(--speed);
+  border: 1px solid var(--btn);
+  grid-column: 1;
+  grid-row: 1;
+  z-index: 1;
+}
+
+.button:hover {
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  transition: var(--speed);
+  transform: translate(4px, -4px);
+}
+
+.button:active {
+  background-color: white;
+}
+
+.logo:hover {
+  filter: invert(1);
+  background-color: white;
+  border: 1px solid black;
+  transform: translate(4px, -4px);
+}
+
+.logo:active {
+  background-color: black;
+}
+
+.outline {
+  font-size: 20px;
+  color: var(--clear);
+  background-color: black;
+  border: 1px solid var(--btn);
+  position: relative;
+  z-index: 0;
+  top: -4px;
+  right: -4px;
+}

@@ -1,0 +1,288 @@
+/* ================================= */
+/* ============ header ============= */
+/* ================================= */
+
+header {
+    display: grid;
+    grid: auto / 1fr 1fr;
+    color: white;
+    height: 100vh;
+    margin-bottom: -100px;
+    justify-self: center;
+    align-items: center;
+    margin: 0 80px;
+    top: 0;
+    position: sticky;
+    z-index: 2;
+    transition: var(--speed);
+  }
+  
+  .intro-container {
+    margin-top: 40px;
+    color: var(--text);
+    justify-self: left;
+    justify-content: left;
+    padding-left: 10px;
+    max-width: 450px;
+  }
+  
+  .intro-container h1 {
+    color: var(--header);
+  }
+  
+  .intro-container p {
+    line-height: var(--line-height);
+  }
+  
+  .intro-container .button-container {
+    padding: 0;
+  }
+  
+  header figure {
+    justify-self: right;
+  }
+  
+  header img {
+    transition: var(--speed);
+  }
+  
+  @media only screen and (max-width: 1000px) {
+    header {
+      margin: 0 60px;
+    }
+  
+    header img {
+      transition: var(--speed);
+      width: 400px;
+    }
+  }
+  
+  @media only screen and (max-width: 800px) {
+    header {
+      margin: 0 20px;
+    }
+  
+    header img {
+      width: 350px;
+    }
+  }
+  
+  @media only screen and (max-width: 700px) {
+    header {
+      grid: min-content 1fr / 1fr;
+    }
+  
+    header figure {
+      padding-top: 50px;
+      grid-row: 1;
+      justify-self: center;
+    }
+  
+    header img {
+      max-width: 300px;
+      height: auto;
+    }
+  
+    .intro-container {
+      display: grid;
+      padding: 0;
+      margin: 0;
+      justify-self: center;
+      justify-items: center;
+      align-self: top;
+      text-align: center;
+    }
+  
+    header h1 {
+      font-size: 30px;
+    }
+  
+    header p,
+    header a,
+    header .outline {
+      font-size: 18px;
+    }
+  }
+  
+  @media only screen and (max-width: 400px) {
+    header {
+      margin: 0 10px;
+    }
+  
+    header img {
+      max-height: 50vh;
+      width: auto;
+    }
+  
+    header h1 {
+      font-size: 24px;
+    }
+  
+    header p,
+    header a,
+    header .outline {
+      font-size: 16px;
+    }
+  }
+  
+  /* ================================= */
+  /* ============= about ============= */
+  /* ================================= */
+  
+  .about {
+    width: 100%;
+    justify-content: center;
+    display: grid;
+    grid: repeat(3, min-content) / 1fr;
+    position: relative;
+    z-index: 4;
+    transition: var(--speed);
+  }
+  
+  .about-container {
+    background-color: black;
+    width: 100%;
+    padding: 0 0 200px 0;
+    display: grid;
+    grid: repeat(5, min-content) / 1fr;
+    row-gap: 20px;
+    text-align: center;
+    justify-items: center;
+    justify-self: center;
+    margin: 0 80px;
+  }
+  
+  .about h1 {
+    padding: 0 5px 50px 10px;
+    background-color: black;
+    z-index: 5;
+    color: var(--header);
+    transition: var(--speed);
+  }
+  
+  .about p {
+    max-width: 500px;
+    color: var(--text);
+    line-height: var(--line-height);
+    transition: var(--speed);
+  }
+  
+  .about .button {
+    justify-self: center;
+  }
+  
+  /* responsiveness */
+  @media only screen and (max-width: 700px) {
+    .about h1 {
+      font-size: 30px;
+      transition: var(--speed);
+    }
+  
+    .about p,
+    .about .button,
+    .about .outline {
+      font-size: 18px;
+      transition: var(--speed);
+    }
+  
+    .about p {
+      padding: 0 40px;
+    }
+  }
+  
+  @media only screen and (max-width: 400px) {
+    .about h1 {
+      padding: 0 5px 50px 5px;
+      font-size: 24px;
+    }
+  
+    .about .diag-line {
+      transform: skewY(-8deg) translateY(38px);
+    }
+    
+    .about p,
+    .about .button,
+    .about .outline {
+      font-size: 16px;
+    }
+  }
+  
+  /* ================================= */
+  /* ============ contact ============ */
+  /* ================================= */
+  
+  .contact {
+    width: 100%;
+    justify-content: center;
+    display: grid;
+    grid: repeat(2, min-content) / 1fr;
+    padding: 200px 0 300px 0;
+    position: relative;
+    z-index: 4;
+    background-color: black;
+  }
+  
+  .contact-container {
+    display: grid;
+    grid: repeat(6, min-content) / 1fr;
+    text-align: center;
+    justify-items: center;
+    justify-self: center;
+    width: 100%;
+    padding: 0;
+  }
+  
+  .contact h1 {
+    padding: 0 5px 10px 5px;
+    background-color: black;
+    z-index: 5;
+    transform: translateY(20px);
+    color: var(--header);
+  }
+  
+  .contact p {
+    color: var(--text);
+    line-height: var(--line-height);
+  }
+  
+  .info {
+    margin-top: 70px;
+  }
+  
+  .contact .button {
+    justify-self: center;
+  }
+  
+  
+  /* responsiveness */
+  @media only screen and (max-width: 700px) {
+    .contact h1 {
+      font-size: 30px;
+      transition: var(--speed);
+    }
+  
+    .contact p,
+    .contact .button,
+    .contact .outline {
+      font-size: 18px;
+      transition: var(--speed);
+    }
+  }
+  
+  @media only screen and (max-width: 400px) {
+    .contact h1 {
+      padding: 0 5px 50px 5px;
+      font-size: 24px;
+    }
+  
+    .contact .diag-line {
+      transform: skewY(-8deg) translateY(35px);
+    }
+    
+    .contact p,
+    .contact .button,
+    .contact .outline {
+      font-size: 16px;
+    }
+  }
+  

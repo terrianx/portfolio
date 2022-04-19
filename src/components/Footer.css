@@ -1,0 +1,118 @@
+/* ================================= */
+/* ============= footer ============ */
+/* ================================= */
+
+footer {
+    padding: 0 200px 100px 200px;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+    transition: var(--speed);
+  }
+  
+  .footer-container {
+    display: grid;
+    grid: 1fr 1fr / repeat(4, 1fr);
+    color: white;
+  }
+  
+  .footer-name h1 {
+    font-size: 36px;
+  }
+  
+  footer h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  footer li,
+  .footer-name {
+    transition: var(--speed);
+  }
+  
+  footer li {
+    color: var(--text);
+  }
+  
+  footer li:hover,
+  .footer-name:hover {
+    color: var(--btn);
+    transition: var(--speed);
+  }
+  
+  footer li:not(:last-child) {
+    margin-bottom: 5px;
+  }
+  
+  .copyright {
+    margin-top: 100px;
+    color: white;
+    justify-self: center;
+    grid-column: 1 / 5;
+  }
+  
+  /* responsiveness */
+  @media only screen and (max-width: 1200px) {
+    footer {
+      padding: 0 100px 100px 100px;
+      transition: var(--speed);
+    }
+  }
+  
+  @media only screen and (max-width: 800px) {
+    footer {
+      padding: 0 60px 100px 60px;
+    }
+  }
+  
+  @media only screen and (max-width: 700px) {
+    .footer-container {
+      grid: auto 1fr 1fr / repeat(3, 1fr);
+      justify-content: center;
+    }
+  
+    .footer-name {
+      justify-self: left;
+      grid-column: 1 / 4;
+    }
+  
+    .copyright {
+      grid-column: 1 / 4;
+    }
+  }
+  
+  @media only screen and (max-width: 550px) {
+    footer {
+      padding: 0 60px 100px 60px;
+    }
+    .footer-container {
+      grid: repeat(5, auto) / 1fr;
+      grid-row-gap: 40px;
+      justify-items: center;
+    }
+    
+    .footer-item {
+      width: 100%;
+      justify-self: center;
+    }
+  
+    footer li {
+      font-size: 16px;
+    }
+  
+    .footer-name h1 {
+      font-size: 24px;
+    }
+  
+    .footer-name,
+    .copyright {
+      grid-column: 1;
+    }
+  
+    footer p,
+    footer a {
+      font-size: 16px;
+    }
+  }
+  

@@ -1,6 +1,8 @@
 import Social from "./Social";
 import Button from "./Button";
 
+import './Home.css';
+
 // home page components
 export default function Home() {
     return (

@@ -1,5 +1,7 @@
 import { HashLink as Link } from 'react-router-hash-link';
 
+import './Footer.css';
+
 export default function Footer() {
     return (
       <footer>
