@@ -15,12 +15,12 @@ export default function Social() {
             target="_blank"></a>
           <p className="social-outline"></p>
         </div>
-        <div className="social-button">
+        {/* <div className="social-button">
           <a className="fa fa-instagram"
             href="https://www.instagram.com/tx_pk/" 
             target="_blank"></a>
           <p className="social-outline"></p>
-        </div>
+        </div> */}
       </div>
     );
 }

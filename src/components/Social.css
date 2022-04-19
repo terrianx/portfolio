@@ -4,7 +4,7 @@
 
 .social-container {
   display: grid;
-  grid: 80px / 1fr 1fr 1fr;
+  grid: 80px / 1fr 1fr;
   column-gap: 20px;
   justify-self: center;
   align-items: center;
