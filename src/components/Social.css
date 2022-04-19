@@ -1,0 +1,56 @@
+/* ================================= */
+/* ============= social ============ */
+/* ================================= */
+
+.social-container {
+    display: grid;
+    grid: 80px / 1fr 1fr 1fr;
+    column-gap: 20px;
+    justify-self: center;
+    align-items: center;
+    width: min-content;
+  }
+  
+  .social-button {
+    display: grid;
+  }
+  
+  .social-button .fa {
+    background-color: white;
+    font-size: 22px;
+    color: black;
+    text-align: center;
+    padding: 4px 7px;
+    border-radius: 24px;
+    justify-self: center;
+    transition: var(--speed);
+  }
+  
+  .social-button .fa {
+    grid-row: 1;
+    grid-column: 1;
+    z-index: 2;
+  }
+  
+  .social-button .fa:hover {
+    background-color: var(--btn);
+    transition: var(--speed);
+    transform: translate(3px, -3px);
+  }
+  
+  .social-button .fa:active {
+    background-color: white;
+  }
+  
+  .social-outline {
+    grid-row: 1;
+    grid-column: 1;
+    padding: 15px;
+    border-radius: 24px;
+    background-color: black;
+    border: 1px solid white;
+    position: relative;
+    transform: translate(3px, -3px);
+    z-index: 1;
+  }
+  
