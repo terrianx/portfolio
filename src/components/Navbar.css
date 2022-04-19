@@ -31,7 +31,13 @@ nav {
 }
 
 .link:hover {
+  transition: var(--speed);
   color: var(--btn);
+}
+
+.link:active {
+  transition: var(--speed);
+  color: var(--light);
 }
 
 .nav-name-container {
