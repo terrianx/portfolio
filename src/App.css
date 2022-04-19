@@ -18,11 +18,12 @@
 :root {
   --header: var(--light);
   --text: var(--light);
-  --light: hsl(200, 0%, 85%);
+  --light: hsl(200, 0%, 88%);
   --highlight: white;
   --btn: hsl(182, 47%, 58%);
   --clear: hsla(0, 0%, 0%, 0);
   --speed: 200ms;
+  --click-speed: 100ms;
   --line-height: 1.4;
 }
 
@@ -85,7 +86,6 @@ main {
   z-index: 0;
 }
 
-
 .fade-box {
   display: block;
   height: 400px;
@@ -93,7 +93,6 @@ main {
   width: 100%;
 }
 
-/* diagonal line */
 .diag-line {
   padding: 0.5px;
   background-color: white;

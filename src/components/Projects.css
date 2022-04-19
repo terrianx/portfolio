@@ -2,94 +2,94 @@
 /* ============= projects =========== */
 /* ================================= */
 .projects {
-    color: white;
-    display: grid;
-    position: relative;
-    width: 100%;
-    justify-items: center;
-    justify-self: center;
-    margin: 0 auto;
-    padding: 100px 0 200px 0;
-  }
-  
-  .project {
-    display: grid;
-    justify-items: center;
-    justify-self: center;
-    width: 100%;
-  }
-  
-  .project .diag-line {
-    transform: skewY(8deg) translateY(140px);
-  }
-  
-  .project h1 {
-    justify-self: left;
-    padding-left: 150px;
-    transform: rotate(8deg) translateY(40px);
-  }
-  
-  .project-container {
-    display: grid;
-    grid: repeat(2, min-content) / 700px 1fr;
-    grid-row-gap: 40px;
-    justify-items: center;
-    width: 100%;
-    justify-self: center;
-    padding: 200px 150px 200px 150px;
-  }
-  
-  .img-container {
-    display: grid;
-  }
-  
-  .img-outline {
-    width: auto;
-    height: auto;
-    position: relative;
-    transform: translate(10px, -10px);
-    grid-row: 1;
-    grid-column: 1;
-    z-index: 2;
-    border: 1px solid white;
-  }
-  
-  .img-container img {
-    grid-row: 1;
-    grid-column: 1;
-    z-index: 4;
-    transition: var(--speed);
-  }
-  
-  .img-container p {
-    margin-top: 10px;
-    justify-self: right;
-  }
-  
-  .project-buttons {
-    display: grid;
-    align-content: center;
-    padding: 0 20px;
-    justify-self: left;
-  }
-  
-  .project-buttons .button-container {
-    padding: 10px 20px;
-  }
-  
-  .project-text {
-    display: grid;
-    grid: repeat(2, min-content) / 1fr;
-  }
-  
-  .project-text p {
-    padding-bottom: 20px;
-    color: var(--text);
-    line-height: var(--line-height);
-  }
-  
-  .project-text li {
-    color: var(--text);
-    line-height: var(--line-height);
-    padding-left: 20px;
-  }
+  color: var(--light);
+  display: grid;
+  position: relative;
+  width: 100%;
+  justify-items: center;
+  justify-self: center;
+  margin: 0 auto;
+  padding: 100px 0 200px 0;
+}
+
+.project {
+  display: grid;
+  justify-items: center;
+  justify-self: center;
+  width: 100%;
+}
+
+.project .diag-line {
+  transform: skewY(8deg) translateY(140px);
+}
+
+.project h1 {
+  justify-self: left;
+  padding-left: 150px;
+  transform: rotate(8deg) translateY(40px);
+}
+
+.project-container {
+  display: grid;
+  grid: repeat(2, min-content) / 700px 1fr;
+  grid-row-gap: 40px;
+  justify-items: center;
+  width: 100%;
+  justify-self: center;
+  padding: 200px 150px 200px 150px;
+}
+
+.img-container {
+  display: grid;
+}
+
+.img-outline {
+  width: auto;
+  height: auto;
+  position: relative;
+  transform: translate(10px, -10px);
+  grid-row: 1;
+  grid-column: 1;
+  z-index: 2;
+  border: 1px solid white;
+}
+
+.img-container img {
+  grid-row: 1;
+  grid-column: 1;
+  z-index: 4;
+  transition: var(--speed);
+}
+
+.img-container p {
+  margin-top: 10px;
+  justify-self: right;
+}
+
+.project-buttons {
+  display: grid;
+  align-content: center;
+  padding: 0 20px;
+  justify-self: left;
+}
+
+.project-buttons .button-container {
+  padding: 10px 20px;
+}
+
+.project-text {
+  display: grid;
+  grid: repeat(2, min-content) / 1fr;
+}
+
+.project-text p {
+  padding-bottom: 20px;
+  color: var(--text);
+  line-height: var(--line-height);
+}
+
+.project-text li {
+  color: var(--text);
+  line-height: var(--line-height);
+  padding-left: 20px;
+}

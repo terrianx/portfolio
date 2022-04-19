@@ -14,7 +14,7 @@ footer {
   .footer-container {
     display: grid;
     grid: 1fr 1fr / repeat(4, 1fr);
-    color: white;
+    color: var(--light);
   }
   
   .footer-name h1 {
@@ -47,7 +47,7 @@ footer {
   
   .copyright {
     margin-top: 100px;
-    color: white;
+    color: var(--light);
     justify-self: center;
     grid-column: 1 / 5;
   }

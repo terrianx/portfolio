@@ -1,3 +1,4 @@
+
 .button-container {
   display: grid;
 }
@@ -23,25 +24,38 @@
 
 .button:hover {
   background-color: black;
-  color: white;
-  border: 1px solid white;
+  color: var(--light);
+  border: 1px solid var(--light);
   transition: var(--speed);
-  transform: translate(4px, -4px);
+  transform: translate(1px, -1px);
+}
+
+.button:hover + .outline {
+  border: 1px solid var(--light);
 }
 
 .button:active {
-  background-color: white;
+  background-color: var(--light);
+  transition: var(--click-speed);
+  transform: translate(3px, -3px);
 }
 
 .logo:hover {
   filter: invert(1);
-  background-color: white;
+  background-color: var(--light);
   border: 1px solid black;
-  transform: translate(4px, -4px);
+  transition: var(--speed);
+  transform: translate(1px, -1px);
+}
+
+.logo:hover + .outline {
+  border: 1px solid var(--light);
 }
 
 .logo:active {
   background-color: black;
+  transition: var(--click-speed);
+  transform: translate(3px, -3px);
 }
 
 .outline {

@@ -16,7 +16,7 @@
 }
 
 .social-button .fa {
-  background-color: white;
+  background-color: var(--light);
   font-size: 22px;
   color: black;
   text-align: center;
@@ -35,11 +35,18 @@
 .social-button .fa:hover {
   background-color: var(--btn);
   transition: var(--speed);
-  transform: translate(3px, -3px);
+  transform: translate(1px, -1px);
+}
+
+.social-button + .social-outline,
+.fa:hover + .social-outline {
+  border: 1px solid var(--btn);
 }
 
 .social-button .fa:active {
-  background-color: white;
+  background-color: var(--light);
+  transition: var(--speed);
+  transform: translate(2px, -2px);
 }
 
 .social-outline {
@@ -48,9 +55,8 @@
   padding: 15px;
   border-radius: 24px;
   background-color: black;
-  border: 1px solid white;
+  border: 1px solid var(--light);
   position: relative;
   transform: translate(3px, -3px);
   z-index: 1;
 }
-  
