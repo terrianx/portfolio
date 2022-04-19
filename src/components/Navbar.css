@@ -61,18 +61,17 @@ nav {
     grid: 60px / auto min-content min-content;
   }
 
-  nav .social-container {
+  .nav-contact {
     display: none;
-    transition: var(--speed);
   }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 750px) {
   nav {
     grid: 60px / auto min-content;
   }
 
-  .nav-contact {
+  nav .social-container {
     display: none;
     transition: var(--speed);
   }
