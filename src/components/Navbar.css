@@ -50,7 +50,7 @@ nav {
 
 .nav-links-container {
   display: grid;
-  grid: 60px / repeat(4, auto);
+  grid: 60px / repeat(5, auto);
   column-gap: 20px;
   justify-self: right;
   align-items: center;
@@ -72,7 +72,7 @@ nav {
   }
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 800px) {
   nav {
     grid: 60px / auto min-content;
   }
@@ -83,7 +83,7 @@ nav {
   }
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 700px) {
   nav {
     grid: 60px / auto min-content;
   }

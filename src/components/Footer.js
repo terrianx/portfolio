@@ -14,6 +14,7 @@ export default function Footer() {
               <li><Link to="/#about" className="link">About</Link></li>
               <li><Link to="/resume#" className="link">Resume</Link></li>
               <li><Link to="/projects#" className="link">Projects</Link></li>
+              <li><Link to="/art#" className="link">Art</Link></li>
             </ul>
           </div>
           <div className="footer-item">
@@ -23,8 +24,8 @@ export default function Footer() {
                      target="_blank">GitHub</a></li>
               <li><a href="https://www.linkedin.com/in/yuxiao8/" 
                      target="_blank">LinkedIn</a></li>
-              <li><a href="https://www.instagram.com/tx_pk/" 
-                     target="_blank">Instagram</a></li>
+              {/* <li><a href="https://www.instagram.com/tx_pk/" 
+                     target="_blank">Instagram</a></li> */}
             </ul>
           </div>
           <div className="footer-item">
