@@ -65,11 +65,11 @@ export default function Projects() {
   
 function Project(props) {
     return (
-        <div className={[props.class, "project"].join(' ')}>
+      <div className={[props.class, "project"].join(' ')}>
         <span className="diag-line"></span>
-        <h1>{props.title}</h1>
         <div className="project-container">
-            <div className="img-container">
+          <h1>{props.title}</h1>
+          <div className="img-container">
             <span className="img-outline" 
                     width={props.width}
                     height={props.height}></span>
@@ -78,25 +78,25 @@ function Project(props) {
                     width={props.width}
                     height={props.height}/>
             <p>{props.tech}</p>
-            </div>
-            <div className="project-buttons">
+          </div>
+          <div className="project-buttons">
             <div className="button-container">
-                <a href={props.site} 
-                className="button" 
-                target="_blank">Site</a>
-                <p className="outline">Site</p>
+              <a href={props.site} 
+              className="button" 
+              target="_blank">Site</a>
+              <p className="outline">Site</p>
             </div>
             <div className="button-container">
-                <a href={props.code} 
-                className="button" 
-                target="_blank">Code</a>
-                <p className="outline">Code</p>
+              <a href={props.code} 
+              className="button" 
+              target="_blank">Code</a>
+              <p className="outline">Code</p>
             </div>
-            </div>
-            <div className="project-text">
+          </div>
+          <div className="project-text">
             <div>{props.children}</div>
-            </div>
+          </div>
         </div>
-        </div>
+      </div>
     );
 }

@@ -25,18 +25,21 @@
 
 .project h1 {
   justify-self: left;
-  padding-left: 150px;
+  grid-row: 1;
+  grid-column: 1 / 3;
+  transition: var(--speed);
   transform: rotate(8deg) translateY(40px);
 }
 
 .project-container {
   display: grid;
-  grid: repeat(2, min-content) / 700px 1fr;
+  grid: 200px repeat(3, min-content) / 700px min-content;
   grid-row-gap: 40px;
   justify-items: center;
-  width: 100%;
+  width: min-content;
   justify-self: center;
-  padding: 200px 150px 200px 150px;
+  padding: 15px 0 200px 0;
+  transition: var(--speed);
 }
 
 .img-container {
@@ -92,4 +95,11 @@
   color: var(--text);
   line-height: var(--line-height);
   padding-left: 20px;
+}
+
+/* responsivness */
+@media only screen and (max-width: 1200px) {
+  .project-container {
+    transition: var(--speed);
+  }
 }
