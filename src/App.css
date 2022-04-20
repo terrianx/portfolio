@@ -86,13 +86,6 @@ main {
   z-index: 0;
 }
 
-.fade-box {
-  display: block;
-  height: 400px;
-  background-image: linear-gradient(var(--clear), black);
-  width: 100%;
-}
-
 .diag-line {
   padding: 0.5px;
   background-color: white;
