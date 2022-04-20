@@ -25,7 +25,7 @@ function Header() {
             through technology.
           </p>
           <Social />
-          <Button to="/#contact">Contact</Button>
+          <Button to="/#about">About</Button>
         </div>
         <figure>
           <img src="./assets/header-1.png" 
