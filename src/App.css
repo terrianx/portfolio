@@ -22,8 +22,8 @@
   --highlight: white;
   --btn: hsl(182, 47%, 58%);
   --clear: hsla(0, 0%, 0%, 0);
-  --speed: 200ms;
-  --click-speed: 100ms;
+  --speed: 150ms;
+  --click-speed: 80ms;
   --line-height: 1.4;
 }
 

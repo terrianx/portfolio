@@ -57,6 +57,9 @@ nav {
   text-align: center;
 }
 
+nav .button-container {
+  padding: 0;
+}
 .nav-resize {
   display: none;
 }
