@@ -11,7 +11,7 @@ export default function Navbar() {
       <nav>
         <div className="nav-name-container">
           <Logo />
-          <Link to="/#" className="link">Yu Xiao</Link>
+          <Link to="/#" className="link name">Yu Xiao</Link>
         </div>
         <div className="nav-links-container">
           <Link to="/#" className="link">Home</Link>

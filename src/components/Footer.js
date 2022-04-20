@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="footer-container">
           <Link to="/#" className="footer-name"><h1>Yu Xiao</h1></Link>
           <div className="footer-item">
-            <h1>Navigation</h1>
+            <h1>Links</h1>
             <ul>
               <li><Link to="/#" className="link">Home</Link></li>
               <li><Link to="/#about" className="link">About</Link></li>

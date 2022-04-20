@@ -43,7 +43,7 @@ nav {
 .nav-name-container {
   display: grid;
   grid: 60px / min-content auto;
-  column-gap: 40px;
+  column-gap: 20px;
   align-items: center;
   justify-self: left;
 }
@@ -55,6 +55,7 @@ nav {
   justify-self: right;
   align-items: center;
   text-align: center;
+  padding: 0;
 }
 
 nav .button-container {
@@ -65,19 +66,23 @@ nav .button-container {
 }
 
 /* responsiveness */
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 950px) {
   nav {
-    grid: 60px / auto min-content min-content;
+    grid: 60px / auto min-content min-content min-content;
+    column-gap: 20px;
+  }
+  .nav-name-container {
+    grid: 60px / 1fr;
   }
 
-  .nav-contact {
+  .nav-name-container .name {
     display: none;
   }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 780px) {
   nav {
-    grid: 60px / auto min-content;
+    grid: 60px / auto min-content min-content;
   }
 
   nav .social-container {
@@ -86,11 +91,33 @@ nav .button-container {
   }
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 680px) {
+  nav {
+    grid: 60px / auto min-content min-content;
+    column-gap: 0;
+  }
+
+  nav .button-container {
+    transform: scale(0.9);
+  }
+
+  .nav-links-container {
+    column-gap: 10px;
+    padding: 0 10px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
   nav {
     grid: 60px / auto min-content;
   }
 
+  .nav-contact {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 500px) {
   .nav-links-container {
     display: none;
     transition: var(--speed);
