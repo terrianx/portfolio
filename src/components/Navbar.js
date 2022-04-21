@@ -22,10 +22,13 @@ export default function Navbar() {
         </div>
         <Social />
         <Button to="/#contact" class="nav-contact">Contact</Button>
-        <div className="nav-resize">
-          <span className="nav-span"></span>
-          <span className="nav-span"></span>
-          <span className="nav-span"></span>
+        <div className="nav-menu">
+          <div className="nav-menu-btn">
+            <span className="nav-span"></span>
+            <span className="nav-span"></span>
+            <span className="nav-span"></span>
+          </div>
+          <div className="nav-menu-outline"></div>
         </div>
       </nav>
     );
