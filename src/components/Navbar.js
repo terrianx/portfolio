@@ -2,7 +2,8 @@ import Logo from "./Logo";
 import { HashLink as Link } from 'react-router-hash-link';
 import Social from "./Social";
 import Button from "./Button";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
+import throttle from 'lodash.throttle'
 
 import './Navbar.css';
 
@@ -21,18 +22,31 @@ export default function Navbar() {
       setScreenWidth(window.innerWidth);
     }
 
-    window.addEventListener("resize", handleResize);
+    window.addEventListener("resize", throttle(() => {
+      handleResize();
+    }, 500));
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   const smallScreen = screenWidth <= 780;
 
+  // nav menu state
   const [menuShow, setMenuShow] = useState(false);
   
   // automatically close nav menu if screen resized to larger
   useEffect(() => {
     if (!smallScreen) setMenuShow(false);
   }, [smallScreen]);
+
+  // automatically close nav menu if user clicks
+  useEffect(() => {
+    function handleClick() {
+      if (menuShow) setMenuShow(false);
+    }
+
+    window.addEventListener("click", handleClick);
+    return () => window.removeEventListener("click", handleClick);
+  }, [menuShow]);
 
   return (
     <nav className={menuShow ? "nav-menu-show" : ""}>
