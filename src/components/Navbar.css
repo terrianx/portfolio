@@ -201,6 +201,10 @@ nav .button-container {
     column-gap: 20px;
     padding: 0;
   }
+
+  .nav-menu {
+    transform: scale(0.9);
+  }
 }
 
 @media only screen and (max-width: 450px) {

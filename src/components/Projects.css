@@ -206,3 +206,15 @@
     width: 450px;
   }
 }
+
+@media only screen and (max-width: 450px) {
+  .project h1 {
+    transition: var(--speed);
+    transform: rotate(8deg) translateY(85px);
+    font-size: 28px;
+  }
+
+  .img-container img {
+    width: 400px;
+  }
+}
