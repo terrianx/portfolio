@@ -21,9 +21,11 @@ export default function Footer() {
             <h1>Social</h1>
             <ul>
               <li><a href="https://github.com/ytxpk" 
-                     target="_blank">GitHub</a></li>
+                     target="_blank"
+                     rel="noreferrer">GitHub</a></li>
               <li><a href="https://www.linkedin.com/in/yuxiao8/" 
-                     target="_blank">LinkedIn</a></li>
+                     target="_blank"
+                     rel="noreferrer">LinkedIn</a></li>
               {/* <li><a href="https://www.instagram.com/tx_pk/" 
                      target="_blank">Instagram</a></li> */}
             </ul>

@@ -79,13 +79,15 @@ function Project(props) {
           <div className="button-container">
             <a href={props.site} 
             className="button" 
-            target="_blank">Site</a>
+            target="_blank"
+            rel="noreferrer">Site</a>
             <p className="outline">Site</p>
           </div>
           <div className="button-container">
             <a href={props.code} 
             className="button" 
-            target="_blank">Code</a>
+            target="_blank"
+            rel="noreferrer">Code</a>
             <p className="outline">Code</p>
           </div>
         </div>

@@ -21,7 +21,7 @@ export default function Resume() {
             Click 'Download' above to download and view
             or view at link below.</p>
           <br></br>
-          <a href={docsLink} target="_blank">
+          <a href={docsLink} target="_blank" rel="noreferrer">
             <u>Click here to view</u>
           </a>
         </object>

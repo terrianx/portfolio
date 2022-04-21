@@ -6,13 +6,15 @@ export default function Social() {
         <div className="social-button">
           <a className="fa fa-github"
             href="https://github.com/ytxpk" 
-            target="_blank"></a>
+            target="_blank"
+            rel="noreferrer"> </a>
           <p className="social-outline"></p>
         </div>
         <div className="social-button">
           <a className="fa fa-linkedin"
             href="https://www.linkedin.com/in/yuxiao8/" 
-            target="_blank"></a>
+            target="_blank"
+            rel="noreferrer"> </a>
           <p className="social-outline"></p>
         </div>
         {/* <div className="social-button">

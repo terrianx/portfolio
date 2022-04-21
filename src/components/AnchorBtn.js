@@ -6,7 +6,10 @@ export default function AnchorBtn(props) {
         <a href={props.to} 
            download={props.download}
            className="button"
-           target="_blank">{props.children}</a>
+           target="_blank"
+           rel="noreferrer">
+          {props.children}
+        </a>
         <div className="outline">{props.children}</div>
       </div>
     );
