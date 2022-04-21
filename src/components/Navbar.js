@@ -2,7 +2,7 @@ import Logo from "./Logo";
 import { HashLink as Link } from 'react-router-hash-link';
 import Social from "./Social";
 import Button from "./Button";
-import React, { useState, useEffect, useCallback } from "react";
+import React, { useState, useEffect } from "react";
 import throttle from 'lodash.throttle'
 
 import './Navbar.css';
