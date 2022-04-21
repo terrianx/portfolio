@@ -17,8 +17,12 @@ export default function Resume() {
                   width="100%"
                   height="100%"
                   className="resume-pdf">
-            This browser does not support PDFs. 
-            Click 'Download' above to download and view.
+            <p>This browser or device does not support PDFs. <br></br>
+              Click 'Download' above to download and view
+              or view at link below.</p>
+            <br></br>
+            <a href="https://docs.google.com/document/d/1CpQL-_v7v3_YCdxQXRoP112ybwPCpTEqIaEqMFjr8qk/edit?usp=sharing"
+               target="_blank"><u>Click here to view</u></a>
           </object>
           <img src="./assets/YuXiaoResume.png" 
                alt="Yu Xiao Resume" 

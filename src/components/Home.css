@@ -85,7 +85,7 @@ header img {
 
   .intro-container {
     display: grid;
-    padding: 0;
+    padding: 0 10px;
     margin: 0;
     justify-self: center;
     justify-items: center;

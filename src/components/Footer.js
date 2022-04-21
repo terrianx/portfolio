@@ -30,7 +30,7 @@ export default function Footer() {
           </div>
           <div className="footer-item">
             <h1>Contact</h1>
-            <ul>
+            <ul className="footer-contact">
               <li><p>txiaopk@gmail.com</p></li>
               <li><p>978-888-8886</p></li>
             </ul>

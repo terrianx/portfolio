@@ -37,6 +37,7 @@ footer li {
 
 footer li:hover,
 .footer-name:hover {
+  text-decoration: underline;
   color: var(--btn);
   transition: var(--speed);
 }
@@ -45,6 +46,10 @@ footer li:active,
 .footer-name:active {
   color: var(--light);
   transition: var(--speed);
+}
+
+.footer-contact li:hover {
+  text-decoration: none;
 }
 
 footer li:not(:last-child) {

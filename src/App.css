@@ -92,5 +92,6 @@ main {
   position: relative;
   z-index: 3;
   transform: skewY(-8deg) translateY(45px);
+  transition: var(--speed);
   width: 100%;
 }

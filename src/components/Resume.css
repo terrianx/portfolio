@@ -21,16 +21,26 @@
   z-index: 4;
 }
 
+.resume .button-container {
+  padding: 0;
+}
+
 .resume-content-container {
   margin-top: 20px;
   display: grid;
   justify-items: center;
   transition: var(--speed);
   max-width: 810px;
-  filter: brightness(0.9);
+  filter: brightness(0.85);
   width: 100%;
   border: 1px solid var(--light);
   height: 1045px;
+}
+
+.resume-content-container p,
+.resume-content-container a {
+  padding-top: 30px;
+  font-size: 24px;
 }
 
 .resume-pdf {
@@ -48,6 +58,7 @@
 @media only screen and (max-width: 1000px) {
   .resume-content-container {
     transform: scale(0.85) translateY(-80px);
+    padding-left: 0;
     transition: var(--speed);
   }
 }

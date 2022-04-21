@@ -25,17 +25,18 @@ nav {
   z-index: 10;
 }
 
-.link {
+nav .link {
   width: 100%;
   transition: var(--speed);
 }
 
-.link:hover {
+nav .link:hover {
+  text-decoration: underline;
   transition: var(--speed);
   color: var(--btn);
 }
 
-.link:active {
+nav .link:active {
   transition: var(--speed);
   color: var(--light);
 }
