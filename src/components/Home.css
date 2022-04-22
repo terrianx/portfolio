@@ -139,6 +139,7 @@ header img {
   width: 100%;
   position: relative;
   z-index: 4;
+  -webkit-transform:translate3d(0,0,0);
 }
 
 .about {
@@ -149,6 +150,7 @@ header img {
   position: relative;
   z-index: 4;
   transition: var(--speed);
+  -webkit-transform:translate3d(0,0,0);
 }
 
 .about-container {
