@@ -9,7 +9,7 @@ footer {
   width: 100%;
   max-width: 1200px;
   transition: var(--speed);
-  z-index: -1;
+  z-index: 3;
 }
 
 .footer-container {

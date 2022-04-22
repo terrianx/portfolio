@@ -6,11 +6,11 @@ import './Home.css';
 // home page components
 export default function Home() {
   return (
-    <>
+    <div>
       <Header />
       <About />
       <Contact />
-    </>
+    </div>
   );
 }
 

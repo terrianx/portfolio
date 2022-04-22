@@ -1,3 +1,4 @@
+
 /* ================================= */
 /* ============ header ============= */
 /* ================================= */
@@ -13,8 +14,9 @@ header {
   margin: 0 80px;
   top: 0;
   position: sticky;
-  z-index: 0;
+  z-index: 2;
   transition: var(--speed);
+  -webkit-transform:translate3d(0,0,0);
 }
 
 .intro-container {
@@ -136,7 +138,7 @@ header img {
   transition: var(--speed);
   width: 100%;
   position: relative;
-  z-index: 3;
+  z-index: 4;
 }
 
 .about {
@@ -237,8 +239,9 @@ header img {
   grid: repeat(2, min-content) / 1fr;
   padding: 200px 0 300px 0;
   position: relative;
-  z-index: 6;
+  z-index: 7;
   background-color: black;
+  -webkit-transform:translate3d(0,0,0);
 }
 
 .contact-container {
@@ -254,7 +257,7 @@ header img {
 .contact h1 {
   padding: 0 5px 10px 5px;
   background-color: black;
-  z-index: 7;
+  z-index: 8;
   transform: translateY(20px);
   color: var(--header);
 }

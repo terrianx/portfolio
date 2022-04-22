@@ -1,9 +1,11 @@
 /* ================================= */
 /* ============= projects =========== */
 /* ================================= */
+
 .projects {
   color: var(--light);
   display: grid;
+  grid: auto auto auto / auto;
   position: relative;
   width: 100%;
   justify-items: center;
@@ -80,8 +82,8 @@
   padding-left: 20px;
 }
 
-.button-container {
-  padding: 10px 0 10px 20px;
+.project .button-container {
+  padding: 10px 0;
 }
 
 .project-text-container {
