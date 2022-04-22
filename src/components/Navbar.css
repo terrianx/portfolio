@@ -245,14 +245,10 @@ nav .button-container {
 @media only screen and (max-width: 450px) {
   nav {
     padding: 0;
-    grid: 40px / auto min-content;
-    column-gap: 0;
   }
 
   .nav-menu-show {
-    grid: 40px auto / auto min-content 0px;
     padding-bottom: 20px;
-    column-gap: 0;
   }
 
   .nav-links-container {
@@ -266,7 +262,6 @@ nav .button-container {
 
   .nav-menu {
     padding-right: 10px;
-    transform: scale(0.7);
   }
 
   .nav-buttons-show {

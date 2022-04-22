@@ -202,6 +202,10 @@
 }
 
 @media only screen and (max-width: 520px) {
+  .project-container {
+    padding-bottom: 100px;
+  }
+
   .img-container img {
     width: 450px;
   }
@@ -216,5 +220,11 @@
 
   .img-container img {
     width: 400px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .img-container img {
+    width: 350px;
   }
 }

@@ -13,7 +13,7 @@ header {
   margin: 0 80px;
   top: 0;
   position: sticky;
-  z-index: 2;
+  z-index: 0;
   transition: var(--speed);
 }
 
@@ -235,7 +235,7 @@ header img {
   grid: repeat(2, min-content) / 1fr;
   padding: 200px 0 300px 0;
   position: relative;
-  z-index: 4;
+  z-index: 6;
   background-color: black;
 }
 
@@ -252,7 +252,7 @@ header img {
 .contact h1 {
   padding: 0 5px 10px 5px;
   background-color: black;
-  z-index: 5;
+  z-index: 7;
   transform: translateY(20px);
   color: var(--header);
 }

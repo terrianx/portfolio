@@ -24,7 +24,7 @@ export default function Projects() {
             functionality and interactivity.
         </p>
         <ul>
-          <lh>Features</lh>
+          <p>Features</p>
             <li>- &nbsp; Browser size responsiveness</li>
             <li>- &nbsp; Customer review system</li>
             <li>- &nbsp; Interactive menu with drinks, toppings, and options</li>
@@ -48,7 +48,7 @@ export default function Projects() {
             intersection observer.
         </p>
         <ul>
-          <lh>Features</lh>
+          <p>Features</p>
             <li>- &nbsp; Animated links</li>
             <li>- &nbsp; Fade in home page image</li>
             <li>- &nbsp; Mobile responsiveness with hamburger menu</li>
