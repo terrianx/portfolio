@@ -110,7 +110,7 @@ header img {
   }
 
   header img {
-    max-height: 50vh;
+    max-height: 40vh;
     width: auto;
   }
 
@@ -135,6 +135,8 @@ header img {
   background-image: linear-gradient(var(--clear), black);
   transition: var(--speed);
   width: 100%;
+  position: relative;
+  z-index: 3;
 }
 
 .about {

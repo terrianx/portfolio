@@ -1,15 +1,8 @@
-
-.button-container {
-  display: grid;
-}
-
-.button,
-.logo,
-.outline {
+.logo {
   background-color: var(--btn);
   height: 36px;
+  width: auto;
   padding: 5px 20px;
-  width: max-content;
   justify-items: center;
   align-items: center;
   text-align: center;
@@ -22,31 +15,24 @@
   z-index: 1;
 }
 
-.button:hover {
-  background-color: black;
-  color: var(--light);
-  border: 1px solid var(--light);
+.logo:hover {
+  filter: invert(1);
+  background-color: var(--light);
+  border: 1px solid black;
   transition: var(--speed);
   transform: translate(1px, -1px);
 }
 
-.button:hover + .outline {
+.logo:hover + .outline {
   border: 1px solid var(--light);
 }
 
-.button:active {
-  background-color: var(--light);
+.logo:active {
+  background-color: black;
   transition: var(--click-speed);
   transform: translate(3px, -3px);
 }
 
-.outline {
-  font-size: 20px;
-  color: var(--clear);
-  background: black;
-  border: 1px solid var(--btn);
-  position: relative;
-  z-index: 0;
-  top: -4px;
-  right: -4px;
+.logo-outline {
+  width: auto;
 }

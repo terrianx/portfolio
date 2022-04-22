@@ -162,8 +162,8 @@ nav .button-container {
   nav {
     grid: 60px / auto min-content min-content;
     column-gap: 20px;
-    transition: var(--speed);
   }
+
   .nav-name-container {
     grid: 60px / 1fr;
   }
