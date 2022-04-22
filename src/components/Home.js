@@ -1,3 +1,4 @@
+/* eslint-disable */
 import Social from "./Social";
 import Button from "./Button";
 import React, { useState, useEffect } from "react";
