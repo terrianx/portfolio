@@ -1,5 +1,6 @@
 import Social from "./Social";
 import Button from "./Button";
+import React, { useState, useEffect } from "react";
 
 import './Home.css';
 
@@ -14,7 +15,33 @@ export default function Home() {
   );
 }
 
+function getDiffRandInt(min, max) {
+  return Math.floor(Math.random() * (max - min) + 1);
+}
+
 function Header() {
+  // renders random image when user clicks
+  const imgMap = new Map();
+  imgMap.set(0, "hsl(182, 47%, 58%)");  // samurai
+  imgMap.set(1, "hsl(200, 80%, 55%)");  // owl
+  imgMap.set(2, "hsl(162, 90%, 45%)");  // deer
+  imgMap.set(3, "hsl(182, 47%, 58%)");  // whale
+  imgMap.set(4, "hsl(190, 75%, 50%)");  // koi
+  imgMap.set(5, "hsl(205, 70%, 50%)");  // jelly
+
+  const imgNum = getDiffRandInt(0, 5);
+
+  // state for which image to show
+  const [imgShow, setImgShow] = useState(imgNum);
+
+  useEffect(() => {
+    setImgShow(imgNum);
+  }, []);
+
+  useEffect(() => {
+    document.documentElement.style.setProperty('--btn', imgMap.get(imgShow));
+  }, [imgShow]);
+
   return (
     <header>
       <div className="intro-container">
@@ -27,10 +54,10 @@ function Header() {
         <Social />
         <Button to="/#about">About</Button>
       </div>
-      <figure>
-        <img src="./assets/header-1.png" 
+      <figure onClick={() => {setImgShow((getDiffRandInt(0, 5) + imgShow) % 6)}}>
+        <img src={"./assets/header-" + imgShow + ".png"} 
               alt="Samurai illustration"
-              width="450px"/>
+              width="500px"/>
       </figure>
     </header>
   );

@@ -11,7 +11,7 @@ header {
   margin-bottom: -100px;
   justify-self: center;
   align-items: center;
-  margin: 0 80px;
+  margin: 0 100px;
   top: 0;
   position: sticky;
   z-index: 2;
@@ -41,7 +41,13 @@ header {
 }
 
 header figure {
+  cursor: pointer;
   justify-self: right;
+  filter: brightness(0.85);
+}
+
+header figure:hover {
+  filter: brightness(0.95);
 }
 
 header img {
@@ -55,7 +61,7 @@ header img {
 
   header img {
     transition: var(--speed);
-    width: 400px;
+    width: 450px;
   }
 }
 
@@ -71,17 +77,17 @@ header img {
 
 @media only screen and (max-width: 700px) {
   header {
-    grid: min-content 1fr / 1fr;
+    grid: min-content min-content / 1fr;
   }
 
   header figure {
-    padding-top: 50px;
+    padding-top: 60px;
     grid-row: 1;
     justify-self: center;
   }
 
   header img {
-    max-width: 300px;
+    max-width: 380px;
     height: auto;
   }
 
@@ -112,7 +118,7 @@ header img {
   }
 
   header img {
-    max-height: 40vh;
+    max-height: 50vh;
     width: auto;
   }
 
