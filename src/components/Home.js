@@ -15,7 +15,7 @@ export default function Home() {
   );
 }
 
-function getDiffRandInt(min, max) {
+function getRandInt(min, max) {
   return Math.floor(Math.random() * (max - min) + 1);
 }
 
@@ -29,7 +29,7 @@ function Header() {
   imgMap.set(4, "hsl(190, 75%, 50%)");  // koi
   imgMap.set(5, "hsl(205, 70%, 50%)");  // jelly
 
-  const imgNum = getDiffRandInt(0, 5);
+  const imgNum = getRandInt(0, 5);
 
   // state for which image to show
   const [imgShow, setImgShow] = useState(imgNum);
@@ -54,7 +54,7 @@ function Header() {
         <Social />
         <Button to="/#about">About</Button>
       </div>
-      <figure onClick={() => {setImgShow((getDiffRandInt(0, 5) + imgShow) % 6)}}>
+      <figure onClick={() => {setImgShow((getRandInt(0, 5) + imgShow) % 6)}}>
         <img src={"./assets/header-" + imgShow + ".png"} 
               alt="Samurai illustration"
               width="500px"/>

@@ -144,7 +144,7 @@ header img {
   transition: var(--speed);
   width: 100%;
   position: relative;
-  z-index: 4;
+  z-index: 3;
   -webkit-transform:translate3d(0,0,0);
 }
 
