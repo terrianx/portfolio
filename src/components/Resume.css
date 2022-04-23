@@ -3,6 +3,8 @@
 /* ============= resume ============ */
 /* ================================= */
 .resume {
+  animation: fadeIn var(--fade-speed);
+  -webkit-animation: fadeIn var(--fade-speed);
   display: grid;
   grid: repeat(4, min-content) / 1fr;
   grid-row-gap: 20px;

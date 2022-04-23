@@ -4,6 +4,8 @@
 /* ================================= */
 
 header {
+  animation: fadeIn var(--fade-speed);
+  -webkit-animation: fadeIn var(--fade-speed);
   display: grid;
   grid: auto / 1fr 1fr;
   color: white;
@@ -30,6 +32,7 @@ header {
 
 .intro-container h1 {
   color: var(--header);
+  font-size: 44px;
 }
 
 .intro-container p {
@@ -43,18 +46,32 @@ header {
 header figure {
   cursor: pointer;
   justify-self: right;
+  animation: fadeIn var(--fade-speed);
+  -webkit-animation: fadeIn var(--fade-speed);
   filter: brightness(0.85);
+  transition: var(--speed);
+}
+
+header figure:focus {
+  animation: fadeIn var(--fade-speed);
+  -webkit-animation: fadeIn var(--fade-speed);
+}
+
+header figure:active {
+  animation: none;
+  -webkit-animation: none;
 }
 
 header figure:hover {
-  filter: brightness(0.95);
+  transition: var(--speed);
+  filter: brightness(1);
 }
 
 header img {
   transition: var(--speed);
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1020px) {
   header {
     margin: 0 60px;
   }
@@ -65,9 +82,19 @@ header img {
   }
 }
 
+@media only screen and (max-width: 900px) {
+  .intro-container h1 {
+    width: 180px;
+  }
+}
+
 @media only screen and (max-width: 800px) {
   header {
     margin: 0 20px;
+  }
+
+  .intro-container h1 {
+    width: max-content;
   }
 
   header img {
@@ -87,7 +114,7 @@ header img {
   }
 
   header img {
-    max-width: 380px;
+    max-width: 360px;
     height: auto;
   }
 
@@ -101,7 +128,7 @@ header img {
     text-align: center;
   }
 
-  header h1 {
+  .intro-container h1 {
     font-size: 30px;
   }
 
@@ -112,17 +139,24 @@ header img {
   }
 }
 
+@media only screen and (max-width: 500px) {
+  header img {
+    max-width: 320px;
+    height: auto;
+  }
+}
+
 @media only screen and (max-width: 400px) {
   header {
     margin: 0 10px;
   }
 
   header img {
-    max-height: 50vh;
+    max-height: 40vh;
     width: auto;
   }
 
-  header h1 {
+  .intro-container h1 {
     font-size: 24px;
   }
 
@@ -164,7 +198,7 @@ header img {
   width: 100%;
   padding: 0 0 200px 0;
   display: grid;
-  grid: repeat(5, min-content) / 1fr;
+  grid: repeat(6, min-content) / 1fr;
   row-gap: 20px;
   text-align: center;
   justify-items: center;
@@ -197,6 +231,10 @@ header img {
 
 /* responsiveness */
 @media only screen and (max-width: 700px) {
+  .about .fade-box {
+    height: 300px;
+  }
+
   .about h1 {
     font-size: 30px;
     transition: var(--speed);
@@ -216,8 +254,7 @@ header img {
 
 @media only screen and (max-width: 400px) {
   .about .fade-box {
-    height: 300px;
-    transition: var(--speed);
+    height: 250px;
   }
 
   .about h1 {
@@ -229,6 +266,9 @@ header img {
     transform: skewY(-8deg) translateY(38px);
   }
   
+  .about-container {
+    padding-bottom: 0;
+  }
   .about p,
   .about .button,
   .about .outline {
@@ -304,6 +344,10 @@ header img {
 }
 
 @media only screen and (max-width: 400px) {
+  .contact {
+    padding-bottom: 100px;
+  }
+  
   .contact h1 {
     padding: 0 5px 50px 5px;
     font-size: 24px;

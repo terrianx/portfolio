@@ -3,6 +3,8 @@
 /* ================================= */
 
 .projects {
+  animation: fadeIn var(--fade-speed);
+  -webkit-animation: fadeIn var(--fade-speed);
   color: var(--light);
   display: grid;
   grid: auto auto auto / auto;
@@ -204,8 +206,12 @@
 }
 
 @media only screen and (max-width: 520px) {
-  .project-container {
+  .projects {
     padding-bottom: 100px;
+  }
+
+  .project-container {
+    padding-bottom: 50px;
   }
 
   .img-container img {

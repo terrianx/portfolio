@@ -17,7 +17,7 @@ export default function App() {
           <Navbar />
           <div className="box-container">
             <Switch>
-              <Route exact path="/"><Home /></Route>
+              <Route exact path="/"><Home x="5" /></Route>
               <Route exact path="/resume"><Resume /></Route>
               <Route exact path="/projects"><Projects /></Route>
             </Switch>

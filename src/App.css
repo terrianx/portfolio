@@ -24,6 +24,7 @@
   --clear: hsla(0, 0%, 0%, 0);
   --speed: 150ms;
   --click-speed: 80ms;
+  --fade-speed: 300ms;
   --line-height: 1.4;
 }
 
@@ -94,4 +95,9 @@ main {
   transform: skewY(-8deg) translateY(45px);
   transition: var(--speed);
   width: 100%;
+}
+
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
 }
