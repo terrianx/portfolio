@@ -12,7 +12,7 @@ export default function Resume() {
       <AnchorBtn to="./assets/YuXiaoResume.pdf"
                  download="YuXiaoResume">Download</AnchorBtn>
       <div className="resume-content-container">
-        <object data="./assets/YuXiaoResume.pdf#toolbar=0"
+        <object data="./assets/YuXiaoResume.pdf"
                 type="application/pdf"
                 width="100%"
                 height="100%"

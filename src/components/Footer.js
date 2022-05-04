@@ -37,7 +37,7 @@ export default function Footer() {
               <li><p>978-888-8886</p></li>
             </ul>
           </div>
-          <p className="copyright">© Yu Xiao 2021. All rights reserved</p>
+          <p className="copyright">© Yu Xiao 2022. All rights reserved</p>
         </div>
       </footer>
     );

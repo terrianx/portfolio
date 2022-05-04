@@ -56,7 +56,7 @@ function Header() {
       </div>
       <figure onClick={() => {setImgShow((getRandInt(0, 5) + imgShow) % 6)}}>
         <img src={"./assets/header-" + imgShow + ".png"} 
-              alt="Samurai illustration"
+              alt="Illustration"
               width="500px"/>
       </figure>
     </header>
@@ -71,7 +71,7 @@ function About() {
       <div className="about-container">
         <span className="diag-line"></span>
         <h1>About Me</h1>
-        <p>Curious and self learner from Greater
+        <p>Self learner and student from Greater
           Boston with a hope to make the world a 
           better place. I have experience in
           programming, front-end web development,

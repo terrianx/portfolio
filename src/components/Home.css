@@ -7,12 +7,13 @@ header {
   animation: fadeIn var(--fade-speed);
   -webkit-animation: fadeIn var(--fade-speed);
   display: grid;
-  grid: auto / 1fr 1fr;
+  grid: 100vh / 1fr 1fr;
   color: white;
   height: 100vh;
   margin-bottom: -100px;
   justify-self: center;
   align-items: center;
+  align-content: center;
   margin: 0 100px;
   top: 0;
   position: sticky;
@@ -47,13 +48,14 @@ header {
 header figure {
   cursor: pointer;
   justify-self: right;
+  align-self: center;
   animation: fadeIn var(--fade-speed);
   -webkit-animation: fadeIn var(--fade-speed);
   filter: brightness(0.85);
   transition: var(--speed);
 }
 
-header figure:focus {
+header figure:active {
   animation: fadeIn var(--fade-speed);
   -webkit-animation: fadeIn var(--fade-speed);
 }
@@ -61,6 +63,11 @@ header figure:focus {
 header figure:active {
   animation: none;
   -webkit-animation: none;
+}
+
+header figure:focus:active {
+  animation: fadeIn var(--fade-speed);
+  -webkit-animation: fadeIn var(--fade-speed);
 }
 
 header figure:hover {
@@ -85,7 +92,7 @@ header img {
 
 @media only screen and (max-width: 900px) {
   .intro-container h1 {
-    width: 180px;
+    min-width: 180px;
   }
 
   header img {
@@ -114,13 +121,14 @@ header img {
   }
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 700px),
+            screen and (orientation: portrait)  {
   header {
     grid: min-content min-content / 1fr;
+    padding-top: 60px;
   }
 
   header figure {
-    padding-top: 60px;
     grid-row: 1;
     justify-self: center;
   }
@@ -175,7 +183,7 @@ header img {
 
 .fade-box {
   display: block;
-  height: 400px;
+  height: 350px;
   background-image: linear-gradient(var(--clear), var(--dark-gray));
   transition: var(--speed);
   width: 100%;

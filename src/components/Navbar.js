@@ -24,7 +24,7 @@ export default function Navbar() {
 
     window.addEventListener("resize", throttle(() => {
       handleResize();
-    }, 500));
+    }, 700));
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
@@ -78,13 +78,15 @@ export default function Navbar() {
           <span className={menuShow ? 
             "nav-span-close nav-span" 
             : "nav-span"}></span>
-          {menuShow ? 
-            <></> :
-            <span className="nav-span"></span>
+
+          {menuShow ?  
+            <></> : <span className="nav-span"></span>
           }
+
           <span className={menuShow ? 
             "nav-span-close nav-span" 
             : "nav-span"}></span>
+            
         </div>
         <div className="nav-menu-outline"></div>
       </div>
