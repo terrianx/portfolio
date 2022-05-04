@@ -26,6 +26,7 @@ header {
   color: var(--text);
   justify-self: left;
   justify-content: left;
+  align-self: center;
   padding-left: 10px;
   max-width: 450px;
 }
@@ -86,19 +87,30 @@ header img {
   .intro-container h1 {
     width: 180px;
   }
+
+  header img {
+    width: 400px;
+  }
 }
 
 @media only screen and (max-width: 800px) {
   header {
-    margin: 0 20px;
-  }
-
-  .intro-container h1 {
-    width: max-content;
+    margin: 0 30px;
   }
 
   header img {
     width: 350px;
+  }
+
+  .intro-container h1 {
+    font-size: 30px;
+    width: max-content;
+  }
+
+  header p,
+  header a,
+  header .outline {
+    font-size: 18px;
   }
 }
 
@@ -114,7 +126,7 @@ header img {
   }
 
   header img {
-    max-width: 360px;
+    max-width: 350px;
     height: auto;
   }
 
@@ -126,16 +138,6 @@ header img {
     justify-items: center;
     align-self: top;
     text-align: center;
-  }
-
-  .intro-container h1 {
-    font-size: 30px;
-  }
-
-  header p,
-  header a,
-  header .outline {
-    font-size: 18px;
   }
 }
 
@@ -174,12 +176,14 @@ header img {
 .fade-box {
   display: block;
   height: 400px;
-  background-image: linear-gradient(var(--clear), black);
+  background-image: linear-gradient(var(--clear), var(--dark-gray));
   transition: var(--speed);
   width: 100%;
   position: relative;
   z-index: 3;
-  -webkit-transform:translate3d(0,0,0);
+  -ms-transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
 }
 
 .about {
@@ -190,11 +194,13 @@ header img {
   position: relative;
   z-index: 4;
   transition: var(--speed);
-  -webkit-transform:translate3d(0,0,0);
+  -ms-transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
 }
 
 .about-container {
-  background-color: black;
+  background-color: var(--dark-gray);;
   width: 100%;
   padding: 0 0 200px 0;
   display: grid;
@@ -208,7 +214,7 @@ header img {
 
 .about h1 {
   padding: 0 5px 50px 10px;
-  background-color: black;
+  background-color: var(--dark-gray);;
   z-index: 5;
   color: var(--header);
   transition: var(--speed);
@@ -288,8 +294,10 @@ header img {
   padding: 200px 0 300px 0;
   position: relative;
   z-index: 7;
-  background-color: black;
-  -webkit-transform:translate3d(0,0,0);
+  background-color: var(--dark-gray);;
+  -ms-transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
 }
 
 .contact-container {
@@ -304,7 +312,7 @@ header img {
 
 .contact h1 {
   padding: 0 5px 10px 5px;
-  background-color: black;
+  background-color: var(--dark-gray);
   z-index: 8;
   transform: translateY(20px);
   color: var(--header);

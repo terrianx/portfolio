@@ -12,6 +12,7 @@
   justify-content: center;
   padding: 200px 0 300px 0;
   color: var(--light);
+  background-color: var(--dark-gray);
   text-align: center;
   width: 100%;
   position: relative;
@@ -19,7 +20,7 @@
 
 .resume h1 {
   padding: 0 0 50px 5px;
-  background-color: black;
+  background-color: var(--dark-gray);
   z-index: 4;
 }
 
@@ -55,6 +56,12 @@
 
 .resume-png {
   display: none;
+}
+
+@media only screen and (min-width: 1600px) {
+  .resume-content-container {
+    max-width: 1000px;
+  }
 }
 
 @media only screen and (max-width: 1000px) {

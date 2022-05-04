@@ -23,10 +23,10 @@ function Header() {
   // renders random image when user clicks
   const imgMap = new Map();
   imgMap.set(0, "hsl(182, 47%, 58%)");  // samurai
-  imgMap.set(1, "hsl(200, 80%, 55%)");  // owl
-  imgMap.set(2, "hsl(162, 90%, 45%)");  // deer
-  imgMap.set(3, "hsl(182, 47%, 58%)");  // whale
-  imgMap.set(4, "hsl(190, 75%, 50%)");  // koi
+  imgMap.set(1, "hsl(200, 75%, 50%)");  // owl
+  imgMap.set(2, "hsl(162, 85%, 40%)");  // deer
+  imgMap.set(3, "hsl(15, 80%, 65%)");  // whale
+  imgMap.set(4, "hsl(325, 60%, 75%)");  // koi
   imgMap.set(5, "hsl(205, 70%, 50%)");  // jelly
 
   const imgNum = getRandInt(0, 5);

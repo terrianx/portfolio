@@ -4,7 +4,7 @@
 /* ================================= */
 
 nav {
-  background-color: black;
+  background-color: var(--dark-gray);
   color: var(--text);
   display: grid;
   grid: 60px / auto auto min-content;
@@ -71,7 +71,7 @@ nav .button-container {
 }
 
 .nav-menu-show {
-  transition: var(--speed);
+  transition: var(--speed) ease;
 }
 
 .nav-menu {
@@ -133,16 +133,23 @@ nav .button-container {
   transform: translate(3px, -3px);
 }
 
-
 .nav-span-close {
   position: absolute;
   width: 22px;
+  -ms-transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+
   transform: rotate(45deg) translate(3.5px, -4px);
 }
 
 .nav-span-close:nth-child(1) {
   position: absolute;
   width: 22px;
+  -ms-transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+
   transform: rotate(-45deg) translate(4px, 3px);
 }
 
@@ -155,6 +162,19 @@ nav .button-container {
 .nav-menu-btn:hover .nav-span {
   background-color: var(--light);
   transition: var(--speed);
+}
+
+.nav-buttons-show {
+  max-height: 0;
+  transition: 500ms;
+  display: grid;
+  grid: auto auto / auto;
+  justify-self: center;
+  grid-row: 2;
+  grid-column: 1 / 4;
+  padding: 0;
+  animation: fadeIn var(--fade-speed);
+  -webkit-animation: fadeIn var(--fade-speed);
 }
 
 /* responsiveness */
@@ -180,18 +200,8 @@ nav .button-container {
 
   .nav-menu-show {
     grid: 60px auto / auto min-content min-content;
-    height: auto;
-    padding-bottom: 40px;
-    transition: var(--speed); 
-  }
-
-  .nav-buttons-show {
-    display: grid;
-    grid: auto auto / auto;
-    justify-self: center;
-    grid-row: 2;
-    grid-column: 1 / 4;
-    padding: 0;
+    padding-bottom: 160px;
+    transition: var(--speed) ease; 
   }
 
   .nav-buttons {
@@ -226,7 +236,7 @@ nav .button-container {
   }
 
   .nav-menu-show {
-    grid: 60px auto / auto min-content 0px;
+    grid: 60px auto / auto min-content 0;
     column-gap: 0;
   }
 
@@ -247,13 +257,13 @@ nav .button-container {
     padding: 0;
   }
 
-  .nav-menu-show {
-    padding-bottom: 20px;
-  }
-
   .nav-links-container {
     column-gap: 15px;
     transition: var(--speed);
+  }
+
+  .nav-menu-show {
+    padding-bottom: 140px;
   }
 
   nav .link {

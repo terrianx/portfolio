@@ -1,4 +1,4 @@
-import AnchorBtn from './AnchorBtn';
+import AnchorBtn from './ButtonAnchor';
 
 import './Resume.css';
 

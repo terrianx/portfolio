@@ -22,9 +22,13 @@
   --highlight: white;
   --btn: hsl(182, 47%, 58%);
   --clear: hsla(0, 0%, 0%, 0);
+  --dark-gray: hsl(0, 0%, 6%);
+  --med-gray: hsl(0, 0%, 10%);
+
   --speed: 150ms;
   --click-speed: 80ms;
   --fade-speed: 300ms;
+
   --line-height: 1.4;
 }
 
@@ -69,7 +73,7 @@ body {
 
 main {
   width: 100%;
-  background-color: black;
+  background-color: var(--dark-gray);
   display: grid;
   justify-items: center;
 }

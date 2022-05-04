@@ -3,6 +3,7 @@
 /* ================================= */
 
 .projects {
+  background-color: var(--dark-gray);
   animation: fadeIn var(--fade-speed);
   -webkit-animation: fadeIn var(--fade-speed);
   color: var(--light);
@@ -222,17 +223,28 @@
 @media only screen and (max-width: 450px) {
   .project h1 {
     transition: var(--speed);
-    transform: rotate(8deg) translateY(85px);
+    transform: rotate(8deg) translateY(100px);
     font-size: 28px;
   }
 
   .img-container img {
     width: 400px;
   }
+
+  .project-text-container p,
+  .project-text-container li {
+    font-size: 16px;
+  }
 }
 
 @media only screen and (max-width: 400px) {
+  .project h1 {
+    transition: var(--speed);
+    transform: rotate(8deg) translateY(102px);
+  }
+
   .img-container img {
     width: 350px;
   }
 }
+
