@@ -1,5 +1,6 @@
 import Social from "./Social";
 import Button from "./Button";
+import ContactInfo from "./ContactInfo";
 import React, { useState, useEffect } from "react";
 
 import './Home.css';
@@ -25,7 +26,7 @@ function Header() {
   imgMap.set(0, "hsl(182, 47%, 58%)");  // samurai
   imgMap.set(1, "hsl(200, 75%, 50%)");  // owl
   imgMap.set(2, "hsl(162, 85%, 40%)");  // deer
-  imgMap.set(3, "hsl(15, 80%, 65%)");  // whale
+  imgMap.set(3, "hsl(15, 80%, 65%)");   // whale
   imgMap.set(4, "hsl(325, 60%, 75%)");  // koi
   imgMap.set(5, "hsl(205, 70%, 50%)");  // jelly
 
@@ -88,20 +89,27 @@ function About() {
 }
 
 function Contact() {
+  const activeClipboard = navigator.clipboard != null;
+
   return (
     <section className="contact">
+
       <span className="anchor" id="contact"></span>
+      
       <div className="contact-container">
         <span className="diag-line"></span>
         <h1>Contact</h1>
-        {/* <p>(Click below to copy)</p> */}
-        <div className="info">
-          <p>txiaopk@gmail.com</p>
-          <p>978-888-8886</p>
-        </div>
+
+        {!activeClipboard ? <></>
+        : <p className="contact-copy">(click to copy info)</p>}
+        
+        <ContactInfo place="right" />
+
         <Social />
+
         <Button to="/#">Back to Top</Button>
       </div>
+
     </section>
   );
 }

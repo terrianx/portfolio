@@ -310,7 +310,7 @@ header img {
 
 .contact-container {
   display: grid;
-  grid: repeat(5, min-content) / 1fr;
+  grid: repeat(6, min-content) / 1fr;
   text-align: center;
   justify-items: center;
   justify-self: center;
@@ -329,10 +329,15 @@ header img {
 .contact p {
   color: var(--text);
   line-height: var(--line-height);
+  transition: var(--speed);
 }
 
-.info {
-  margin-top: 70px;
+.contact-copy {
+  padding-top: 30px;
+}
+
+.contact .info {
+  margin-top: 40px;
 }
 
 .contact .button-container {

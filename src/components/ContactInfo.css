@@ -1,0 +1,14 @@
+.info {
+  display: grid;
+}
+
+.info p:hover {
+  color: var(--btn);
+  transition: var(--speed);
+  cursor: pointer;
+}
+
+.info p:active {
+  color: var(--light);
+  transition: var(--speed);
+}

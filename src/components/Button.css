@@ -23,7 +23,7 @@
 }
 
 .button:hover {
-  background-color: black;
+  background-color: var(--dark-gray);
   color: var(--light);
   border: 1px solid var(--light);
   transition: var(--speed);
@@ -43,7 +43,7 @@
 .outline {
   font-size: 20px;
   color: var(--clear);
-  background: black;
+  background-color: var(--dark-gray);
   border: 1px solid var(--btn);
   position: relative;
   z-index: 0;

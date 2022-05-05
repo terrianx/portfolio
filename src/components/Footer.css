@@ -15,6 +15,7 @@ footer {
 .footer-container {
   display: grid;
   grid: 1fr 1fr / repeat(4, 1fr);
+  justify-items: left;
   color: var(--light);
 }
 
@@ -49,8 +50,8 @@ footer li:active,
   transition: var(--speed);
 }
 
-.footer-contact li:hover {
-  text-decoration: none;
+footer .info {
+  row-gap: 5px;
 }
 
 footer li:not(:last-child) {
@@ -72,16 +73,16 @@ footer li:not(:last-child) {
   }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 850px) {
   footer {
     padding: 0 60px 100px 60px;
   }
 }
 
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 800px) {
   .footer-container {
     grid: auto 1fr 1fr / repeat(3, 1fr);
-    justify-content: center;
+    justify-items: left;
   }
 
   .footer-name {
