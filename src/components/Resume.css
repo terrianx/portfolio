@@ -34,7 +34,7 @@
   justify-items: center;
   transition: var(--speed);
   max-width: 810px;
-  filter: brightness(0.85);
+  filter: brightness(0.9);
   width: 100%;
   border: 1px solid var(--light);
   height: 1045px;

@@ -61,7 +61,7 @@ export default function Navbar() {
         <Link to="/#about" className="link">About</Link>
         <Link to="/resume#" className="link">Resume</Link>
         <Link to="/projects#" className="link">Projects</Link>
-        <Link to="/art#" className="link">Art</Link>
+        {/* <Link to="/art#" className="link">Art</Link> */}
       </div>
 
       <div className="nav-buttons">

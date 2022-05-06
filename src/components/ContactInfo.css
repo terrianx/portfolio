@@ -2,6 +2,10 @@
   display: grid;
 }
 
+.info p {
+  color: var(--text);
+}
+
 .info p:hover {
   color: var(--btn);
   transition: var(--speed);

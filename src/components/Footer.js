@@ -8,12 +8,6 @@ export default function Footer() {
   const phone = "978-888-8886";
   const activeClipboard = navigator.clipboard != null;
 
-  function clickCopy(props) {
-    if (activeClipboard) {
-      navigator.clipboard.writeText(props);
-    }
-  }
-
   return (
     <footer>
       <div className="footer-container">
@@ -26,7 +20,7 @@ export default function Footer() {
             <li><Link to="/#about" className="link">About</Link></li>
             <li><Link to="/resume#" className="link">Resume</Link></li>
             <li><Link to="/projects#" className="link">Projects</Link></li>
-            <li><Link to="/art#" className="link">Art</Link></li>
+            {/* <li><Link to="/art#" className="link">Art</Link></li> */}
           </ul>
         </div>
 
@@ -44,10 +38,15 @@ export default function Footer() {
 
         <div className="footer-item">
           <h1>Contact</h1>
-          <ContactInfo place="top" />
+          <ul>
+            <li className="footer-contact">
+              {!activeClipboard ? <></>
+              : <p>&lt;Click to copy info&gt;</p>}</li>
+          </ul>
+          <ContactInfo />
         </div>
 
-        <p className="copyright">© Yu Xiao 2022. All rights reserved</p>
+        <p className="copyright">© Yu Xiao 2022. All rights reserved.</p>
 
       </div>
     </footer>

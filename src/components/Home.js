@@ -101,9 +101,9 @@ function Contact() {
         <h1>Contact</h1>
 
         {!activeClipboard ? <></>
-        : <p className="contact-copy">(click to copy info)</p>}
+        : <p className="contact-copy">&lt;Click to copy info&gt;</p>}
         
-        <ContactInfo place="right" />
+        <ContactInfo />
 
         <Social />
 

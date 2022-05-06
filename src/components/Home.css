@@ -150,8 +150,13 @@ header img {
 }
 
 @media only screen and (max-width: 500px) {
+  header {
+    align-items: start;
+    align-content: start;
+  }
+
   header img {
-    max-width: 320px;
+    max-width: 340px;
     height: auto;
   }
 }
@@ -162,7 +167,7 @@ header img {
   }
 
   header img {
-    max-height: 40vh;
+    max-height: 42vh;
     width: auto;
   }
 
@@ -233,10 +238,7 @@ header img {
   color: var(--text);
   line-height: var(--line-height);
   transition: var(--speed);
-}
-
-.about .button-container {
-  padding: 0;
+  padding-bottom: 20px;
 }
 
 .about .button {
@@ -319,7 +321,7 @@ header img {
 }
 
 .contact h1 {
-  padding: 0 5px 10px 5px;
+  padding: 0 5px 10px 2px;
   background-color: var(--dark-gray);
   z-index: 8;
   transform: translateY(20px);
@@ -327,12 +329,12 @@ header img {
 }
 
 .contact p {
-  color: var(--text);
   line-height: var(--line-height);
   transition: var(--speed);
 }
 
 .contact-copy {
+  color: var(--text);
   padding-top: 30px;
 }
 
@@ -376,6 +378,10 @@ header img {
 
   .contact .diag-line {
     transform: skewY(-8deg) translateY(35px);
+  }
+  
+  .contact-copy {
+    padding-bottom: 0;
   }
   
   .contact p,

@@ -1,44 +1,38 @@
-import Tooltip from 'react-tooltip';
+import React, { useState, useEffect, useRef } from "react";
 
 import './ContactInfo.css';
 
 export default function ContactInfo() {
   const email = "txiaopk@gmail.com";
   const phone = "978-888-8886";
+
+  const lightEmail = useRef();
+  const lightPhone = useRef();
+
   const activeClipboard = navigator.clipboard != null;
-  
-  function clickCopy(text) {
+
+  function copyText(text) {
     if (activeClipboard) {
       navigator.clipboard.writeText(text);
     }
-  }
+    let node = lightEmail;
+    if (text == phone) node = lightPhone;
 
+    const select = window.getSelection();
+    const range = document.createRange();
+
+    range.selectNodeContents(node.current);
+    select.removeAllRanges();
+    select.addRange(range);
+  }
 
   return (
     <div className="info">
-      <p onClick={() => {clickCopy(email)}}
-         data-tip="Copied" 
-         data-event="click focus">{email}</p>
+      <p ref={lightEmail} 
+         onClick={() => {copyText(email)}}>{email}</p>
 
-      {!activeClipboard ? <></>
-      : <Tooltip bodyMode 
-                 className="tooltip"
-                 place="top"
-                 type="dark" 
-                 effect="solid"
-                 globalEventOff="click"/>}
-      
-      <p onClick={() => {clickCopy(phone)}}
-         data-tip="Copied" 
-         data-event="click focus">{phone}</p>
-
-      {!activeClipboard ? <></>
-      : <Tooltip bodyMode
-                 className="tooltip"
-                 place="top"
-                 type="dark" 
-                 effect="solid"
-                 globalEventOff="click"/>}
+      <p ref={lightPhone}
+         onClick={() => {copyText(phone)}}>{phone}</p>
     </div>
   );
 }

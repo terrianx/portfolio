@@ -44,6 +44,15 @@ footer li:hover,
   transition: var(--speed);
 }
 
+.footer-contact {
+  width: max-content;
+}
+
+.footer-contact:hover {
+  text-decoration: none;
+  color: var(--text);
+}
+
 footer li:active,
 .footer-name:active {
   color: var(--light);
@@ -51,6 +60,7 @@ footer li:active,
 }
 
 footer .info {
+  padding-top: 5px;
   row-gap: 5px;
 }
 

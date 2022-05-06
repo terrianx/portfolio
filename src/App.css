@@ -103,28 +103,6 @@ main {
   width: 100%;
 }
 
-.tooltip {
-  background-color: var(--btn) !important;
-  color: var(--dark-gray) !important;
-  font-size: 14px !important;
-  opacity: 1 !important;
-  border-radius: 20px !important;
-  padding: 5px 10px !important;
-  box-shadow: 0 2px 3px var(--dark-gray);
-}
-
-.__react_component_tooltip {
-  z-index: 50 !important;
-}
-
-.__react_component_tooltip.place-right::after {
-  border-right: 8px solid var(--btn) !important;
-}
-
-.__react_component_tooltip.place-top::after {
-  border-top: 8px solid var(--btn) !important;
-}
-
 @keyframes fadeIn {
   0% {opacity: 0;}
   100% {opacity: 1;}
