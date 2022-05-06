@@ -212,6 +212,10 @@ header img {
   transform: translate3d(0, 0, 0);
 }
 
+.about .diag-line {
+  transform: skewY(-8deg) translateY(45px);
+}
+
 .about-container {
   background-color: var(--dark-gray);;
   width: 100%;
@@ -274,7 +278,7 @@ header img {
   }
 
   .about h1 {
-    padding: 0 5px 50px 5px;
+    padding: 0 2px 50px 5px;
     font-size: 24px;
   }
 
@@ -310,6 +314,10 @@ header img {
   transform: translate3d(0, 0, 0);
 }
 
+.contact .diag-line {
+  transform: skewY(-8deg) translateY(45px);
+}
+
 .contact-container {
   display: grid;
   grid: repeat(6, min-content) / 1fr;
@@ -328,14 +336,10 @@ header img {
   color: var(--header);
 }
 
-.contact p {
-  line-height: var(--line-height);
-  transition: var(--speed);
-}
-
 .contact-copy {
   color: var(--text);
   padding-top: 30px;
+  font-size: 18px;
 }
 
 .contact .info {
@@ -354,11 +358,19 @@ header img {
 /* responsiveness */
 @media only screen and (max-width: 700px) {
   .contact h1 {
+    padding-right: 3px;
     font-size: 30px;
     transition: var(--speed);
   }
 
-  .contact p,
+  .contact .diag-line {
+    transform: skewY(-8deg) translateY(40px);
+  }
+
+  .contact-copy {
+    font-size: 16px;
+  }
+  
   .contact .button,
   .contact .outline {
     font-size: 18px;
@@ -372,19 +384,19 @@ header img {
   }
   
   .contact h1 {
-    padding: 0 5px 50px 5px;
+    padding: 0 3px 50px 0;
     font-size: 24px;
   }
 
   .contact .diag-line {
-    transform: skewY(-8deg) translateY(35px);
+    transform: skewY(-8deg) translateY(38px);
   }
   
   .contact-copy {
     padding-bottom: 0;
+    font-size: 12px;
   }
-  
-  .contact p,
+
   .contact .button,
   .contact .outline {
     font-size: 16px;

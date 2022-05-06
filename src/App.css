@@ -20,8 +20,8 @@
   --text: var(--light);
 
   --light: hsl(200, 0%, 88%);
-  --highlight: white;
   --btn: hsl(182, 47%, 58%);
+  --highlight: hsla(182, 47%, 58%, 60%);
   --clear: hsla(0, 0%, 0%, 0);
   --dark-gray: hsl(0, 0%, 7%);
   --med-gray: hsl(0, 0%, 10%);
@@ -32,6 +32,16 @@
   --fade-speed: 305ms;
 
   --line-height: 1.4;
+}
+
+::selection {
+  background-color: var(--highlight);
+  color: var(--text);
+}
+
+::-moz-selection {
+  background-color: var(--highlight);
+  color: var(--text);
 }
 
 ul {
@@ -70,7 +80,7 @@ img {
 }
 
 body {
-  background-color: black;
+  background-color: var(--btn);
 }
 
 main {
@@ -98,7 +108,7 @@ main {
   background-color: white;
   position: relative;
   z-index: 3;
-  transform: skewY(-8deg) translateY(45px);
+  transform: skewY(-8deg);
   transition: var(--speed);
   width: 100%;
 }

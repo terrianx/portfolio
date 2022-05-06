@@ -18,6 +18,10 @@
   position: relative;
 }
 
+.resume .diag-line {
+  transform: skewY(-8deg) translateY(45px);
+}
+
 .resume h1 {
   padding: 0 0 50px 5px;
   background-color: var(--dark-gray);
@@ -77,6 +81,10 @@
     padding: 200px 0 100px 0;
   }
 
+  .resume .diag-line {
+    transform: skewY(-8deg) translateY(42px);
+  }
+
   .resume-content-container {
     margin-top: 40px;
     padding: 5px;
@@ -107,6 +115,10 @@
 }
 
 @media only screen and (max-width: 400px) {
+  .resume .diag-line {
+    transform: skewY(-8deg) translateY(46px);
+  }
+
   .resume-content-container {
     padding: 0;
   }

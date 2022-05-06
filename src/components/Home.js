@@ -23,12 +23,12 @@ function getRandInt(min, max) {
 function Header() {
   // renders random image when user clicks
   const imgMap = new Map();
-  imgMap.set(0, "hsl(182, 47%, 58%)");  // samurai
-  imgMap.set(1, "hsl(200, 75%, 50%)");  // owl
-  imgMap.set(2, "hsl(162, 85%, 40%)");  // deer
-  imgMap.set(3, "hsl(15, 80%, 65%)");   // whale
-  imgMap.set(4, "hsl(325, 60%, 75%)");  // koi
-  imgMap.set(5, "hsl(205, 70%, 50%)");  // jelly
+  imgMap.set(0, "182, 47%, 58%");  // samurai
+  imgMap.set(1, "200, 75%, 50%");  // owl
+  imgMap.set(2, "162, 85%, 40%");  // deer
+  imgMap.set(3, "15, 80%, 65%");   // whale
+  imgMap.set(4, "325, 60%, 75%");  // koi
+  imgMap.set(5, "205, 70%, 50%");  // jelly
 
   const imgNum = getRandInt(0, 5);
 
@@ -40,7 +40,10 @@ function Header() {
   }, []);
 
   useEffect(() => {
-    document.documentElement.style.setProperty('--btn', imgMap.get(imgShow));
+    document.documentElement.style.setProperty(
+      '--btn', 'hsl(' + imgMap.get(imgShow) + ')');
+    document.documentElement.style.setProperty(
+      '--highlight', 'hsla(' + imgMap.get(imgShow) + ', 75%)');
   }, [imgShow]);
 
   return (

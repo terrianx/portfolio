@@ -39,9 +39,9 @@ export default function Footer() {
         <div className="footer-item">
           <h1>Contact</h1>
           <ul>
-            <li className="footer-contact">
+            <li className="footer-contact-li">
               {!activeClipboard ? <></>
-              : <p>&lt;Click to copy info&gt;</p>}</li>
+              : <p className="footer-contact">&lt;Click to copy info&gt;</p>}</li>
           </ul>
           <ContactInfo />
         </div>
