@@ -6,6 +6,7 @@ import './Projects.css';
 export default function Projects() {
   return (
     <section className="projects">
+
       <Project title="FreshTea Website"
                 src="./assets/FreshTea.png"
                 width="700px"
@@ -31,6 +32,7 @@ export default function Projects() {
             <li>- &nbsp; Cart system to store user order</li>
         </ul>
       </Project>
+
       <Project title="BlueAir Website"
                 src="./assets/BlueAir.png"
                 width="700px"
@@ -54,7 +56,9 @@ export default function Projects() {
             <li>- &nbsp; Mobile responsiveness with hamburger menu</li>
         </ul>
       </Project>
+
       <Button to="/projects#">Back to Top</Button>
+
     </section>
   );
 }
@@ -64,7 +68,9 @@ function Project(props) {
     <div className={[props.class, "project"].join(' ')}>
       <span className="diag-line"></span>
       <div className="project-container">
+
         <h1>{props.title}</h1>
+
         <div className="img-container">
           <span className="img-outline" 
                   width={props.width}
@@ -75,6 +81,7 @@ function Project(props) {
                   height={props.height}/>
           <p>{props.tech}</p>
         </div>
+
         <div className="project-buttons">
           <div className="button-container">
             <a href={props.site} 
@@ -91,11 +98,13 @@ function Project(props) {
             <p className="outline">Code</p>
           </div>
         </div>
+
         <div className="project-text-container">
           <div>
             {props.children}
           </div>
         </div>
+
       </div>
     </div>
   );

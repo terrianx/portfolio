@@ -56,7 +56,7 @@ function Header() {
           through technology.
         </p>
         <Social />
-        <Button to="/#about">About</Button>
+        <Button to="/#contact">Contact</Button>
       </div>
       <figure onClick={() => {setImgShow((getRandInt(0, 5) + imgShow) % 6)}}>
         <img src={"./assets/header-" + imgShow + ".png"} 
@@ -75,14 +75,13 @@ function About() {
       <div className="about-container">
         <span className="diag-line"></span>
         <h1>About Me</h1>
-        <p>Self learner and student from Greater
+        <p>I'm a self-learner from Greater
           Boston with a hope to make the world a 
           better place. I have experience in
-          programming, front-end web development,
-          and graphic design through my time at
-          the University of Michigan studying 
-          computer science and independent
-          projects.
+          programming, front-end development,
+          and graphic design studying computer
+          science at the University of Michigan
+          and doing independent projects.
         </p>
         <Button to="/resume#">Resume</Button>
         <Button to="/projects#">Projects</Button>

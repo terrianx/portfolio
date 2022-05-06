@@ -183,6 +183,13 @@
   .img-container img {
     width: 550px;
   }
+
+  .projects p,
+  .project li,
+  .projects .button,
+  .projects .outline {
+    font-size: 18px;
+  }
 }
 
 @media only screen and (max-width: 620px) {
@@ -192,7 +199,7 @@
   }
 
   .project .diag-line {
-    transition: 200ms;
+    transition: var(--speed);
     transform: skewY(8deg) translateY(195px);
   }
 
@@ -203,12 +210,18 @@
   .project-container {
     padding-right: 10px;
     transform: scale(0.9);
+    padding-bottom: 100px;
   }
 }
 
 @media only screen and (max-width: 520px) {
   .projects {
     padding-bottom: 100px;
+  }
+
+  .project .diag-line {
+    transition: var(--speed);
+    transform: skewY(8deg) translateY(185px);
   }
 
   .project-container {
@@ -231,7 +244,7 @@
     width: 400px;
   }
 
-  .project-text-container p,
+  .project p,
   .project-text-container li {
     font-size: 16px;
   }

@@ -1,4 +1,6 @@
 import AnchorBtn from './ButtonAnchor';
+import React from 'react';
+
 
 import './Resume.css';
 

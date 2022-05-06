@@ -23,8 +23,8 @@
   --btn: hsl(182, 47%, 58%);
   --highlight: hsla(182, 47%, 58%, 60%);
   --clear: hsla(0, 0%, 0%, 0);
-  --dark-gray: hsl(0, 0%, 7%);
-  --med-gray: hsl(0, 0%, 10%);
+  --dark-gray: hsl(220, 5%, 7%);
+  --med-gray: hsl(220, 5%, 9%);
   --light-gray: hsl(0, 0%, 20%);
 
   --speed: 150ms;

@@ -188,7 +188,8 @@ header img {
 
 .fade-box {
   display: block;
-  height: 350px;
+  height: 320px;
+  /* background-color: green; */
   background-image: linear-gradient(var(--clear), var(--dark-gray));
   transition: var(--speed);
   width: 100%;
@@ -213,7 +214,7 @@ header img {
 }
 
 .about .diag-line {
-  transform: skewY(-8deg) translateY(45px);
+  transform: skewY(-8deg) translateY(47px);
 }
 
 .about-container {
@@ -230,7 +231,7 @@ header img {
 }
 
 .about h1 {
-  padding: 0 5px 50px 10px;
+  padding: 0 0px 50px 5px;
   background-color: var(--dark-gray);;
   z-index: 5;
   color: var(--header);
@@ -252,7 +253,11 @@ header img {
 /* responsiveness */
 @media only screen and (max-width: 700px) {
   .about .fade-box {
-    height: 300px;
+    height: 280px;
+  }
+
+  .about .diag-line {
+    transform: skewY(-8deg) translateY(42px);
   }
 
   .about h1 {
@@ -278,7 +283,6 @@ header img {
   }
 
   .about h1 {
-    padding: 0 2px 50px 5px;
     font-size: 24px;
   }
 
@@ -371,6 +375,7 @@ header img {
     font-size: 16px;
   }
   
+  .contact .info p,
   .contact .button,
   .contact .outline {
     font-size: 18px;
@@ -384,7 +389,7 @@ header img {
   }
   
   .contact h1 {
-    padding: 0 3px 50px 0;
+    padding: 0 3px 30px 0;
     font-size: 24px;
   }
 
@@ -397,6 +402,7 @@ header img {
     font-size: 12px;
   }
 
+  .contact .info p,
   .contact .button,
   .contact .outline {
     font-size: 16px;
