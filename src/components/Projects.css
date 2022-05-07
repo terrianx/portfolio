@@ -49,6 +49,50 @@
 
 .img-container {
   display: grid;
+  grid: 1fr / 1fr;
+}
+
+.next-btn {
+  grid-row: 1;
+  grid-column: 1;
+  background-color: hsla(220, 5%, 7%, 60%);
+  border-radius: 40px;
+  color: white;
+  width: min-content;
+  height: min-content;
+  font-size: 36px;
+  justify-items: center;
+  text-align: start;
+  align-self: center;
+  line-height: 100%;
+  z-index: 5;
+  opacity: 0;
+  transition: var(--speed);
+  user-select: none;
+}
+
+.next-btn:active {
+  background-color: var(--dark-gray);
+  transition: var(--click-speed);
+}
+
+.btn-r {
+  justify-self: right;
+  padding: 5px 18px 10px 20px;
+  margin-right: 10px;
+}
+
+.btn-l {
+  justify-self: left;
+  padding: 5px 20px 10px 18px;
+  margin-left: 10px;
+}
+
+.img-container img:hover ~ .next-btn,
+.next-btn:hover {
+  cursor: pointer;
+  opacity: 1;
+  transition: var(--speed);
 }
 
 .img-outline {
@@ -60,13 +104,14 @@
   grid-column: 1;
   z-index: 2;
   border: 1px solid white;
+  transition: var(--speed);
 }
 
 .img-container img {
   grid-row: 1;
   grid-column: 1;
   z-index: 4;
-  transition: var(--speed);
+  transition: var(--fade-speed);
 }
 
 .img-container p {
@@ -77,12 +122,8 @@
 .project-buttons {
   display: grid;
   align-content: center;
-  padding: 0;
-  justify-self: left;
-}
-
-.project-buttons {
   padding-left: 20px;
+  justify-self: left;
 }
 
 .project .button-container {
@@ -195,7 +236,7 @@
 @media only screen and (max-width: 620px) {
   .project h1 {
     transition: var(--speed);
-    transform: rotate(8deg) translateY(75px);
+    transform: rotate(8deg) translateY(80px);
   }
 
   .project .diag-line {
@@ -231,12 +272,24 @@
   .img-container img {
     width: 450px;
   }
+
+  .next-btn {
+    transform: scale(0.7);
+  }
+
+  .btn-r {
+    margin-right: 5px;
+  }
+
+  .btn-l {
+    margin-left: 5px;
+  }
 }
 
 @media only screen and (max-width: 450px) {
   .project h1 {
     transition: var(--speed);
-    transform: rotate(8deg) translateY(100px);
+    transform: rotate(8deg) translateY(88px);
     font-size: 28px;
   }
 
@@ -244,8 +297,8 @@
     width: 400px;
   }
 
-  .project p,
-  .project-text-container li {
+  .projects p,
+  .project li {
     font-size: 16px;
   }
 }
@@ -253,7 +306,7 @@
 @media only screen and (max-width: 400px) {
   .project h1 {
     transition: var(--speed);
-    transform: rotate(8deg) translateY(102px);
+    transform: rotate(8deg) translateY(92px);
   }
 
   .img-container img {

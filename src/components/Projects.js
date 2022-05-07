@@ -1,4 +1,5 @@
 import Button from "./Button";
+import React, { useState, useEffect, useRef } from "react";
 
 import './Projects.css';
 
@@ -8,14 +9,15 @@ export default function Projects() {
     <section className="projects">
 
       <Project title="FreshTea Website"
-                src="./assets/FreshTea.png"
+                src="./assets/fresh-tea-0.png"
                 width="700px"
                 height="auto"
-                alt="FreshTea Website home page"
+                alt="FreshTea Website page"
                 site="https://yu-xiao-boba-shop.netlify.app/"
                 code="https://github.com/ytxpk/boba-website"
-                tech=" HTML, CSS, JS"
-                class="fresh-tea">
+                tech="HTML, CSS, JS"
+                class="fresh-tea"
+                imgs="4">
         <p>I created this mock boba tea website to 
             gain working knowledge of front end web 
             development. Additionally, I am a fan of
@@ -34,14 +36,15 @@ export default function Projects() {
       </Project>
 
       <Project title="BlueAir Website"
-                src="./assets/BlueAir.png"
+                src="./assets/blue-air-0.png"
                 width="700px"
                 height="auto"
-                alt="Blue Website home page"
+                alt="Blue Website page"
                 site="https://yu-xiao-blue-air.netlify.app/"
                 code="https://github.com/ytxpk/blue-air-website"
-                tech=" HTML, CSS, JS"
-                class="blue-air">
+                tech="HTML, CSS, JS"
+                class="blue-air"
+                imgs="2">
         <p>A mock website meant for a business that delivers 
             fresh air. Elegance and mobile usability was 
             a focus for this project. Through this project, 
@@ -62,8 +65,20 @@ export default function Projects() {
     </section>
   );
 }
-  
+
 function Project(props) {
+  const [imgNum, setImgNum] = useState(0);
+  const fadeImg = useRef();
+
+  const imgs = props.imgs;
+
+  useEffect(() => {
+    setTimeout(() => {
+      fadeImg.current.style.filter = "brightness(1)";
+    }, 250);
+    fadeImg.current.style.filter = "brightness(0.95)";
+  }, [imgNum]);
+
   return (
     <div className={[props.class, "project"].join(' ')}>
       <span className="diag-line"></span>
@@ -73,12 +88,30 @@ function Project(props) {
 
         <div className="img-container">
           <span className="img-outline" 
-                  width={props.width}
-                  height={props.height}></span>
-          <img src={props.src} 
-                  alt={props.alt} 
-                  width={props.width}
-                  height={props.height}/>
+                width={props.width}
+                height={props.height}>
+          </span>
+
+          <img ref={fadeImg}
+               src={"./assets/" + props.class 
+                    + "-" + (imgNum % imgs) 
+                    + ".png"} 
+               alt={props.alt} 
+               width={props.width}
+               height={props.height}/>
+
+          <div className="next-btn btn-r"
+               onClick={() => {setImgNum(
+                (imgNum + 1) % imgs)}}>
+              &rsaquo;
+          </div>
+
+          <div className="next-btn btn-l"
+               onClick={() => {setImgNum(
+                (imgNum + 2 * imgs - imgs - 1) % imgs)}}>
+              &lsaquo;
+          </div>
+
           <p>{props.tech}</p>
         </div>
 

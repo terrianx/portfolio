@@ -4,8 +4,6 @@ import ContactInfo from './ContactInfo';
 import './Footer.css';
 
 export default function Footer() {
-  const email = "txiaopk@gmail.com";
-  const phone = "978-888-8886";
   const activeClipboard = navigator.clipboard != null;
 
   return (

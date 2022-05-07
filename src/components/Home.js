@@ -16,10 +16,6 @@ export default function Home() {
   );
 }
 
-function getRandInt(min, max) {
-  return Math.floor(Math.random() * (max - min) + 1);
-}
-
 function Header() {
   // renders random image when user clicks
   const imgMap = new Map();
@@ -29,6 +25,10 @@ function Header() {
   imgMap.set(3, "15, 80%, 65%");   // whale
   imgMap.set(4, "325, 60%, 75%");  // koi
   imgMap.set(5, "205, 70%, 50%");  // jelly
+
+  function getRandInt(min, max) {
+    return Math.floor(Math.random() * (max - min) + 1);
+  }
 
   const imgNum = getRandInt(0, 5);
 

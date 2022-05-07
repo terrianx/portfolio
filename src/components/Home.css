@@ -30,6 +30,7 @@ header {
   align-self: center;
   padding-left: 10px;
   max-width: 450px;
+  transition: var(--fade-speed);
 }
 
 .intro-container h1 {
@@ -52,7 +53,7 @@ header figure {
   animation: fadeIn var(--fade-speed);
   -webkit-animation: fadeIn var(--fade-speed);
   filter: brightness(0.85);
-  transition: var(--speed);
+  transition: var(--fade-speed);
 }
 
 header figure:active {
@@ -63,11 +64,6 @@ header figure:active {
 header figure:active {
   animation: none;
   -webkit-animation: none;
-}
-
-header figure:focus:active {
-  animation: fadeIn var(--fade-speed);
-  -webkit-animation: fadeIn var(--fade-speed);
 }
 
 header figure:hover {

@@ -16,7 +16,7 @@ export default function ContactInfo() {
       navigator.clipboard.writeText(text);
     }
     let node = lightEmail;
-    if (text == phone) node = lightPhone;
+    if (text === phone) node = lightPhone;
 
     const select = window.getSelection();
     const range = document.createRange();
