@@ -72,9 +72,9 @@ export default function Navbar() {
         </Button>
       </div>
 
-      <div className="nav-menu" 
-           onClick={() => setMenuShow(!menuShow)}>
-        <div className="nav-menu-btn">
+      <div className="nav-menu">
+        <div className="nav-menu-btn"
+             onClick={() => setMenuShow(!menuShow)}>
           <span className={menuShow ? 
             "nav-span-close nav-span" 
             : "nav-span"}></span>

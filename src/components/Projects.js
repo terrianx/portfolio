@@ -1,5 +1,5 @@
 import Button from "./Button";
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState } from "react";
 
 import './Projects.css';
 
@@ -68,19 +68,11 @@ export default function Projects() {
 
 function Project(props) {
   const [imgNum, setImgNum] = useState(0);
-  const fadeImg = useRef();
 
   const imgs = props.imgs;
 
-  useEffect(() => {
-    setTimeout(() => {
-      fadeImg.current.style.filter = "brightness(1)";
-    }, 250);
-    fadeImg.current.style.filter = "brightness(0.95)";
-  }, [imgNum]);
-
   return (
-    <div className={[props.class, "project"].join(' ')}>
+    <div className={props.class + " project"}>
       <span className="diag-line"></span>
       <div className="project-container">
 
@@ -92,8 +84,7 @@ function Project(props) {
                 height={props.height}>
           </span>
 
-          <img ref={fadeImg}
-               src={"./assets/" + props.class 
+          <img src={"./assets/" + props.class 
                     + "-" + (imgNum % imgs) 
                     + ".png"} 
                alt={props.alt} 

@@ -259,10 +259,11 @@
   .projects {
     padding-bottom: 100px;
   }
-
-  .project .diag-line {
+  
+  .project h1 {
     transition: var(--speed);
-    transform: skewY(8deg) translateY(185px);
+    transform: rotate(8deg) translateY(90px);
+    font-size: 30px;
   }
 
   .project-container {
@@ -306,7 +307,7 @@
 @media only screen and (max-width: 400px) {
   .project h1 {
     transition: var(--speed);
-    transform: rotate(8deg) translateY(92px);
+    transform: rotate(8deg) translateY(102px);
   }
 
   .img-container img {

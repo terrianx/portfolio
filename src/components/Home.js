@@ -36,10 +36,6 @@ function Header() {
   const [imgShow, setImgShow] = useState(imgNum);
 
   useEffect(() => {
-    setImgShow(imgNum);
-  }, []);
-
-  useEffect(() => {
     document.documentElement.style.setProperty(
       '--btn', 'hsl(' + imgMap.get(imgShow) + ')');
     document.documentElement.style.setProperty(

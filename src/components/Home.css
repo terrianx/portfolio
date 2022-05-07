@@ -59,11 +59,19 @@ header figure {
 header figure:active {
   animation: fadeIn var(--fade-speed);
   -webkit-animation: fadeIn var(--fade-speed);
-}
+} 
 
 header figure:active {
   animation: none;
   -webkit-animation: none;
+}
+
+@media (pointer: coarse) {
+  header figure,
+  header figure:active {
+    animation: none;
+    -webkit-animation: none;
+  }
 }
 
 header figure:hover {
@@ -77,6 +85,7 @@ header img {
 
 @media only screen and (max-width: 1020px) {
   header {
+    grid: 100vh / 1fr 1fr;
     margin: 0 60px;
   }
 
@@ -145,12 +154,16 @@ header img {
   }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 700px) and (max-height: 700px),
+            screen and (min-width: 700px) and (max-height: 400px) {
   header {
-    align-items: start;
-    align-content: start;
+    margin: 0 30px 0 30px;
+    height: auto;
+    position: relative;
   }
+}
 
+@media only screen and (max-width: 500px) {
   header img {
     max-width: 340px;
     height: auto;
@@ -160,6 +173,7 @@ header img {
 @media only screen and (max-width: 400px) {
   header {
     margin: 0 10px;
+    position: sticky;
   }
 
   header img {
@@ -289,6 +303,7 @@ header img {
   .about-container {
     padding-bottom: 0;
   }
+
   .about p,
   .about .button,
   .about .outline {
