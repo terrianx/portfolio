@@ -1,8 +1,16 @@
-import Logo from "./Logo";
+// ==========================================
+// COMPONENT: Navigation bar
+// OVERVIEW:  Responsive to window resizing,
+//            Hamburger menu on mobile screen,
+//            Links to all pages and social
+// USAGE:     App
+// ==========================================
+
+import { useState, useEffect } from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
-import Social from "./Social";
-import Button from "./Button";
-import React, { useState, useEffect } from "react";
+import Logo from './Logo';
+import Button from "../button/Button";
+import Social from '../contact/Social';
 import throttle from 'lodash.throttle'
 
 import './Navbar.css';
@@ -22,6 +30,7 @@ export default function Navbar() {
       setScreenWidth(window.innerWidth);
     }
 
+    // throttle to improve performance
     window.addEventListener("resize", throttle(() => {
       handleResize();
     }, 700));

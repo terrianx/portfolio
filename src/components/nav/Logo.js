@@ -1,6 +1,13 @@
+// ==========================================
+// COMPONENT: Logo
+// OVERVIEW:  Click pressing animation,
+//            Signature hover color change
+// USAGE:     Navbar
+// ==========================================
+
 import { HashLink as Link } from 'react-router-hash-link';
 
-import './Button.css'
+import '../button/Button.css'
 import './Logo.css'
 
 export default function Logo() {

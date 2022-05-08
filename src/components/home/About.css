@@ -1,0 +1,137 @@
+/* ======================= */
+/* About component styling */
+/* ======================= */
+
+/* creates header fade effect */
+.fade-box {
+  display: block;
+
+  position: relative;
+  z-index: 3;
+
+  height: 320px;
+  width: 100%;
+
+  background-image: linear-gradient(var(--clear), var(--dark-gray));
+
+  transition: var(--speed);
+  -ms-transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.about {
+  display: grid;
+  grid: repeat(3, min-content) / 1fr;
+
+  position: relative;
+  justify-content: center;
+  z-index: 4;
+
+  width: 100%;
+
+  transition: var(--speed);
+  -ms-transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.about .diag-line {
+  transform: skewY(-8deg) translateY(47px);
+}
+
+.about-container {
+  display: grid;
+  grid: repeat(6, min-content) / 1fr;
+  row-gap: 20px;
+
+  justify-items: center;
+  justify-self: center;
+  text-align: center;
+
+  padding: 0 0 200px 0;
+  margin: 0 80px;
+  width: 100%;
+
+  background-color: var(--dark-gray);;
+}
+
+.about h1 {
+  z-index: 5;
+
+  padding: 0 0px 50px 5px;
+
+  background-color: var(--dark-gray);;
+  color: var(--header);
+
+  transition: var(--speed);
+}
+
+.about p {
+  padding-bottom: 20px;
+  max-width: 500px;
+
+  color: var(--text);
+
+  line-height: var(--line-height);
+
+  transition: var(--speed);
+}
+
+.about .button {
+  justify-self: center;
+}
+
+/* ============== */
+/* responsiveness */
+/* ============== */
+
+@media only screen and (max-width: 700px) {
+  .about .fade-box {
+    height: 280px;
+  }
+
+  .about .diag-line {
+    transform: skewY(-8deg) translateY(42px);
+  }
+
+  .about h1 {
+    font-size: 30px;
+    transition: var(--speed);
+  }
+
+  .about p,
+  .about .button,
+  .about .outline {
+    font-size: 18px;
+    transition: var(--speed);
+  }
+
+  .about p {
+    padding: 0 40px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .about .fade-box {
+    height: 250px;
+  }
+
+  .about h1 {
+    font-size: 24px;
+  }
+
+  .about .diag-line {
+    transform: skewY(-8deg) translateY(38px);
+  }
+  
+  .about-container {
+    padding-bottom: 0;
+  }
+
+  .about p,
+  .about .button,
+  .about .outline {
+    font-size: 16px;
+  }
+}

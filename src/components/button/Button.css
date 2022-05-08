@@ -1,39 +1,49 @@
+/* ======================== */
+/* Button component styling */
+/* ======================== */
 
-.button-container {
+.button-container { 
   display: grid;
 }
 
 .button,
 .logo,
 .outline {
-  background-color: var(--btn);
-  height: 36px;
-  padding: 5px 20px;
-  width: max-content;
+  grid-row: 1;
+  grid-column: 1;
+
   justify-items: center;
   align-items: center;
   text-align: center;
-  border-radius: 20px;
-  color: black;
-  transition: var(--speed);
-  border: 1px solid var(--btn);
-  grid-column: 1;
-  grid-row: 1;
   z-index: 1;
+  
+  padding: 5px 20px;
+  height: 36px;
+  width: max-content;
+
+  background-color: var(--btn);
+  color: var(--dark-gray);
+  border-radius: 20px;
+  border: 1px solid var(--btn);
+
+  transition: var(--speed);
 }
 
 .button:hover {
   background-color: var(--dark-gray);
   color: var(--light);
   border: 1px solid var(--light);
+
   transition: var(--speed);
   transform: translate(1px, -1px);
 }
 
+/* outline takes on same color as btn */
 .button:hover + .outline {
   border: 1px solid var(--light);
 }
 
+/* on click indicator */
 .button:active {
   background-color: var(--light);
   transition: var(--click-speed);
@@ -41,12 +51,14 @@
 }
 
 .outline {
-  font-size: 20px;
-  color: var(--clear);
-  background-color: var(--dark-gray);
-  border: 1px solid var(--btn);
   position: relative;
-  z-index: 0;
   top: -4px;
   right: -4px;
+  z-index: 0;
+
+  background-color: var(--dark-gray);
+  color: var(--clear);
+  border: 1px solid var(--btn);
+
+  font-size: 20px;
 }

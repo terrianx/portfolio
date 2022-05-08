@@ -1,21 +1,28 @@
+/* ============================= */
+/* Resume page component styling */
+/* ============================= */
 
-/* ================================= */
-/* ============= resume ============ */
-/* ================================= */
 .resume {
-  animation: fadeIn var(--fade-speed);
-  -webkit-animation: fadeIn var(--fade-speed);
   display: grid;
   grid: repeat(4, min-content) / 1fr;
   grid-row-gap: 20px;
+
+  position: relative;
   justify-items: center;
   justify-content: center;
+  z-index: 4;
+
   padding: 200px 0 300px 0;
-  color: var(--light);
-  background-color: var(--dark-gray);
-  text-align: center;
   width: 100%;
-  position: relative;
+
+  background-color: var(--dark-gray);
+  color: var(--light);
+
+  text-align: center;
+  
+  transition: var(--speed);
+  animation: fadeIn var(--fade-speed);
+  -webkit-animation: fadeIn var(--fade-speed);
 }
 
 .resume .diag-line {
@@ -23,9 +30,9 @@
 }
 
 .resume h1 {
+  z-index: 5;
   padding: 0 0 50px 5px;
   background-color: var(--dark-gray);
-  z-index: 4;
 }
 
 .resume .button-container {
@@ -33,15 +40,19 @@
 }
 
 .resume-content-container {
-  margin-top: 20px;
   display: grid;
+
   justify-items: center;
-  transition: var(--speed);
-  max-width: 810px;
-  filter: brightness(0.9);
+
+  margin-top: 20px;
   width: 100%;
-  border: 1px solid var(--light);
+  max-width: 810px;
   height: 1045px;
+  
+  border: 1px solid var(--light);
+  filter: brightness(0.9);
+
+  transition: var(--speed);
 }
 
 .resume-content-container p,
@@ -52,15 +63,22 @@
 
 .resume-pdf {
   display: block;
+
   justify-self: center;
-  transition: var(--speed);
+
   width: 100%;
   height: 100%;
+
+  transition: var(--speed);
 }
 
 .resume-png {
   display: none;
 }
+
+/* ============== */
+/* responsiveness */
+/* ============== */
 
 @media only screen and (min-width: 1600px) {
   .resume-content-container {
@@ -70,12 +88,13 @@
 
 @media only screen and (max-width: 1000px) {
   .resume-content-container {
-    transform: scale(0.85) translateY(-80px);
     padding-left: 0;
     transition: var(--speed);
+    transform: scale(0.85) translateY(-80px);
   }
 }
 
+/* resume switches from pdf to image */
 @media only screen and (max-width: 700px) {
   .resume {
     padding: 200px 0 100px 0;
@@ -86,10 +105,10 @@
   }
 
   .resume-content-container {
-    margin-top: 40px;
     padding: 5px;
-    height: min-content;
+    margin-top: 40px;
     width: 100%;
+    height: min-content;
   }
 
   .resume-pdf {
@@ -125,8 +144,8 @@
 
   .resume h1 {
     padding: 0 0 20px 2px;
-    transform: translateY(8px);
     font-size: 24px;
+    transform: translateY(8px);
   }
 
   .resume p,

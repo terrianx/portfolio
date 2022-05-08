@@ -1,24 +1,33 @@
+/* ====================== */
+/* Logo component styling */
+/* ====================== */
+
 .logo {
-  background-color: var(--btn);
-  height: 36px;
-  width: auto;
-  padding: 5px 20px;
+  grid-row: 1;
+  grid-column: 1;
+
   justify-items: center;
   align-items: center;
   text-align: center;
-  border-radius: 20px;
-  color: black;
-  transition: var(--speed);
-  border: 1px solid var(--btn);
-  grid-column: 1;
-  grid-row: 1;
   z-index: 1;
+
+  padding: 5px 20px;
+  width: auto;
+  height: 36px;
+  
+  background-color: var(--btn);
+  color: var(--dark-gray);
+  border: 1px solid var(--btn);
+  border-radius: 20px;
+  
+  transition: var(--speed);
 }
 
 .logo:hover {
-  filter: invert(1);
   background-color: var(--light);
-  border: 1px solid black;
+  border: 1px solid var(--dark-gray);
+  filter: invert(1);
+
   transition: var(--speed);
   transform: translate(1px, -1px);
 }
@@ -27,6 +36,7 @@
   border: 1px solid var(--light);
 }
 
+/* on click indicator */
 .logo:active {
   background-color: black;
   transition: var(--click-speed);

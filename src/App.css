@@ -1,24 +1,19 @@
-/* ================================= */
-/* ============ styling ============ */
-/* ================================= */
+/* ======================== */
+/* Default elements styling */
+/* ======================== */
 
-
-
-/* ================================= */
-/* ======== initial set up ========= */
-/* ================================= */
 * {
   box-sizing: border-box;
-  margin: 0;
+
   padding: 0;
+  margin: 0;
+
   font-family: 'Red Hat Display', sans-serif;
+
   scroll-behavior: smooth;
 }
 
 :root {
-  --header: var(--light);
-  --text: var(--light);
-
   --light: hsl(200, 0%, 88%);
   --btn: hsl(182, 47%, 58%);
   --highlight: hsla(182, 47%, 58%, 60%);
@@ -27,13 +22,16 @@
   --med-gray: hsl(220, 5%, 9%);
   --light-gray: hsl(0, 0%, 20%);
 
+  --header: var(--light);
+  --text: var(--light);
+  --line-height: 1.4;
+
   --speed: 150ms;
   --click-speed: 80ms;
   --fade-speed: 305ms;
-
-  --line-height: 1.4;
 }
 
+/* text highlight color */
 ::selection {
   background-color: var(--highlight);
   color: var(--text);
@@ -45,9 +43,9 @@
 }
 
 ul {
-  list-style: none;
-  margin: 0;
   padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
 li,
@@ -65,13 +63,9 @@ p {
 
 a {
   color: (var(--text));
-  text-decoration: none;
-  font-size: 20px;
-}
 
-.anchor {
-  position: absolute;
-  transform: translateY(10vh);
+  font-size: 20px;
+  text-decoration: none;
 }
 
 img {
@@ -84,34 +78,58 @@ body {
 }
 
 main {
-  width: 100%;
-  background-color: var(--dark-gray);
   display: grid;
+
   justify-items: center;
+
+  width: 100%;
+
+  background-color: var(--dark-gray);
 }
 
+/* ======================= */
+/* Custom elements styling */
+/* ======================= */
+
+/* wraps all page components */
 .box-container {
   justify-self: center;
-  margin: 0 auto 100px auto;
+  z-index: 0;
+
   padding: 0;
+  margin: 0 auto 100px auto;
   width: 100%;
   max-width: 1200px;
+
   background-color: black;
   border-left: 1px solid white;
   border-right: 1px solid white;
   border-bottom: 1px solid white;
-  z-index: 0;
 }
 
+/* positions internal link destinations */
+.anchor {
+  position: absolute;
+  transform: translateY(10vh);
+}
+
+/* diagonal line across page */
 .diag-line {
-  padding: 0.5px;
-  background-color: white;
   position: relative;
   z-index: 3;
-  transform: skewY(-8deg);
-  transition: var(--speed);
+
+  padding: 0.5px;
   width: 100%;
+
+  background-color: white;
+  
+  transition: var(--speed);
+  transform: skewY(-8deg);
 }
+
+/* ========== */
+/* Animations */
+/* ========== */
 
 @keyframes fadeIn {
   0% {opacity: 0}

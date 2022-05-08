@@ -1,13 +1,15 @@
-/* ================================= */
-/* ============= social ============ */
-/* ================================= */
+/* ==================================== */
+/* Social media icons component styling */
+/* ==================================== */
 
 .social-container {
   display: grid;
   grid: 80px / 1fr 1fr;
   column-gap: 20px;
-  justify-self: center;
+
   align-items: center;
+  justify-self: center;
+
   width: min-content;
 }
 
@@ -16,24 +18,30 @@
 }
 
 .social-button .fa {
-  background-color: var(--light);
-  font-size: 22px;
-  color: var(--dark-gray);
-  text-align: center;
-  padding: 4px 7px;
-  border-radius: 24px;
   justify-self: center;
+
+  padding: 4px 7px;
+
+  background-color: var(--light);
+  color: var(--dark-gray);
+  border-radius: 24px;
+
+  font-size: 22px;
+  text-align: center;
+  
   transition: var(--speed);
 }
 
 .social-button .fa {
   grid-row: 1;
   grid-column: 1;
+
   z-index: 2;
 }
 
 .social-button .fa:hover {
   background-color: var(--btn);
+
   transition: var(--speed);
   transform: translate(1px, -1px);
 }
@@ -43,8 +51,10 @@
   border: 1px solid var(--btn);
 }
 
+/* on click indicator */
 .social-button .fa:active {
   background-color: var(--light);
+
   transition: var(--speed);
   transform: translate(2px, -2px);
 }
@@ -52,11 +62,15 @@
 .social-outline {
   grid-row: 1;
   grid-column: 1;
+
+  position: relative;
+  z-index: 1;
+
   padding: 15px;
-  border-radius: 24px;
+
   background-color: var(--dark-gray);
   border: 1px solid var(--light);
-  position: relative;
+  border-radius: 24px;
+  
   transform: translate(3px, -3px);
-  z-index: 1;
 }

@@ -1,3 +1,7 @@
+/* ============================== */
+/* Contact info component styling */
+/* ============================== */
+
 .info {
   display: grid;
 }
@@ -13,6 +17,7 @@
   cursor: pointer;
 }
 
+/* on click indicator */
 .info p:active {
   color: var(--light);
   transition: var(--speed);

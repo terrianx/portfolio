@@ -1,4 +1,12 @@
-import React, { useRef } from "react";
+// ==========================================
+// COMPONENT: Contact info
+// OVERVIEW:  Click to copy feature,
+//            Auto select email and phone
+// USAGE:     HomePage/Contact, 
+//            Footer
+// ==========================================
+
+import { useRef } from 'react';
 
 import './ContactInfo.css';
 
@@ -11,6 +19,8 @@ export default function ContactInfo() {
 
   const activeClipboard = navigator.clipboard != null;
 
+  // copies text to clipboard if able
+  // default select text
   function copyText(text) {
     if (activeClipboard) {
       navigator.clipboard.writeText(text);

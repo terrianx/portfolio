@@ -1,5 +1,13 @@
+// ==========================================
+// COMPONENT: Footer
+// OVERVIEW:  Navigation and social links,
+//            Contact info click to copy,
+//            Copyright
+// USAGE:     App
+// ==========================================
+
 import { HashLink as Link } from 'react-router-hash-link';
-import ContactInfo from './ContactInfo';
+import ContactInfo from '../contact/ContactInfo';
 
 import './Footer.css';
 

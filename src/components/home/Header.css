@@ -1,0 +1,211 @@
+/* ======================== */
+/* Header component styling */
+/* ======================== */
+
+header {
+  display: grid;
+  grid: 100vh / 1fr 1fr;
+
+  position: sticky;
+  align-items: center;
+  align-content: center;
+  justify-self: center;
+  top: 0;
+  z-index: 2;
+
+  height: 100vh;
+  margin: 0 100px;
+  margin-bottom: -100px;
+
+  color: white;
+  
+  transition: var(--speed);
+  -webkit-transform:translate3d(0,0,0);
+  animation: fadeIn var(--fade-speed);
+  -webkit-animation: fadeIn var(--fade-speed);
+}
+
+.intro-container {
+  align-self: center;
+  justify-self: left;
+  justify-content: left;
+
+  padding-left: 10px;
+  margin-top: 40px;
+  max-width: 450px;
+
+  color: var(--text);
+  
+  transition: var(--fade-speed);
+}
+
+.intro-container h1 {
+  color: var(--header);
+  font-size: 44px;
+}
+
+.intro-container p {
+  line-height: var(--line-height);
+}
+
+.intro-container .button-container {
+  padding: 0;
+}
+
+header figure {
+  align-self: center;
+  justify-self: right;
+  
+  filter: brightness(0.85);
+
+  transition: var(--fade-speed);
+  animation: fadeIn var(--fade-speed);
+  -webkit-animation: fadeIn var(--fade-speed);
+  cursor: pointer;
+}
+
+/* image fade on switch */
+header figure:active {
+  animation: fadeIn var(--fade-speed);
+  -webkit-animation: fadeIn var(--fade-speed);
+} 
+
+header figure:active {
+  animation: none;
+  -webkit-animation: none;
+}
+
+/* remove effect for mobile */
+@media (pointer: coarse) {
+  header figure,
+  header figure:active {
+    animation: none;
+    -webkit-animation: none;
+  }
+}
+
+header figure:hover {
+  filter: brightness(1);
+  transition: var(--speed);
+}
+
+header img {
+  transition: var(--speed);
+}
+
+/* ============== */
+/* responsiveness */
+/* ============== */
+
+@media only screen and (max-width: 1020px) {
+  header {
+    grid: 100vh / 1fr 1fr;
+    margin: 0 60px;
+  }
+
+  header img {
+    width: 450px;
+    transition: var(--speed);
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .intro-container h1 {
+    min-width: 180px;
+  }
+
+  header img {
+    width: 400px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  header {
+    margin: 0 30px;
+  }
+
+  header img {
+    width: 350px;
+  }
+
+  .intro-container h1 {
+    width: max-content;
+    font-size: 30px;
+  }
+
+  header p,
+  header a,
+  header .outline {
+    font-size: 18px;
+  }
+}
+
+/* change to vertical layout */
+@media only screen and (max-width: 700px),
+            screen and (orientation: portrait)  {
+  header {
+    grid: min-content min-content / 1fr;
+    padding-top: 60px;
+  }
+
+  header figure {
+    grid-row: 1;
+    justify-self: center;
+  }
+
+  header img {
+    max-width: 350px;
+    height: auto;
+  }
+
+  .intro-container {
+    display: grid;
+
+    align-self: top;
+    justify-self: center;
+    justify-items: center;
+    text-align: center;
+    
+    padding: 0 10px;
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  header img {
+    max-width: 340px;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  header {
+    position: sticky;
+    margin: 0 10px;
+  }
+
+  header img {
+    width: auto;
+    max-height: 42vh;
+  }
+
+  .intro-container h1 {
+    font-size: 24px;
+  }
+
+  header p,
+  header a,
+  header .outline {
+    font-size: 16px;
+  }
+}
+
+/* vertical height responsiveness */
+@media only screen and (max-width: 700px) and (max-height: 700px),
+            screen and (min-width: 700px) and (max-height: 400px) {
+  header {
+    position: relative;
+    margin: 0 30px 0 30px;
+    height: auto;
+  }
+}

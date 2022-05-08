@@ -1,22 +1,26 @@
-/* ================================= */
-/* ============= footer ============ */
-/* ================================= */
+/* ======================== */
+/* Footer component styling */
+/* ======================== */
 
 footer {
-  padding: 0 200px 100px 200px;
   justify-content: center;
+  z-index: 3;
+
+  padding: 0 200px 100px 200px;
   margin: 0 auto;
   width: 100%;
   max-width: 1200px;
+  
   transition: var(--speed);
-  z-index: 3;
 }
 
 .footer-container {
   display: grid;
   grid: 1fr 1fr / repeat(4, 1fr);
+
   justify-items: left;
-  color: var(--light);
+
+  color: var(--text);
 }
 
 .footer-name h1 {
@@ -24,8 +28,8 @@ footer {
 }
 
 footer h1 {
-  font-size: 24px;
   margin-bottom: 20px;
+  font-size: 24px;
 }
 
 footer li,
@@ -34,14 +38,14 @@ footer li,
 }
 
 footer li {
-  color: var(--text);
   width: min-content;
+  color: var(--text);
 }
 
 footer li:hover,
 .footer-name:hover {
-  text-decoration: underline;
   color: var(--btn);
+  text-decoration: underline;
   transition: var(--speed);
 }
 
@@ -52,8 +56,8 @@ footer li:hover,
 
 .footer-contact:hover,
 .footer-contact-li:hover {
-  text-decoration: none;
   color: var(--text);
+  text-decoration: none;
 }
 
 footer li:active,
@@ -63,26 +67,33 @@ footer li:active,
 }
 
 footer .info {
-  padding-top: 5px;
   row-gap: 5px;
+  padding-top: 5px;
 }
 
+/* all except last list item */
 footer li:not(:last-child) {
   margin-bottom: 5px;
 }
 
+/* spans entire footer */
 .copyright {
-  margin-top: 100px;
-  color: var(--light);
-  justify-self: center;
   grid-column: 1 / 5;
+
+  justify-self: center;
+  
+  margin-top: 100px;
+  
+  color: var(--light);
 }
 
+/* ============== */
 /* responsiveness */
+/* ============== */
+
 @media only screen and (max-width: 1200px) {
   footer {
     padding: 0 100px 100px 100px;
-    transition: var(--speed);
   }
 }
 
@@ -92,15 +103,17 @@ footer li:not(:last-child) {
   }
 }
 
+/* name appears on top of other items */
 @media only screen and (max-width: 800px) {
   .footer-container {
     grid: auto 1fr 1fr / repeat(3, 1fr);
     justify-items: left;
   }
 
+  /* span entire footer */
   .footer-name {
-    justify-self: left;
     grid-column: 1 / 4;
+    justify-self: left;
   }
 
   .copyright {
@@ -108,6 +121,7 @@ footer li:not(:last-child) {
   }
 }
 
+/* list view of items */
 @media only screen and (max-width: 550px) {
   footer {
     padding: 0 60px 100px 60px;
@@ -124,12 +138,12 @@ footer li:not(:last-child) {
     justify-self: center;
   }
 
-  footer li {
-    font-size: 16px;
+  footer h1 {
+    font-size: 22px;
   }
-
+  
   .footer-name h1 {
-    font-size: 28px;
+    font-size: 24px;
   }
 
   .footer-name,
@@ -137,6 +151,11 @@ footer li:not(:last-child) {
     grid-column: 1;
   }
   
+  .copyright {
+    margin-top: 50px;
+  }
+
+  footer li,
   footer .info p,
   footer p,
   footer a {
@@ -147,4 +166,3 @@ footer li:not(:last-child) {
     font-size: 14px;
   }
 }
-  
