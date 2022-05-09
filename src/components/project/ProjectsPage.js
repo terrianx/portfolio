@@ -15,7 +15,7 @@ export default function Projects() {
     <section className="projects">
 
       <Project title="FreshTea Website"
-                src="./assets/fresh-tea-0.png"
+                src="./assets/fresh-tea-0.webp"
                 width="700px"
                 height="auto"
                 alt="FreshTea Website page"
@@ -42,7 +42,7 @@ export default function Projects() {
       </Project>
 
       <Project title="BlueAir Website"
-                src="./assets/blue-air-0.png"
+                src="./assets/blue-air-0.webp"
                 width="700px"
                 height="auto"
                 alt="Blue Website page"

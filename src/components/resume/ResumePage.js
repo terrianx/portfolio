@@ -47,9 +47,9 @@ export default function Resume() {
 
         </object>
 
-        <img src="./assets/YuXiaoResume.png" 
+        <img src="./assets/YuXiaoResume.webp" 
              alt="Yu Xiao Resume" 
-             className="resume-png" 
+             className="resume-img" 
              width="100%" />
 
       </div>

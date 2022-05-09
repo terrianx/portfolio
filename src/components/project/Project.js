@@ -30,7 +30,7 @@ export default function Project(props) {
 
           <img src={"./assets/" + props.class 
                     + "-" + (imgNum % imgs) 
-                    + ".png"} 
+                    + ".webp"} 
                alt={props.alt} 
                width={props.width}
                height={props.height}/>

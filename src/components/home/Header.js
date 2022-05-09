@@ -53,7 +53,7 @@ export default function Header() {
 
       <figure onClick={() => {
           setImgShow((getRandInt(0, 5) + imgShow) % 6)}}>
-        <img src={"./assets/header-" + imgShow + ".png"} 
+        <img src={"./assets/header-" + imgShow + ".webp"} 
               alt="Illustration"
               width="500px"
               height="auto"/>

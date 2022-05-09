@@ -72,7 +72,7 @@
   transition: var(--speed);
 }
 
-.resume-png {
+.resume-img {
   display: none;
 }
 
@@ -115,7 +115,7 @@
     display: none;
   }
 
-  .resume-png {
+  .resume-img {
     display: block;
   }
 
