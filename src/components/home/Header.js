@@ -55,7 +55,8 @@ export default function Header() {
           setImgShow((getRandInt(0, 5) + imgShow) % 6)}}>
         <img src={"./assets/header-" + imgShow + ".png"} 
               alt="Illustration"
-              width="500px"/>
+              width="500px"
+              height="auto"/>
       </figure>
 
     </header>

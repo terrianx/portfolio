@@ -10,7 +10,7 @@ import Contact from './Contact';
 
 export default function Home() {
   return (
-    <div>
+    <div className="home">
       <Header />
       <About />
       <Contact />

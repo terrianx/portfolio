@@ -15,7 +15,8 @@ export default function Social() {
         <a className="fa fa-github"
           href="https://github.com/ytxpk" 
           target="_blank"
-          rel="noreferrer">
+          rel="noreferrer"
+          name="github link">
         </a>
 
         <p className="social-outline"></p>
@@ -25,7 +26,8 @@ export default function Social() {
         <a className="fa fa-linkedin"
           href="https://www.linkedin.com/in/yuxiao8/" 
           target="_blank"
-          rel="noreferrer">
+          rel="noreferrer"
+          name="linkedin link">
         </a>
 
         <p className="social-outline"></p>
