@@ -10,12 +10,11 @@ header {
   align-items: center;
   align-content: center;
   justify-self: center;
-  top: 0;
+  top: 20px;
   z-index: 2;
 
-  height: 100vh;
   margin: 0 100px;
-  margin-bottom: -100px;
+  height: 100%;
 
   color: white;
   
@@ -115,17 +114,19 @@ header img {
   }
 
   header img {
-    width: 400px;
+    width: 380px;
+    transition: var(--speed);
   }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 820px) {
   header {
     margin: 0 30px;
   }
 
   header img {
     width: 350px;
+    transition: var(--speed);
   }
 
   .intro-container h1 {
@@ -156,6 +157,7 @@ header img {
   header img {
     max-width: 350px;
     height: auto;
+    transition: var(--speed);
   }
 
   .intro-container {
@@ -175,6 +177,7 @@ header img {
   header img {
     max-width: 340px;
     height: auto;
+    transition: var(--speed);
   }
 }
 
@@ -187,6 +190,7 @@ header img {
   header img {
     width: auto;
     max-height: 42vh;
+    transition: var(--speed);
   }
 
   .intro-container h1 {
@@ -201,11 +205,34 @@ header img {
 }
 
 /* vertical height responsiveness */
-@media only screen and (max-width: 700px) and (max-height: 700px),
-            screen and (min-width: 700px) and (max-height: 400px) {
+@media only screen and (max-width: 700px) 
+                   and (max-height: 700px),
+            screen and (min-width: 700px) 
+                   and (max-height: 400px) {
   header {
     position: relative;
-    margin: 0 30px 0 30px;
     height: auto;
+  }
+}
+
+@media only screen and (min-width: 900px) 
+                   and (max-height: 680px) {
+  header figure {
+    justify-self: center;
+  }
+
+  header img {
+    width: 380px;
+    height: auto;
+    transition: var(--speed);
+  }
+}
+
+@media only screen and (min-width: 820px) 
+                   and (max-height: 600px) {
+  header img {
+    width: 320px;
+    height: auto;
+    transition: var(--speed);
   }
 }
