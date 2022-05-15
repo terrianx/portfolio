@@ -23,8 +23,8 @@ export default function About() {
         <h1>About Me</h1>
 
         <p>I'm a self-learner from Greater
-          Boston with a hope to make the world a 
-          better place. I have experience in
+          Boston with a mindset of making the world 
+          a better place. I have experience in
           programming, front-end development,
           and graphic design studying computer
           science at the University of Michigan

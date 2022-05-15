@@ -6,6 +6,7 @@
 
 import Header from './Header';
 import About from './About';
+import Skills from './Skills';
 import Contact from './Contact';
 
 export default function Home() {
@@ -13,6 +14,7 @@ export default function Home() {
     <div className="home">
       <Header />
       <About />
+      <Skills />
       <Contact />
     </div>
   );

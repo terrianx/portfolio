@@ -1,0 +1,172 @@
+/* ======================== */
+/* Skills component styling */
+/* ======================== */
+
+.skills {
+  display: grid;
+  grid: auto auto auto / 1fr;
+
+  position: relative;
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+  z-index: 4;
+
+  width: 100%;
+  padding: 80px 0 40px 0;
+
+  background-color: var(--dark-gray);
+}
+
+.skills .diag-line {
+  transform: skewY(-8deg) translateY(27px);
+}
+
+.skills h1 {
+  z-index: 5;
+
+  padding: 0 5px 50px 5px;
+
+  background-color: var(--dark-gray);;
+  color: var(--header);
+
+  transition: var(--speed);
+}
+
+.skills h2 {
+  grid-row: 1 / 5;
+  grid-column: 1;
+
+  align-self: start;
+  text-align: start;
+
+  margin-top: 30px;
+  width: min-content;
+
+  color: var(--header);
+}
+
+.skills-container {
+  display: grid;
+  grid: auto auto auto / 1fr;
+  row-gap: 80px;
+
+  padding-top: 40px;
+}
+
+.proficient-container,
+.competent-container,
+.capable-container {
+  display: grid;
+  grid: 1fr / repeat(4, 1fr);
+  column-gap: 20px;
+
+  align-items: end;
+
+  padding-bottom: 20px;
+}
+
+.skills figure img {
+  filter: brightness(0.9);
+  transition: var(--speed);
+}
+
+.skills figcaption {
+  padding-top: 20px;
+
+  color: var(--text);
+
+  font-size: 20px;
+
+  transition: var(--speed);
+}
+
+/* ============== */
+/* responsiveness */
+/* ============== */
+
+@media only screen and (max-width: 800px) {
+  .proficient-container,
+  .competent-container,
+  .capable-container {
+    grid: 1fr / repeat(3, 1fr);
+  }
+
+  .skills h2 {
+    grid-row: 1;
+    grid-column: 1 / 4;
+    margin: 0 0 20px 20px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .skills .diag-line {
+    transform: skewY(-8deg) translateY(25px);
+  }
+
+  .skills h1 {
+    padding: 0 3px 50px 3px;
+    font-size: 30px;
+  }
+
+  .skills h2 {
+    font-size: 22px;
+  }
+
+  .skills figure img {
+    transition: var(--speed);
+    transform: scale(0.9);
+  }
+
+  .skills figcaption {
+    padding-top: 15px;
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .skills {
+    padding-bottom: 0;
+  }
+  
+  .proficient-container,
+  .competent-container,
+  .capable-container {
+    grid: auto repeat(3, 1fr) / 1fr;
+    row-gap: 40px;
+    align-items: start;
+  }
+
+  .skills h2 {
+    grid-row: 1;
+    grid-column: 1;
+    text-align: center;
+    margin: 0;
+    justify-self: center;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .skills .diag-line {
+    transform: skewY(-8deg) translateY(20px);
+  }
+
+  .skills h1 {
+    padding: 0 3px 50px 3px;
+    font-size: 24px;
+  }
+
+  .skills h2 {
+    font-size: 20px;
+  }
+
+  .skills figure img {
+    transition: var(--speed);
+    transform: scale(0.8);
+  }
+
+  .skills figcaption {
+    padding-top: 10px;
+    font-size: 16px;
+  }
+}
