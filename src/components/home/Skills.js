@@ -4,6 +4,8 @@
 // USAGE:     HomePage
 // ==========================================
 
+import Button from '../button/Button';
+
 import './Skills.css';
 
 export default function Skills() {
@@ -11,7 +13,15 @@ export default function Skills() {
     <section className="skills">
       <span className="diag-line"></span>
 
-      <h1>Skills</h1>
+      <h1>My Skills</h1>
+      
+      <p>
+        Skills I gained from education
+        and independent projects. Check out my resume
+        to see how I learned and honed each skill.
+      </p>
+
+      <Button to="/resume#">Resume</Button>
 
       <div className="skills-container">
         <div className="proficient-container">
@@ -35,7 +45,9 @@ export default function Skills() {
             <img src="./assets/icon-affinity.webp"
                 alt="affinity designer icon"
                 width="80"/>
-            <figcaption>Affinity Designer</figcaption>
+            <figcaption className="multi-word">
+                        Affinity Designer
+            </figcaption>
           </figure>
 
         </div>
@@ -80,7 +92,9 @@ export default function Skills() {
             <img src="./assets/icon-illustrator.webp"
                 alt="adobe illustrator icon"
                 width="80"/>
-            <figcaption>Adobe Illustrator</figcaption>
+            <figcaption className="multi-word">
+                        Adobe Illustrator
+            </figcaption>
           </figure>
         </div>
 

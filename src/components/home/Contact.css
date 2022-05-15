@@ -11,7 +11,7 @@
   justify-content: center;
   z-index: 7;
 
-  padding: 200px 0 300px 0;
+  padding: 200px 0 200px 0;
   width: 100%;
 
   background-color: var(--dark-gray);
@@ -64,8 +64,10 @@
   padding: 0;
 }
 
-.contact .button {
+.contact .button,
+.contact .outline {
   justify-self: center;
+  margin-top: 120px;
 }
 
 
@@ -98,7 +100,7 @@
 
 @media only screen and (max-width: 600px) {
   .contact {
-    padding-top: 100px;
+    padding-top: 150px;
   }
 }
 

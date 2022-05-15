@@ -6,7 +6,7 @@
 // USAGE:     HomePage
 // ==========================================
 
-import Button from "../button/Button.js";
+import Button from "../button/Button";
 
 import './About.css';
 

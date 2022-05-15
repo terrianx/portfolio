@@ -24,7 +24,7 @@
 
   --header: var(--light);
   --text: var(--light);
-  --line-height: 1.4;
+  --line-height: 1.5;
 
   --speed: 150ms;
   --click-speed: 80ms;
@@ -129,6 +129,11 @@ main {
   
   transition: var(--speed);
   transform: skewY(-8deg);
+}
+
+/* no line break */
+.multi-word {
+  width: max-content;
 }
 
 /* ========== */

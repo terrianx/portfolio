@@ -4,7 +4,7 @@
 
 .skills {
   display: grid;
-  grid: auto auto auto / 1fr;
+  grid: repeat(5, auto) / 1fr;
 
   position: relative;
   justify-content: center;
@@ -33,6 +33,18 @@
   transition: var(--speed);
 }
 
+.skills p {
+  padding: 20px 0 40px 0;
+  margin: 0 80px;
+  max-width: 500px;
+
+  color: var(--text);
+
+  line-height: var(--line-height);
+
+  transition: var(--speed);
+}
+
 .skills h2 {
   grid-row: 1 / 5;
   grid-column: 1;
@@ -40,10 +52,13 @@
   align-self: start;
   text-align: start;
 
-  margin-top: 30px;
+  margin: 30px 0 0 20px;
   width: min-content;
 
   color: var(--header);
+
+  transition: var(--speed);
+
 }
 
 .skills-container {
@@ -51,7 +66,7 @@
   grid: auto auto auto / 1fr;
   row-gap: 80px;
 
-  padding-top: 40px;
+  padding-top: 100px;
 }
 
 .proficient-container,
@@ -64,6 +79,7 @@
   align-items: end;
 
   padding-bottom: 20px;
+  margin: 0 20px;
 }
 
 .skills figure img {
@@ -95,22 +111,28 @@
   .skills h2 {
     grid-row: 1;
     grid-column: 1 / 4;
+
     margin: 0 0 20px 20px;
+
+    transition: var(--speed);
+
   }
 }
 
 @media only screen and (max-width: 700px) {
   .skills .diag-line {
-    transform: skewY(-8deg) translateY(25px);
+    transform: skewY(-8deg) translateY(23px);
   }
 
   .skills h1 {
     padding: 0 3px 50px 3px;
     font-size: 30px;
+    transition: var(--speed);
   }
 
   .skills h2 {
     font-size: 22px;
+    transition: var(--speed);
   }
 
   .skills figure img {
@@ -118,9 +140,17 @@
     transform: scale(0.9);
   }
 
+  .skills p,
+  .skills .button,
+  .skills .outline {
+    font-size: 18px;
+    transition: var(--speed);
+  }
+
   .skills figcaption {
     padding-top: 15px;
     font-size: 18px;
+    transition: var(--speed);
   }
 }
 
@@ -128,21 +158,25 @@
   .skills {
     padding-bottom: 0;
   }
-  
+
+  .skills-container {
+    padding-top: 80px;
+    row-gap: 60px;
+  }
+
   .proficient-container,
   .competent-container,
   .capable-container {
-    grid: auto repeat(3, 1fr) / 1fr;
-    row-gap: 40px;
-    align-items: start;
+    column-gap: 0;
   }
 
   .skills h2 {
-    grid-row: 1;
-    grid-column: 1;
-    text-align: center;
-    margin: 0;
-    justify-self: center;
+    margin: 0 0 10px 20px;
+  }
+
+  .skills figure img {
+    transition: var(--speed);
+    transform: scale(0.8);
   }
 }
 
@@ -154,19 +188,29 @@
   .skills h1 {
     padding: 0 3px 50px 3px;
     font-size: 24px;
+    transition: var(--speed);
   }
 
   .skills h2 {
     font-size: 20px;
+    transition: var(--speed);
   }
 
   .skills figure img {
     transition: var(--speed);
-    transform: scale(0.8);
+    transform: scale(0.7);
+  }
+
+  .skills p,
+  .skills .button,
+  .skills .outline {
+    font-size: 16px;
+    transition: var(--speed);
   }
 
   .skills figcaption {
-    padding-top: 10px;
+    padding-top: 5px;
     font-size: 16px;
+    transition: var(--speed);
   }
 }
