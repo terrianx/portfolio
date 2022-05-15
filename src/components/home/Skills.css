@@ -58,7 +58,6 @@
   color: var(--header);
 
   transition: var(--speed);
-
 }
 
 .skills-container {
@@ -138,6 +137,10 @@
   .skills figure img {
     transition: var(--speed);
     transform: scale(0.9);
+  }
+
+  .skills p {
+    margin: 0 40px;
   }
 
   .skills p,
