@@ -15,15 +15,20 @@
 
 :root {
   --light: hsl(200, 0%, 88%);
+
   --btn: hsl(182, 47%, 58%);
+  --btn-light: hsla(182, 47%, 80%);
   --highlight: hsla(182, 47%, 58%, 60%);
+
   --clear: hsla(0, 0%, 0%, 0);
-  --dark-gray: hsl(220, 5%, 7%);
-  --med-gray: hsl(220, 5%, 9%);
-  --light-gray: hsl(0, 0%, 20%);
+  --black-gray: hsl(220, 15%, 7%);
+  --dark-gray: hsl(220, 15%, 10%);
+  --med-gray: hsl(220, 15%, 15%);
+  --light-gray: hsl(220, 10%, 50%);
+  --white-gray: hsl(220, 15%, 75%);
 
   --header: var(--light);
-  --text: var(--light);
+  --text: var(--white-gray);
   --line-height: 1.5;
 
   --speed: 150ms;
@@ -34,12 +39,12 @@
 /* text highlight color */
 ::selection {
   background-color: var(--highlight);
-  color: var(--text);
+  color: var(--light);
 }
 
 ::-moz-selection {
   background-color: var(--highlight);
-  color: var(--text);
+  color: var(--light);
 }
 
 ul {
@@ -88,7 +93,7 @@ main {
 
   width: 100%;
 
-  background-color: var(--dark-gray);
+  background-color: var(--black-gray);
 }
 
 /* ======================= */
@@ -105,10 +110,10 @@ main {
   width: 100%;
   max-width: 1200px;
 
-  background-color: black;
-  border-left: 1px solid white;
-  border-right: 1px solid white;
-  border-bottom: 1px solid white;
+  background-color: var(--dark-gray);
+  border-left: 1px solid var(--light-gray);
+  border-right: 1px solid var(--light-gray);
+  border-bottom: 1px solid var(--light-gray);
 }
 
 /* positions internal link destinations */
@@ -125,7 +130,7 @@ main {
   padding: 0.5px;
   width: 100%;
 
-  background-color: white;
+  background-color: var(--light-gray);
   
   transition: var(--speed);
   transform: skewY(-8deg);

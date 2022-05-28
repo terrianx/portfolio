@@ -17,7 +17,7 @@ header {
   margin: 0 100px;
   height: 100%;
 
-  color: white;
+  color: var(--text);
   
   transition: var(--speed);
   -webkit-transform:translate3d(0,0,0);
@@ -33,8 +33,6 @@ header {
   padding-left: 10px;
   margin-top: 40px;
   max-width: 450px;
-
-  color: var(--text);
   
   transition: var(--fade-speed);
 }
@@ -45,6 +43,7 @@ header {
 }
 
 .intro-container p {
+  color: var(--text);
   line-height: var(--line-height);
 }
 
@@ -56,7 +55,9 @@ header figure {
   align-self: center;
   justify-self: right;
   
-  filter: brightness(0.85);
+  background-color: var(--dark-gray);
+  background: radial-gradient(circle, hsl(0, 0%, 0%) 0%, hsla(0, 0%, 0%, 0) 50%);
+  filter: brightness(0.9);
 
   transition: var(--fade-speed);
   animation: fadeIn var(--fade-speed);

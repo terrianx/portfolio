@@ -7,7 +7,6 @@
 }
 
 .info p {
-  color: var(--text);
   line-height: var(--line-height);
 }
 

@@ -56,7 +56,7 @@
   right: -4px;
   z-index: 0;
 
-  background-color: var(--dark-gray);
+  background-color: var(--clear);
   color: var(--clear);
   border: 1px solid var(--btn);
 

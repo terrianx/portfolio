@@ -38,7 +38,7 @@
 
 /* on click indicator */
 .logo:active {
-  background-color: black;
+  background-color: var(--dark-gray);
   transition: var(--click-speed);
   transform: translate(3px, -3px);
 }

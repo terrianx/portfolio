@@ -24,7 +24,7 @@ footer {
 }
 
 .footer-name h1 {
-  font-size: 36px;
+  font-size: 32px;
 }
 
 footer h1 {
@@ -33,7 +33,7 @@ footer h1 {
 }
 
 footer li,
-.footer-name {
+.footer-name {  
   transition: var(--speed);
 }
 
@@ -51,10 +51,10 @@ footer li:hover,
 
 .footer-contact {
   width: max-content;
+  color: var(--light-gray);
   font-size: 16px;
 }
 
-.footer-contact:hover,
 .footer-contact-li:hover {
   color: var(--text);
   text-decoration: none;
@@ -69,6 +69,7 @@ footer li:active,
 footer .info {
   row-gap: 5px;
   padding-top: 5px;
+  color: var(--text);
 }
 
 /* all except last list item */
@@ -84,7 +85,7 @@ footer li:not(:last-child) {
   
   margin-top: 100px;
   
-  color: var(--light);
+  color: var(--text);
 }
 
 /* ============== */

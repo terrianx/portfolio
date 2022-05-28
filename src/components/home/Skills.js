@@ -1,6 +1,6 @@
 // ==========================================
 // COMPONENT: Skills section
-// OVERVIEW:  
+// OVERVIEW:  responsive tech icons layout for skills
 // USAGE:     HomePage
 // ==========================================
 

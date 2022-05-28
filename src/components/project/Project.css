@@ -105,7 +105,7 @@
   width: auto;
   height: auto;
 
-  border: 1px solid white;
+  border: 1px solid var(--light-gray);
 
   transition: var(--speed);
   transform: translate(10px, -10px);
@@ -117,12 +117,15 @@
 
   z-index: 4;
 
+  border: 1px solid var(--light-gray);
+
   transition: var(--fade-speed);
 }
 
 .img-container p {
   justify-self: right;
   margin-top: 10px;
+  color: var(--light-gray);
 }
 
 .project-buttons {

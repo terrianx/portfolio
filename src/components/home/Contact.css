@@ -52,12 +52,13 @@
 
 .contact-copy {
   padding-top: 30px;
-  color: var(--text);
+  color: var(--light-gray);
   font-size: 18px;
 }
 
 .contact .info {
   margin-top: 40px;
+  color: var(--text);
 }
 
 .contact .button-container {
