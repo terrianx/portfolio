@@ -20,7 +20,7 @@
   --btn-light: hsla(182, 47%, 80%);
   --highlight: hsla(182, 47%, 58%, 60%);
 
-  --clear: hsla(0, 0%, 0%, 0);
+  --clear: hsla(220, 15%, 7%, 0);
   --black-gray: hsl(220, 15%, 7%);
   --dark-gray: hsl(220, 15%, 10%);
   --med-gray: hsl(220, 15%, 15%);
@@ -114,6 +114,13 @@ main {
   border-left: 1px solid var(--light-gray);
   border-right: 1px solid var(--light-gray);
   border-bottom: 1px solid var(--light-gray);
+}
+
+@media only screen and (max-width: 1200px) {
+  .box-container {
+    border-left: none;
+    border-right: none;
+  }
 }
 
 /* positions internal link destinations */

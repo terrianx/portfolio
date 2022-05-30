@@ -10,9 +10,9 @@ import Button from '../button/Button';
 
 import './ProjectsPage.css';
 
-export default function Projects() {
+export default function ProjectsPage() {
   return (
-    <section className="projects">
+    <section className="projects-page">
 
       <Project title="FreshTea Website"
                 src="./assets/fresh-tea-0.webp"
@@ -22,7 +22,7 @@ export default function Projects() {
                 site="https://yu-xiao-boba-shop.netlify.app/"
                 code="https://github.com/ytxpk/boba-website"
                 tech="HTML, CSS, JS"
-                class="fresh-tea"
+                name="fresh-tea"
                 imgs="4">
         <p>I created this mock boba tea website to 
             gain working knowledge of front end web 
@@ -49,7 +49,7 @@ export default function Projects() {
                 site="https://yu-xiao-blue-air.netlify.app/"
                 code="https://github.com/ytxpk/blue-air-website"
                 tech="HTML, CSS, JS"
-                class="blue-air"
+                name="blue-air"
                 imgs="2">
         <p>A mock website meant for a business that delivers 
             fresh air. Elegance and mobile usability was 

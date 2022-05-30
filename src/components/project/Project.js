@@ -6,15 +6,11 @@
 // USAGE:     ProjectPage
 // ==========================================
 
-import { useState } from 'react';
+import Carousel from '../carousel/Carousel';
 
 import './Project.css';
 
 export default function Project(props) {
-  const [imgNum, setImgNum] = useState(0);
-
-  const imgs = props.imgs;
-
   return (
     <div className={props.class + " project"}>
       <span className="diag-line"></span>
@@ -28,24 +24,13 @@ export default function Project(props) {
                 height={props.height}>
           </span>
 
-          <img src={"./assets/" + props.class 
-                    + "-" + (imgNum % imgs) 
-                    + ".webp"} 
-               alt={props.alt} 
-               width={props.width}
-               height={props.height}/>
-
-          <div className="next-btn btn-r"
-               onClick={() => {setImgNum(
-                (imgNum + 1) % imgs)}}>
-              &rsaquo;
-          </div>
-
-          <div className="next-btn btn-l"
-               onClick={() => {setImgNum(
-                (imgNum + 2 * imgs - imgs - 1) % imgs)}}>
-              &lsaquo;
-          </div>
+          <Carousel component="project"
+                    name={props.name}
+                    alt={props.alt}
+                    width={props.width}
+                    height={props.height}
+                    imgs={props.imgs}>
+          </Carousel>
 
           <p>{props.tech}</p>
         </div>

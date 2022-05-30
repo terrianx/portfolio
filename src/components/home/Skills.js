@@ -28,21 +28,21 @@ export default function Skills() {
           <h2>Proficient</h2>
 
           <figure>
-              <img src="./assets/icon-cpp.webp"
+              <img src="./assets/icons/icon-cpp.webp"
                   alt="c/c++ icon"
                   width="70"/>
               <figcaption>C/C++</figcaption>
           </figure>
 
           <figure>
-            <img src="./assets/icon-html.webp"
+            <img src="./assets/icons/icon-html.webp"
                 alt="html icon"
                 width="70"/>
             <figcaption>HTML</figcaption>
           </figure>
 
           <figure>
-            <img src="./assets/icon-affinity.webp"
+            <img src="./assets/icons/icon-affinity.webp"
                 alt="affinity designer icon"
                 width="80"/>
             <figcaption className="multi-word">
@@ -56,21 +56,21 @@ export default function Skills() {
           <h2>Competent</h2>
 
           <figure>
-            <img src="./assets/icon-react.webp"
+            <img src="./assets/icons/icon-react.webp"
                 alt="react icon"
                 width="80"/>
             <figcaption>React</figcaption>
           </figure>
 
           <figure>
-            <img src="./assets/icon-css.webp"
+            <img src="./assets/icons/icon-css.webp"
                 alt="css icon"
                 width="70"/>
             <figcaption>CSS</figcaption>
           </figure>
 
           <figure>
-            <img src="./assets/icon-js.webp"
+            <img src="./assets/icons/icon-js.webp"
                 alt="javascript icon"
                 width="80"/>
             <figcaption>Javascript</figcaption>
@@ -82,14 +82,14 @@ export default function Skills() {
           <h2>Capable</h2>
 
           <figure>
-            <img src="./assets/icon-python.webp"
+            <img src="./assets/icons/icon-python.webp"
                 alt="python icon"
                 width="80"/>
             <figcaption>Python</figcaption>
           </figure>
 
           <figure>
-            <img src="./assets/icon-illustrator.webp"
+            <img src="./assets/icons/icon-illustrator.webp"
                 alt="adobe illustrator icon"
                 width="80"/>
             <figcaption className="multi-word">

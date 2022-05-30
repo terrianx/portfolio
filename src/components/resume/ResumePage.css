@@ -12,11 +12,10 @@
   justify-content: center;
   z-index: 4;
 
-  padding: 200px 0 300px 0;
+  padding: 200px 0;  
   width: 100%;
 
   background-color: var(--dark-gray);
-  color: var(--light);
 
   text-align: center;
   
@@ -31,8 +30,12 @@
 
 .resume h1 {
   z-index: 5;
+
   padding: 0 0 50px 5px;
+
   background-color: var(--dark-gray);
+  
+  color: var(--light);
 }
 
 .resume .button-container {

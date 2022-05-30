@@ -105,8 +105,8 @@ nav .button-container {
   width: 35px;
   height: 35px;
   
-  background-color: var(--dark-gray);
-  border: 1px solid var(--dark-gray);
+  background-color: var(--med-gray);
+  border: 1px solid var(--med-gray);
   border-radius: 50%;
   
   transition: var(--speed);
@@ -125,15 +125,15 @@ nav .button-container {
   width: 35px;
   height: 35px;
   
-  background-color: var(--dark-gray);
-  border: 1px solid var(--dark-gray);
+  background-color: var(--med-gray);
+  border: 1px solid var(--med-gray);
   border-radius: 50%;
 
   transition: var(--speed);
 }
 
 .nav-menu:hover > .nav-menu-btn {
-  background-color: var(--dark-gray);
+  background-color: var(--med-gray);
   border: 1px solid var(--light);
   
   transition: var(--speed);
@@ -206,6 +206,13 @@ nav .button-container {
 /* ============== */
 /* responsiveness */
 /* ============== */
+
+@media only screen and (max-width: 1200px) {
+  nav {
+    border-right: none;
+    border-left: none;
+  }
+}
 
 /* name disappears */
 @media only screen and (max-width: 950px) {

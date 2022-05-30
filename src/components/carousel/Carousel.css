@@ -1,0 +1,74 @@
+/* ========================== */
+/* Carousel component styling */
+/* ========================== */
+
+.carousel {
+  display: grid;
+  grid: 1fr / 1fr;
+  grid-row: 1;
+  grid-column: 1;
+
+  position: relative;
+}
+
+.carousel img {
+  grid-row: 1;
+  grid-column: 1;
+
+  z-index: 4;
+
+  border: 1px solid var(--light-gray);
+
+  transition: var(--fade-speed);
+}
+
+/* image carousel navigation */
+.next-btn {
+  grid-row: 1;
+  grid-column: 1;
+
+  align-self: center;
+  justify-items: center;
+  text-align: start;
+  z-index: 5;
+  
+  width: min-content;
+  height: min-content;
+
+  background-color: hsla(220, 5%, 7%, 60%);
+  color: white;
+  border-radius: 40px;
+  opacity: 0;
+  
+  font-size: 36px;
+  line-height: 100%;
+  
+  transition: var(--speed);
+  user-select: none;
+}
+
+/* on click indicator */
+.next-btn:active {
+  background-color: var(--dark-gray);
+  transition: var(--click-speed);
+}
+
+.btn-r {
+  justify-self: right;
+  padding: 5px 18px 10px 20px;
+  margin-right: 10px;
+}
+
+.btn-l {
+  justify-self: left;
+  padding: 5px 20px 10px 18px;
+  margin-left: 10px;
+}
+
+/* image carousel navigation buttons appear */
+.carousel img:hover ~ .next-btn,
+.next-btn:hover {
+  opacity: 1;
+  transition: var(--speed);
+  cursor: pointer;
+}

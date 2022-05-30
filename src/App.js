@@ -8,6 +8,7 @@ import Navbar from './components/nav/Navbar';
 import Home from './components/home/HomePage';
 import Resume from './components/resume/ResumePage';
 import Projects from './components/project/ProjectsPage';
+import Art from './components/art/ArtPage';
 import Footer from './components/footer/Footer';
 
 import './App.css';
@@ -25,6 +26,8 @@ export default function App() {
             <Route exact path="/resume"><Resume /></Route>
 
             <Route exact path="/projects"><Projects /></Route>
+
+            <Route exact path="/art"><Art /></Route>
 
           </Switch>
         </div>

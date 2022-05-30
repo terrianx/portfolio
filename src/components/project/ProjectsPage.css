@@ -1,8 +1,8 @@
 /* =============================== */
-/* Projects page component styling */
+/* projects page component styling */
 /* =============================== */
 
-.projects {
+.projects-page {
   display: grid;
   grid: auto auto auto / auto;
 
@@ -26,28 +26,28 @@
 /* ============== */
 
 @media only screen and (max-width: 700px) {
-  .projects p,
-  .projects .button,
-  .projects .outline {
+  .projects-page p,
+  .projects-page .button,
+  .projects-page .outline {
     font-size: 18px;
   }
 }
 
 @media only screen and (max-width: 520px) {
-  .projects {
+  .projects-page {
     padding-bottom: 100px;
   }
 }
 
 @media only screen and (max-width: 450px) {
-  .projects p {
+  .projects-page p {
     font-size: 16px;
   }
 }
 
 @media only screen and (max-width: 400px) {
-  .projects .button,
-  .projects .outline {
+  .projects-page .button,
+  .projects-page .outline {
     font-size: 16px;
   }
 }
