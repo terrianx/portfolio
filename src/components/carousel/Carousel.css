@@ -9,6 +9,8 @@
   grid-column: 1;
 
   position: relative;
+
+  width: min-content
 }
 
 .carousel img {
@@ -35,7 +37,7 @@
   width: min-content;
   height: min-content;
 
-  background-color: hsla(220, 5%, 7%, 60%);
+  background-color: hsla(220, 15%, 10%, 60%);
   color: white;
   border-radius: 40px;
   opacity: 0;
@@ -49,7 +51,7 @@
 
 /* on click indicator */
 .next-btn:active {
-  background-color: var(--dark-gray);
+  background-color: hsla(220, 35%, 15%, 80%);
   transition: var(--click-speed);
 }
 
@@ -71,4 +73,18 @@
   opacity: 1;
   transition: var(--speed);
   cursor: pointer;
+}
+
+@media only screen and (max-width: 520px) {
+  .next-btn {
+    transform: scale(0.7);
+  }
+
+  .btn-r {
+    margin-right: 5px;
+  }
+
+  .btn-l {
+    margin-left: 5px;
+  }
 }

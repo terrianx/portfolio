@@ -13,6 +13,9 @@ import './ProjectsPage.css';
 export default function ProjectsPage() {
   return (
     <section className="projects-page">
+      <span className="diag-line intro-diag"></span>
+
+      <h1 className="title">Projects</h1>
 
       <Project title="FreshTea Website"
                 src="./assets/fresh-tea-0.webp"

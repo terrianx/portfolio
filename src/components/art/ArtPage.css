@@ -5,6 +5,7 @@
 .art-page {
   display: grid;
   
+  justify-items: center;
   padding: 200px 0;
   width: 100%;
 
@@ -15,7 +16,10 @@
 
 .art-intro {
   display: grid;
+
   justify-items: center;
+
+  padding-bottom: 100px;
   width: 100%;
 }
 
@@ -42,4 +46,8 @@
   text-align: center;
   line-height: var(--line-height);
   color: var(--text);
+}
+
+.art-page .button-container {
+  margin-top: 100px;
 }

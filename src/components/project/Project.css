@@ -68,15 +68,12 @@
 
 .project-buttons {
   display: grid;
+  row-gap: 20px;
 
   align-content: center;
   justify-self: left;
 
-  padding-left: 20px;
-}
-
-.project .button-container {
-  padding: 10px 0;
+  padding-left: 30px;
 }
 
 .project-text-container {
@@ -221,18 +218,6 @@
 
   .img-container img {
     width: 450px;
-  }
-
-  .next-btn {
-    transform: scale(0.7);
-  }
-
-  .btn-r {
-    margin-right: 5px;
-  }
-
-  .btn-l {
-    margin-left: 5px;
   }
 }
 

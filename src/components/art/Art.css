@@ -1,0 +1,56 @@
+.art-img-container {
+  display: grid;
+  grid: auto / 400px;
+}
+
+.art-outline {
+  grid-row: 1;
+  grid-column: 1;
+
+  position: relative;
+  z-index: 2;
+
+  width: auto;
+  height: auto;
+
+  border: 1px solid var(--light-gray);
+
+  transition: var(--speed);
+  transform: translate(10px, -10px);
+}
+
+.art {
+  display: grid;
+  grid: repeat(3, auto) / 1fr;
+  column-gap: 100px;
+
+  justify-self: center;
+  padding: 50px 40px;
+  width: 100%;
+}
+
+.art-text-container {
+  display: grid;
+  row-gap: 20px;
+  justify-self: left;
+}
+
+.art-img-container {
+  grid-row: 1 / 4;
+  grid-column: 2;
+  justify-self: right;
+}
+
+.art h1 {
+  color: var(--light);
+}
+
+.art h2 {
+  color: var(--btn);
+}
+
+.art p {
+  max-width: 500px;
+  color: var(--text);
+  line-height: var(--line-height);
+}

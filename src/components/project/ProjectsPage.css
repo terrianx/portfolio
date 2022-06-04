@@ -4,13 +4,13 @@
 
 .projects-page {
   display: grid;
-  grid: auto auto auto / auto;
+  grid: repeat(5, auto) / auto;
 
   position: relative;
   justify-items: center;
   justify-self: center;
 
-  padding: 100px 0 200px 0;
+  padding: 200px 0;
   width: 100%;
   margin: 0 auto;
 
@@ -19,6 +19,22 @@
 
   animation: fadeIn var(--fade-speed);
   -webkit-animation: fadeIn var(--fade-speed);
+}
+
+.projects-page .intro-diag {
+  transform: skewY(8deg);
+}
+
+.projects-page .title {
+  z-index: 5;
+
+  padding: 0 3px 100px 3px;
+
+  background-color: var(--dark-gray);
+
+  color: var(--light);
+
+  transform: translateY(-25px);
 }
 
 /* ============== */
@@ -37,11 +53,21 @@
   .projects-page {
     padding-bottom: 100px;
   }
+
+  .projects-page .title {
+    font-size: 30px;
+    transform: translateY(-20px);
+  }
 }
 
 @media only screen and (max-width: 450px) {
   .projects-page p {
     font-size: 16px;
+  }
+
+  .projects-page .title {
+    padding: 0 1px 100px 1px;
+    font-size: 28px;
   }
 }
 
