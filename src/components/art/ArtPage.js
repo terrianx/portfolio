@@ -22,19 +22,25 @@ export default function ArtPage() {
 
       <div className="art-container">
         <Art name="astro"
-             imgs="3"
+             imgs="7"
              title="Astro Playing Cards"
              alt="Astro playing cards"
              tools="Affinity Designer, Adobe Illustrator"
              width="400px"
              height="auto">
-          Integer sapien nibh, 
-          egestas ut, cursus sit amet, 
-          faucibus a, sapien. 
-          Vestibulum purus purus, elementum ac, 
-          luctus ullamcorper, ornare vitae, massa. 
-          Nullam posuere sem ut mauris. Nullam velit. 
-          Quisque sodales. Donec
+            A fully custom designed deck
+            of poker sized playing cards
+            including an original tuck box
+            design. Each card has a unique face
+            and all share a back design
+            inspired by Michelangelo's
+            'The Creation of Adam'. This has been
+            my largest design project yet,
+            spanning the length of 1.5 years
+            from brainstorming to distribution
+            and taking nearly 300 hours to complete.
+            Contact me at txiaopk@gmail.com to
+            purchase a physical deck.
         </Art>
 
         <Art name="jelly"
@@ -44,13 +50,18 @@ export default function ArtPage() {
              tools="Affinity Designer"
              width="400px"
              height="auto">
-          Integer sapien nibh, 
-          egestas ut, cursus sit amet, 
-          faucibus a, sapien. 
-          Vestibulum purus purus, elementum ac, 
-          luctus ullamcorper, ornare vitae, massa. 
-          Nullam posuere sem ut mauris. Nullam velit. 
-          Quisque sodales. Donec
+            An aquatic illustration
+            of a mechanical jellyfish.
+            Note the dichotomy
+            between the soft nature of
+            natural jellyfish and the
+            fantastical hardness of
+            the metallic tentacles. 
+            One challenge I faced during
+            the illustration of 'Jelly 
+            Heart' was drawing the
+            organic and soft shape of
+            the jellyfish head.
         </Art>
 
         <Art name="samurai"
@@ -60,13 +71,17 @@ export default function ArtPage() {
              tools="Affinity Designer"
              width="400px"
              height="auto">
-          Integer sapien nibh, 
-          egestas ut, cursus sit amet, 
-          faucibus a, sapien. 
-          Vestibulum purus purus, elementum ac, 
-          luctus ullamcorper, ornare vitae, massa. 
-          Nullam posuere sem ut mauris. Nullam velit. 
-          Quisque sodales. Donec
+            The cybernetic head of an
+            ancient Japanese warrior. 
+            I followed several reference
+            helmets from museums to 
+            craft a fictional blend of
+            robotics and ancient culture.
+            The spine and wires trailing
+            out of the head was the most
+            complex section to illustrate,
+            given all the overlapping and
+            intertwining that I wanted to add.
         </Art>
 
         <Art name="jackal"
@@ -76,13 +91,15 @@ export default function ArtPage() {
              tools="Affinity Designer"
              width="400px"
              height="auto">
-          Integer sapien nibh, 
-          egestas ut, cursus sit amet, 
-          faucibus a, sapien. 
-          Vestibulum purus purus, elementum ac, 
-          luctus ullamcorper, ornare vitae, massa. 
-          Nullam posuere sem ut mauris. Nullam velit. 
-          Quisque sodales. Donec
+            Egyptian inspired face for
+            the Jack of Spades. A lesson
+            learned from designing this
+            was how to create a metallic
+            surface by using highlights
+            and overlays. This piece
+            would eventually inspire me
+            to create the Astro Playing
+            Cards deck.
         </Art>
 
         <Art name="koi"
@@ -92,13 +109,13 @@ export default function ArtPage() {
              tools="Affinity Designer"
              width="400px"
              height="auto">
-          Integer sapien nibh, 
-          egestas ut, cursus sit amet, 
-          faucibus a, sapien. 
-          Vestibulum purus purus, elementum ac, 
-          luctus ullamcorper, ornare vitae, massa. 
-          Nullam posuere sem ut mauris. Nullam velit. 
-          Quisque sodales. Donec
+            Another Japanese inspired
+            design. I focused heavily
+            on the choice of colors and
+            wanted a piece that would pop.
+            Much like other illustrations,
+            I blended robotic parts with
+            flesh.
         </Art>
 
         <Art name="whale"
@@ -108,13 +125,13 @@ export default function ArtPage() {
              tools="Affinity Designer"
              width="400px"
              height="auto">
-          Integer sapien nibh, 
-          egestas ut, cursus sit amet, 
-          faucibus a, sapien. 
-          Vestibulum purus purus, elementum ac, 
-          luctus ullamcorper, ornare vitae, massa. 
-          Nullam posuere sem ut mauris. Nullam velit. 
-          Quisque sodales. Donec
+            A whale with wooden body
+            parts. I wanted to learn
+            how to draw a new surface other
+            than metal. Figuring out
+            how to draw the grains and
+            patterns in wood was a
+            quite the challenge.
         </Art>
 
         <Art name="deer"
@@ -124,13 +141,11 @@ export default function ArtPage() {
              tools="Affinity Designer"
              width="400px"
              height="auto">
-          Integer sapien nibh, 
-          egestas ut, cursus sit amet, 
-          faucibus a, sapien. 
-          Vestibulum purus purus, elementum ac, 
-          luctus ullamcorper, ornare vitae, massa. 
-          Nullam posuere sem ut mauris. Nullam velit. 
-          Quisque sodales. Donec
+            A mechanical deer with
+            blooming flowers on its antlers.
+            I learned how to use colored
+            edge highlights to make
+            certain parts look more defined.
         </Art>
 
         <Art name="owl"
@@ -140,13 +155,12 @@ export default function ArtPage() {
              tools="Affinity Designer"
              width="400px"
              height="auto">
-          Integer sapien nibh, 
-          egestas ut, cursus sit amet, 
-          faucibus a, sapien. 
-          Vestibulum purus purus, elementum ac, 
-          luctus ullamcorper, ornare vitae, massa. 
-          Nullam posuere sem ut mauris. Nullam velit. 
-          Quisque sodales. Donec
+            A regal owl split to reveal
+            steam punk innards. This is my
+            first illustration using Affinity
+            Designer and I learned how to
+            digitally illustrate using 
+            layers, highlights, and shading.
         </Art>
       </div>
 
