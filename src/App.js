@@ -8,7 +8,7 @@ import Navbar from './components/nav/Navbar';
 import Home from './components/home/HomePage';
 import Resume from './components/resume/ResumePage';
 import Projects from './components/project/ProjectsPage';
-import Art from './components/art/ArtPage';
+import Gallery from './components/gallery/GalleryPage';
 import Footer from './components/footer/Footer';
 
 import './App.css';
@@ -27,7 +27,7 @@ export default function App() {
 
             <Route exact path="/projects"><Projects /></Route>
 
-            <Route exact path="/art"><Art /></Route>
+            <Route exact path="/gallery"><Gallery /></Route>
 
           </Switch>
         </div>

@@ -71,6 +71,7 @@
   background-color: var(--clear);
   border: 1px solid var(--light);
   border-radius: 24px;
+  box-shadow: 1px 1px 3px 0px var(--shadow);
   
   transform: translate(3px, -3px);
 }

@@ -1,32 +1,32 @@
 // ==========================================
-// COMPONENT: Art page
-// OVERVIEW:  
+// COMPONENT: Gallery page
+// OVERVIEW:  gallery view of all digital illustrations
 // USAGE:     App
 // ==========================================
 
 import Art from './Art';
 import Button from '../button/Button';
 
-import './ArtPage.css';
+import './GalleryPage.css';
 
-export default function ArtPage() {
+export default function GalleryPage() {
   return (
-    <section className="art-page">
-      <div className="art-intro">
+    <section className="gallery-page">
+      <div className="gallery-intro">
 
         <span className="diag-line"></span>
 
-        <h1>Art</h1>
+        <h1>Gallery</h1>
 
       </div>
 
-      <div className="art-container">
+      <div className="gallery-container">
         <Art name="astro"
              imgs="7"
              title="Astro Playing Cards"
              alt="Astro playing cards"
              tools="Affinity Designer, Adobe Illustrator"
-             width="400px"
+             width="450px"
              height="auto">
             A fully custom designed deck
             of poker sized playing cards
@@ -48,7 +48,7 @@ export default function ArtPage() {
              title="Jelly Heart"
              alt="Jelly heart illustration"
              tools="Affinity Designer"
-             width="400px"
+             width="450px"
              height="auto">
             An aquatic illustration
             of a mechanical jellyfish.
@@ -69,7 +69,7 @@ export default function ArtPage() {
              title="Samurai"
              alt="Samurai illustration"
              tools="Affinity Designer"
-             width="400px"
+             width="450px"
              height="auto">
             The cybernetic head of an
             ancient Japanese warrior. 
@@ -89,7 +89,7 @@ export default function ArtPage() {
              title="Jackal of Spades"
              alt="Jackal of spades illustration"
              tools="Affinity Designer"
-             width="400px"
+             width="450px"
              height="auto">
             Egyptian inspired face for
             the Jack of Spades. A lesson
@@ -107,7 +107,7 @@ export default function ArtPage() {
              title="Mech-koi"
              alt="Mech koi illustration"
              tools="Affinity Designer"
-             width="400px"
+             width="450px"
              height="auto">
             Another Japanese inspired
             design. I focused heavily
@@ -120,10 +120,10 @@ export default function ArtPage() {
 
         <Art name="whale"
              imgs="3"
-             title="Wooden"
+             title="Whale of Wood"
              alt="Wooden whale illustration"
              tools="Affinity Designer"
-             width="400px"
+             width="450px"
              height="auto">
             A whale with wooden body
             parts. I wanted to learn
@@ -139,7 +139,7 @@ export default function ArtPage() {
              title="Blossom"
              alt="Deer illustration"
              tools="Affinity Designer"
-             width="400px"
+             width="450px"
              height="auto">
             A mechanical deer with
             blooming flowers on its antlers.
@@ -150,10 +150,10 @@ export default function ArtPage() {
 
         <Art name="owl"
              imgs="3"
-             title="Owl"
+             title="Steampunk Wings"
              alt="Owl illustration"
              tools="Affinity Designer"
-             width="400px"
+             width="450px"
              height="auto">
             A regal owl split to reveal
             steam punk innards. This is my
@@ -164,7 +164,7 @@ export default function ArtPage() {
         </Art>
       </div>
 
-      <Button to="/art#">Back to Top</Button>
+      <Button to="/gallery#">Back to Top</Button>
 
     </section>
   );

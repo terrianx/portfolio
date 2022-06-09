@@ -15,7 +15,6 @@
   margin: 0 auto;
 
   background-color: var(--dark-gray);
-  color: var(--light);
 
   animation: fadeIn var(--fade-speed);
   -webkit-animation: fadeIn var(--fade-speed);
@@ -41,39 +40,18 @@
 /* responsiveness */
 /* ============== */
 
-@media only screen and (max-width: 700px) {
-  .projects-page p,
-  .projects-page .button,
-  .projects-page .outline {
-    font-size: 18px;
-  }
-}
-
-@media only screen and (max-width: 520px) {
+@media only screen and (max-width: 550px) {
   .projects-page {
     padding-bottom: 100px;
   }
 
   .projects-page .title {
-    font-size: 30px;
-    transform: translateY(-20px);
-  }
-}
-
-@media only screen and (max-width: 450px) {
-  .projects-page p {
-    font-size: 16px;
-  }
-
-  .projects-page .title {
-    padding: 0 1px 100px 1px;
-    font-size: 28px;
+    transform: translateY(-18px);
   }
 }
 
 @media only screen and (max-width: 400px) {
-  .projects-page .button,
-  .projects-page .outline {
-    font-size: 16px;
+  .projects-page .title {
+    padding: 0 1px 100px 1px;
   }
 }

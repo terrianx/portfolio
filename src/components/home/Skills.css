@@ -32,7 +32,6 @@
   padding: 0 5px 50px 5px;
 
   background-color: var(--dark-gray);;
-  color: var(--header);
 
   transition: var(--speed);
 }
@@ -41,10 +40,6 @@
   padding: 20px 0 40px 0;
   margin: 0 80px;
   max-width: 500px;
-
-  color: var(--text);
-
-  line-height: var(--line-height);
 
   transition: var(--speed);
 }
@@ -58,8 +53,6 @@
 
   margin: 30px 0 0 20px;
   width: min-content;
-
-  color: var(--text);
 
   transition: var(--speed);
 }
@@ -96,7 +89,7 @@
 
   color: var(--light-gray);
 
-  font-size: 20px;
+  font-size: 18px;
 
   transition: var(--speed);
 }
@@ -125,17 +118,11 @@
 
 @media only screen and (max-width: 700px) {
   .skills .diag-line {
-    transform: skewY(-8deg) translateY(23px);
+    transform: skewY(-8deg) translateY(20px);
   }
 
   .skills h1 {
     padding: 0 3px 50px 3px;
-    font-size: 30px;
-    transition: var(--speed);
-  }
-
-  .skills h2 {
-    font-size: 22px;
     transition: var(--speed);
   }
 
@@ -148,16 +135,9 @@
     margin: 0 40px;
   }
 
-  .skills p,
-  .skills .button,
-  .skills .outline {
-    font-size: 18px;
-    transition: var(--speed);
-  }
-
   .skills figcaption {
     padding-top: 15px;
-    font-size: 18px;
+    font-size: 16px;
     transition: var(--speed);
   }
 }
@@ -190,17 +170,11 @@
 
 @media only screen and (max-width: 400px) {
   .skills .diag-line {
-    transform: skewY(-8deg) translateY(20px);
+    transform: skewY(-8deg) translateY(18px);
   }
 
   .skills h1 {
     padding: 0 3px 50px 3px;
-    font-size: 24px;
-    transition: var(--speed);
-  }
-
-  .skills h2 {
-    font-size: 20px;
     transition: var(--speed);
   }
 
@@ -209,16 +183,8 @@
     transform: scale(0.7);
   }
 
-  .skills p,
-  .skills .button,
-  .skills .outline {
-    font-size: 16px;
-    transition: var(--speed);
-  }
-
   .skills figcaption {
     padding-top: 5px;
-    font-size: 16px;
     transition: var(--speed);
   }
 }

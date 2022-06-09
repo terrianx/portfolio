@@ -30,12 +30,8 @@
 
 .resume h1 {
   z-index: 5;
-
   padding: 0 0 50px 5px;
-
   background-color: var(--dark-gray);
-  
-  color: var(--light);
 }
 
 .resume .button-container {
@@ -61,7 +57,6 @@
 .resume-content-container p,
 .resume-content-container a {
   padding-top: 30px;
-  font-size: 24px;
 }
 
 .resume-pdf {
@@ -124,14 +119,6 @@
 
   .resume h1 {
     padding: 0 2px 20px 2px;
-    font-size: 30px;
-    transition: var(--speed);
-  }
-
-  .resume p,
-  .resume .button,
-  .resume .outline {
-    font-size: 18px;
     transition: var(--speed);
   }
 }
@@ -147,13 +134,6 @@
 
   .resume h1 {
     padding: 0 0 20px 2px;
-    font-size: 24px;
     transform: translateY(8px);
-  }
-
-  .resume p,
-  .resume .button,
-  .resume .outline {
-    font-size: 16px;
   }
 }

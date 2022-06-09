@@ -17,8 +17,6 @@ header {
   margin: 0 100px;
   height: 100%;
 
-  color: var(--text);
-  
   transition: var(--speed);
   -webkit-transform:translate3d(0,0,0);
   animation: fadeIn var(--fade-speed);
@@ -38,17 +36,7 @@ header {
 }
 
 .intro-container h1 {
-  color: var(--header);
   font-size: 44px;
-}
-
-.intro-container p {
-  color: var(--text);
-  line-height: var(--line-height);
-}
-
-.intro-container .button-container {
-  padding: 0;
 }
 
 header figure {
@@ -56,7 +44,7 @@ header figure {
   justify-self: right;
   
   background-color: var(--dark-gray);
-  background: radial-gradient(circle, hsl(0, 0%, 0%) 0%, hsla(0, 0%, 0%, 0) 50%);
+  background: radial-gradient(circle, hsl(220, 5%, 5%) 0%, hsla(220, 15%, 7%, 0) 50%);
   filter: brightness(0.9);
 
   transition: var(--fade-speed);
@@ -135,12 +123,6 @@ header img {
     width: max-content;
     font-size: 30px;
   }
-
-  header p,
-  header a,
-  header .outline {
-    font-size: 18px;
-  }
 }
 
 /* change to vertical layout */
@@ -199,11 +181,6 @@ header img {
     font-size: 24px;
   }
 
-  header p,
-  header a,
-  header .outline {
-    font-size: 16px;
-  }
 }
 
 /* vertical height responsiveness */

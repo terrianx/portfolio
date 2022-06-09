@@ -4,44 +4,32 @@
 
 .project {
   display: grid;
-
-  justify-items: center;
-  justify-self: center;
-
-  width: 100%;
-}
-
-.project .diag-line {
-  transform: skewY(8deg) translateY(140px);
-}
-
-.project-container {
-  display: grid;
-  grid: 200px repeat(3, min-content) / 700px min-content;
+  grid: repeat(3, min-content) / 700px min-content;
   grid-row-gap: 40px;
 
   justify-items: center;
   justify-self: center;
 
-  padding: 15px 0 200px 40px;
+  padding: 15px 0 100px 40px;
   width: min-content;
 
   transition: 0;
 }
 
-.project-container h1 {
+.project h1 {
   grid-row: 1;
   grid-column: 1 / 3;
 
   justify-self: left;
-  
-  transition: 0;
-  transform: rotate(8deg) translateY(48px);
 }
 
 .img-container {
   display: grid;
   grid: 1fr / 1fr;
+}
+
+.project img {
+  box-shadow: 2px 2px 5px 1px var(--shadow);
 }
 
 .img-outline {
@@ -55,6 +43,7 @@
   height: auto;
 
   border: 1px solid var(--light-gray);
+  box-shadow: 2px 2px 5px 1px var(--shadow);
 
   transition: var(--speed);
   transform: translate(10px, -10px);
@@ -83,14 +72,10 @@
 
 .project-text-container p {
   padding-bottom: 20px;
-  color: var(--text);
-  line-height: var(--line-height);
 }
 
 .project-text-container li {
   padding-left: 20px;
-  color: var(--text);
-  line-height: var(--line-height);
 }
 
 /* ============== */
@@ -99,8 +84,8 @@
 
 /* project and code buttons shift below images */
 @media only screen and (max-width: 1000px) {
-  .project-container {
-    grid: 200px repeat(4, min-content) / min-content;
+  .project {
+    grid: repeat(4, min-content) / min-content;
     margin-left: -120px;
     transition: 0;
   }
@@ -123,45 +108,25 @@
   }
 }
 
-/* smoothens shifting layout */
-@media only screen and (max-width: 910px) {
-  .project-container {
-    transition: var(--speed);
-  }
-}
-
 @media only screen and (max-width: 900px) {
-  .project-container {
+  .project {
     margin-left: -80px;
     transition: var(--speed);
-  }
-
-  .project h1 {
-    transform: rotate(8deg) translateY(50px);
   }
 }
 
 @media only screen and (max-width: 850px) {
-  .project-container {
+  .project {
     margin-left: -50px;
     transition: var(--speed);
-  }
-
-  .project h1 {
-    transform: rotate(8deg) translateY(53px);
   }
 }
 
 @media only screen and (max-width: 800px) {
-  .project-container {
+  .project {
     padding-left: 0;
     margin-left: 0;
-    
     transition: var(--speed);
-  }
-
-  .project h1 {
-    transform: rotate(8deg) translateY(60px);
   }
 
   .img-container img {
@@ -170,34 +135,16 @@
 }
 
 @media only screen and (max-width: 700px) {
-  .project h1 {
-    transform: rotate(8deg) translateY(65px);
-  }
-
   .img-container img {
     width: 550px;
-  }
-
-  .project li {
-    font-size: 18px;
   }
 }
 
 @media only screen and (max-width: 620px) {
-  .project-container {
+  .project {
     padding-right: 10px;
     padding-bottom: 100px;
     transform: scale(0.9);
-  }
-
-  .project h1 {
-    transition: var(--speed);
-    transform: rotate(8deg) translateY(80px);
-  }
-
-  .project .diag-line {
-    transition: var(--speed);
-    transform: skewY(8deg) translateY(195px);
   }
 
   .img-container img {
@@ -206,14 +153,8 @@
 }
 
 @media only screen and (max-width: 520px) {
-  .project-container {
+  .project {
     padding-bottom: 50px;
-  }
-
-  .project h1 {
-    font-size: 30px;
-    transition: var(--speed);
-    transform: rotate(8deg) translateY(90px);
   }
 
   .img-container img {
@@ -222,27 +163,12 @@
 }
 
 @media only screen and (max-width: 450px) {
-  .project h1 {
-    font-size: 28px;
-    transition: var(--speed);
-    transform: rotate(8deg) translateY(88px);
-  }
-
   .img-container img {
     width: 400px;
-  }
-
-  .project li {
-    font-size: 16px;
   }
 }
 
 @media only screen and (max-width: 400px) {
-  .project h1 {
-    transition: var(--speed);
-    transform: rotate(8deg) translateY(102px);
-  }
-
   .img-container img {
     width: 350px;
   }

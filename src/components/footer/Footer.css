@@ -19,31 +19,23 @@ footer {
   grid: 1fr 1fr / repeat(4, 1fr);
 
   justify-items: left;
-
-  color: var(--text);
 }
 
 .footer-name h1 {
   font-size: 32px;
-}
-
-footer h1 {
   margin-bottom: 20px;
-  font-size: 24px;
 }
 
-footer li,
-.footer-name {  
-  transition: var(--speed);
+footer h2 {
+  margin-bottom: 20px;
 }
 
 footer li {
   width: min-content;
-  color: var(--text);
 }
 
-footer li:hover,
-.footer-name:hover {
+footer .link:hover,
+.footer-name h1:hover {
   color: var(--btn);
   text-decoration: underline;
   transition: var(--speed);
@@ -60,7 +52,7 @@ footer li:hover,
   text-decoration: none;
 }
 
-footer li:active,
+footer .link:active,
 .footer-name:active {
   color: var(--light);
   transition: var(--speed);
@@ -69,7 +61,6 @@ footer li:active,
 footer .info {
   row-gap: 5px;
   padding-top: 5px;
-  color: var(--text);
 }
 
 /* all except last list item */
@@ -84,8 +75,6 @@ footer li:not(:last-child) {
   justify-self: center;
   
   margin-top: 100px;
-  
-  color: var(--text);
 }
 
 /* ============== */
@@ -117,6 +106,10 @@ footer li:not(:last-child) {
     justify-self: left;
   }
 
+  .footer-name h1 {
+    font-size: 28px;
+  }
+
   .copyright {
     grid-column: 1 / 4;
   }
@@ -139,27 +132,22 @@ footer li:not(:last-child) {
     justify-self: center;
   }
 
-  footer h1 {
-    font-size: 22px;
-  }
-  
-  .footer-name h1 {
-    font-size: 24px;
-  }
-
   .footer-name,
   .copyright {
     grid-column: 1;
   }
+
+  .footer-name h1 {
+    font-size: 24px;
+  }
   
-  .copyright {
-    margin-top: 50px;
+  footer p,
+  footer .link {
+    font-size: 16px;
   }
 
-  footer li,
-  footer .info p,
-  footer p,
-  footer a {
+  .copyright p {
+    margin-top: 50px;
     font-size: 16px;
   }
 

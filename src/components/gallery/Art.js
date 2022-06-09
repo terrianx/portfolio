@@ -1,7 +1,7 @@
 // ==========================================
 // COMPONENT: Art component
-// OVERVIEW:  
-// USAGE:     ArtPage
+// OVERVIEW:  carousel of digital illustrations
+// USAGE:     GalleryPage
 // ==========================================
 
 import Carousel from '../carousel/Carousel';

@@ -20,34 +20,37 @@ export default function Footer() {
         <Link to="/#" className="footer-name"><h1>Yu Xiao</h1></Link>
 
         <div className="footer-item">
-          <h1>Links</h1>
+          <h2>Links</h2>
           <ul>
             <li><Link to="/#" className="link">Home</Link></li>
             <li><Link to="/#about" className="link">About</Link></li>
             <li><Link to="/resume#" className="link">Resume</Link></li>
             <li><Link to="/projects#" className="link">Projects</Link></li>
-            <li><Link to="/art#" className="link">Art</Link></li>
+            <li><Link to="/gallery#" className="link">Gallery</Link></li>
           </ul>
         </div>
 
         <div className="footer-item">
-          <h1>Social</h1>
+          <h2>Social</h2>
           <ul>
             <li><a href="https://github.com/ytxpk" 
-                    target="_blank"
-                    rel="noreferrer">GitHub</a></li>
+                   target="_blank"
+                   rel="noreferrer"
+                   className="link">GitHub</a></li>
             <li><a href="https://www.linkedin.com/in/yuxiao8/" 
-                    target="_blank"
-                    rel="noreferrer">LinkedIn</a></li>
+                   target="_blank"
+                   rel="noreferrer"
+                   className="link">LinkedIn</a></li>
           </ul>
         </div>
 
         <div className="footer-item">
-          <h1>Contact</h1>
+          <h2>Contact</h2>
           <ul>
             <li className="footer-contact-li">
               {!activeClipboard ? <></>
-              : <p className="footer-contact">&lt;Click to copy info&gt;</p>}</li>
+              : <p className="footer-contact">&lt;Click to copy info&gt;</p>}
+            </li>
           </ul>
           <ContactInfo />
         </div>

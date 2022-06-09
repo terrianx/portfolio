@@ -31,9 +31,8 @@ export default function About() {
           and doing independent projects.
         </p>
 
-        <Button to="/resume#">Resume</Button>
-
         <Button to="/projects#">Projects</Button>
+        <Button to="/gallery#">Gallery</Button>
 
       </div>
 

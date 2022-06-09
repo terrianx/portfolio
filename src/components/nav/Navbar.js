@@ -9,7 +9,7 @@
 import { useState, useEffect } from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
 import Logo from './Logo';
-import Button from "../button/Button";
+import Button from '../button/Button';
 import Social from '../contact/Social';
 import throttle from 'lodash.throttle'
 
@@ -70,7 +70,7 @@ export default function Navbar() {
         <Link to="/#about" className="link">About</Link>
         <Link to="/resume#" className="link">Resume</Link>
         <Link to="/projects#" className="link">Projects</Link>
-        <Link to="/art#" className="link">Art</Link>
+        <Link to="/gallery#" className="link">Gallery</Link>
       </div>
 
       <div className="nav-buttons">

@@ -62,7 +62,6 @@
   padding: 0 0px 50px 5px;
 
   background-color: var(--dark-gray);;
-  color: var(--header);
 
   transition: var(--speed);
 }
@@ -70,10 +69,6 @@
 .about p {
   padding-bottom: 20px;
   max-width: 500px;
-
-  color: var(--text);
-
-  line-height: var(--line-height);
 
   transition: var(--speed);
 }
@@ -92,18 +87,16 @@
   }
 
   .about .diag-line {
-    transform: skewY(-8deg) translateY(42px);
+    transform: skewY(-8deg) translateY(40px);
   }
 
   .about h1 {
-    font-size: 30px;
     transition: var(--speed);
   }
 
   .about p,
   .about .button,
   .about .outline {
-    font-size: 18px;
     transition: var(--speed);
   }
 
@@ -112,26 +105,16 @@
   }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 550px) {
   .about .fade-box {
     height: 250px;
   }
 
-  .about h1 {
-    font-size: 24px;
-  }
-
   .about .diag-line {
-    transform: skewY(-8deg) translateY(38px);
+    transform: skewY(-8deg) translateY(37px);
   }
   
   .about-container {
     padding-bottom: 100px;
-  }
-
-  .about p,
-  .about .button,
-  .about .outline {
-    font-size: 16px;
   }
 }
