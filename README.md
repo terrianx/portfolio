@@ -32,17 +32,18 @@ Hi! This is my personal website that acts as a digital portfolio for all my proj
 
 ### Google Lighthouse Optimizing
 * Performance
-  * 97 in lighthouse audit
+  * 80 mobile / 90-100 desktop
+  * Maximum performance on wide screen
   * I optimized this by using a `.webp` format for images
   * Further improvements was using throttling from `lodash.throttle` for the navigation bar using an event listener
     * Instead of updating the state for every exact change in size, updating happens every 700ms
 * Accessibility
-  * 89 in lighthouse audit
+  * 100 mobile / 100 desktop
   * Added `alt` properties for all images
 * Best Practices
-  * 100 in lighthouse audit
+  * 100 mobile / 100 desktop
 * SEO
-  * 100 in lighthouse audit
+  * 100 mobile / 100 desktop
 
 ### Dark Theme UI
 * Use of elevation
