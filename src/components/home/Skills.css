@@ -80,6 +80,7 @@
 
 .skills figure img {
   filter: brightness(0.9);
+  
   transition: var(--speed);
   transform: scale(0.9);
 }

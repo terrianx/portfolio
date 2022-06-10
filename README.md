@@ -1,7 +1,7 @@
 # My Portfolio Website
 
 ## Intro - [Link to Website](https://yu-xiao-portfolio.netlify.app/)
-Hi! This is my personal website that acts as a digital portfolio for all my projects, resume, and illustrations. I built this responsive multipage website from scratch using `React.js`, `HTML`, and `CSS`. Creating this was an amazing learning experience to develop my front end skills.
+Hi! This is my personal website that acts as a digital portfolio for all my projects, resume, and illustrations. I built this responsive multipage website from scratch using `React.js`, `HTML`, and `CSS`. Creating this was an amazing learning experience to develop my front end skills. Hosted by [Netlify](https://www.netlify.com/).
 
 
 ## What I Learned
@@ -31,19 +31,46 @@ Hi! This is my personal website that acts as a digital portfolio for all my proj
   * Sometimes using an open source component did not have the customization that I wanted, leading me to create my own original ones
 
 ### Google Lighthouse Optimizing
-* Throttling
+* Performance
+  * 97 in lighthouse audit
+  * I optimized this by using a `.webp` format for images
+  * Further improvements was using throttling from `lodash.throttle` for the navigation bar using an event listener
+    * Instead of updating the state for every exact change in size, updating happens every 700ms
+* Accessibility
+  * 89 in lighthouse audit
+  * Added `alt` properties for all images
+* Best Practices
+  * 100 in lighthouse audit
+* SEO
+  * 100 in lighthouse audit
 
 ### Dark Theme UI
 * Use of elevation
-* Color on dark backgrounds
+  * Added subtle drop shadows for better contrast and distinction of elements
+  * 'Higher' elements are lighter, as if closer to a light source
+  * Higher priority text is lighter
+* Color
+  * Avoided pure whites and pure blacks for better readability
+  * Reduced brightness of saturated and vibrant colors to reduce eye strain
 
 ### UX Principles
 * Back to top buttons
-* `alt` properties for images
+  * Improves user navigation
+* Button interaction indicators
+  * Lets users know exactly when something has been clicked
+  * Paired with hover effects
+    * Translations or appearance of auxiliary elements are used to better indicate when an element is being hovered
+    * Helps users with color blindness
 * PDF viewer incompatability messages
+  * View and download options allow user to view resume even when PDF viewer is not available
+  * Informative error message that leads users to other options when viewer unavailable
+* Mobile design
+  * Every page and component is optimized for mobile use on top of desktop use
+  * Tighter spacing and appropriate font size for smaller screens
+  * Landscape mode was considered and supported
 
 
-## Pages
+## Website Pages
 
 ### Home - [Link](https://yu-xiao-portfolio.netlify.app/)
 * Features a header section with image randomizer
@@ -51,6 +78,7 @@ Hi! This is my personal website that acts as a digital portfolio for all my proj
   * All accent colors change on click
 * Internal and external links to other pages and social media
 * Contact section with click to copy information feature
+  * Auto selects info for user on click as well in case clipboard is not available
 
 ### Resume - [Link](https://yu-xiao-portfolio.netlify.app/resume)
 * Includes a PDF viewer of my resume
@@ -61,6 +89,7 @@ Hi! This is my personal website that acts as a digital portfolio for all my proj
 * Description and screenshots of my previous web projects
   * Uses custom built carousel component for project images
   * Responsive layout
+  * Links to live sites and Github repository
 
 ### Gallery - [Link](https://yu-xiao-portfolio.netlify.app/gallery)
 * Description and images of digital illustrations

@@ -17,6 +17,7 @@ export default function Social() {
           target="_blank"
           rel="noreferrer"
           name="github link">
+          <span>Github</span>
         </a>
 
         <p className="social-outline"></p>
@@ -28,6 +29,7 @@ export default function Social() {
           target="_blank"
           rel="noreferrer"
           name="linkedin link">
+          <span>LinkedIn</span>
         </a>
 
         <p className="social-outline"></p>

@@ -26,7 +26,7 @@
   --black-gray: hsl(220, 15%, 7%);
   --dark-gray: hsl(220, 15%, 10%);
   --med-gray: hsl(220, 15%, 15%);
-  --light-gray: hsl(220, 10%, 50%);
+  --light-gray: hsl(220, 20%, 60%);
   --white-gray: hsl(220, 15%, 75%);
 
   --header: var(--light);

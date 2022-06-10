@@ -59,6 +59,10 @@
   transform: translate(2px, -2px);
 }
 
+.social-button span {
+  display: none;
+}
+
 .social-outline {
   grid-row: 1;
   grid-column: 1;

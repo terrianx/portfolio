@@ -79,6 +79,7 @@ header figure:hover {
 }
 
 header img {
+  width: 500px;
   transition: var(--speed);
 }
 
