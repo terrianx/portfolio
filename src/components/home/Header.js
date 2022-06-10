@@ -56,7 +56,6 @@ export default function Header() {
         </p>
 
         <Social />
-
         <Button to="/#contact">Contact</Button>
 
       </div>
