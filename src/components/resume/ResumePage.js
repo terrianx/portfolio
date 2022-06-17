@@ -20,7 +20,8 @@ export default function Resume() {
                    + "Applied Computational Machine Learning, "
                    + "Introduction to Computer Organization, "
                    + "Discrete Mathematics, "
-                   + "Technical Communication";
+                   + "Technical Communication, "
+                   + "Codepath";
 
   return (
     <section className="resume-page">
@@ -69,7 +70,7 @@ export default function Resume() {
             <h2>SKILLS</h2>
             <SpanText title="Proficient">C/C++, HTML, Affinity Designer</SpanText>
             <SpanText title="Competent">React, CSS, JavaScript, Java, Git</SpanText>
-            <SpanText title="Capable">Python, MATLAB, Julia, Adobe Illustrator</SpanText>
+            <SpanText title="Capable">Python, MATLAB, Adobe Illustrator</SpanText>
           </section>
 
           <section className="resume-content-section">

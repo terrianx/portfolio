@@ -76,10 +76,6 @@ nav .link:active {
   align-items: center;
 }
 
-nav .button-container {
-  padding: 0;
-}
-
 /* mobile nav hamburger menu open state */
 .nav-menu-show {
   transition: var(--speed) ease;

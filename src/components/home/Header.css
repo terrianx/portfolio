@@ -24,9 +24,11 @@ header {
 }
 
 .intro-container {
+  display: grid;
+  grid: repeat(4, min-content) / 1fr;
+  
   align-self: center;
   justify-self: left;
-  justify-content: left;
 
   padding-left: 10px;
   margin-top: 40px;
@@ -37,6 +39,10 @@ header {
 
 .intro-container h1 {
   font-size: 44px;
+}
+
+.intro-container .social-container {
+  justify-self: left;
 }
 
 header figure {
@@ -156,11 +162,15 @@ header img {
     padding: 0 10px;
     margin: 0;
   }
+
+  .intro-container .social-container {
+    justify-self: center;
+  }
 }
 
 @media only screen and (max-width: 500px) {
   header img {
-    max-width: 340px;
+    max-width: 320px;
     height: auto;
     transition: var(--speed);
   }
@@ -219,7 +229,7 @@ header img {
 @media only screen and (min-width: 820px) 
                    and (max-height: 600px) {
   header img {
-    width: 320px;
+    width: 300px;
     height: auto;
     transition: var(--speed);
   }
