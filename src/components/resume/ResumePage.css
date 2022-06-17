@@ -2,9 +2,9 @@
 /* Resume page component styling */
 /* ============================= */
 
-.resume {
+.resume-page {
   display: grid;
-  grid: repeat(4, min-content) / 1fr;
+  grid: repeat(5, auto) / 1fr;
   grid-row-gap: 20px;
 
   position: relative;
@@ -12,7 +12,7 @@
   justify-content: center;
   z-index: 4;
 
-  padding: 200px 0;  
+  padding: 200px 0;
   width: 100%;
 
   background-color: var(--dark-gray);
@@ -24,116 +24,148 @@
   -webkit-animation: fadeIn var(--fade-speed);
 }
 
-.resume .diag-line {
-  transform: skewY(-8deg) translateY(45px);
-}
-
-.resume h1 {
+.resume-page .title {
   z-index: 5;
   padding: 0 0 50px 5px;
   background-color: var(--dark-gray);
-}
 
-.resume .button-container {
-  padding: 0;
+  transform: translateY(-48px);
+  transition: var(--speed);
 }
 
 .resume-content-container {
+  margin: 40px 0 100px 0;
+  padding: 0 40px;
+  max-width: 1000px;
+
+  transition: var(--speed);
+}
+
+.resume-content {
   display: grid;
+  row-gap: 20px;
 
-  justify-items: center;
+  padding: 40px;
 
-  margin-top: 20px;
-  width: 100%;
-  max-width: 810px;
-  height: 1045px;
-  
-  border: 1px solid var(--light);
-  filter: brightness(0.9);
+  background-color: var(--med-gray);
+  border: 1px solid var(--light-gray);
+  box-shadow: 0 0 5px 2px var(--shadow);
+  color: var(--text);
 
   transition: var(--speed);
 }
 
-.resume-content-container p,
-.resume-content-container a {
-  padding-top: 30px;
+.resume-content h1 {
+  font-size: 24px;
 }
 
-.resume-pdf {
-  display: block;
+.resume-content h2,
+.resume-content h3,
+.resume-content h4,
+.resume-content p,
+.resume-content a,
+.resume-content li {
+  font-size: 16px;
+}
 
-  justify-self: center;
+.resume-content h1,
+.resume-content h2 {
+  font-weight: 700;
+}
 
+.resume-content h2 {
   width: 100%;
-  height: 100%;
-
-  transition: var(--speed);
+  text-align: left;
+  border-bottom: 1px solid var(--light-gray);
 }
 
-.resume-img {
-  display: none;
+/* header */
+.resume-content-head span{
+  display: grid;
+  grid: min-content / repeat(3, min-content);
+  justify-content: center;
+}
+
+.resume-content-section {
+  display: grid;
+  justify-self: left;
+  text-align: left;
+  width: 100%;
+}
+
+.resume-content-block {
+  padding-bottom: 20px;
 }
 
 /* ============== */
 /* responsiveness */
 /* ============== */
 
-@media only screen and (min-width: 1600px) {
-  .resume-content-container {
-    max-width: 1000px;
-  }
-}
-
-@media only screen and (max-width: 1000px) {
-  .resume-content-container {
-    padding-left: 0;
-    transition: var(--speed);
-    transform: scale(0.85) translateY(-80px);
-  }
-}
-
 /* resume switches from pdf to image */
+@media only screen and (max-width: 900px) {
+  .resume-content-container {
+    padding: 0 20px;
+    transition: var(--speed);
+  }
+
+  .resume-content {
+    padding: 40px 20px;
+    transition: var(--speed);
+  }
+}
+
 @media only screen and (max-width: 700px) {
-  .resume {
+  .resume-page {
     padding: 200px 0 100px 0;
   }
 
-  .resume .diag-line {
-    transform: skewY(-8deg) translateY(42px);
-  }
-
-  .resume-content-container {
-    padding: 5px;
-    margin-top: 40px;
-    width: 100%;
-    height: min-content;
-  }
-
-  .resume-pdf {
-    display: none;
-  }
-
-  .resume-img {
-    display: block;
-  }
-
-  .resume h1 {
+  .resume-page .title {
     padding: 0 2px 20px 2px;
+    transform: translateY(-42px);
     transition: var(--speed);
+  }
+
+  .resume-content h1 {
+    font-size: 20px;
+  }
+
+  .resume-content h2,
+  .resume-content h3,
+  .resume-content h4,
+  .resume-content p,
+  .resume-content a,
+  .resume-content li {
+    font-size: 14px;
   }
 }
 
-@media only screen and (max-width: 400px) {
-  .resume .diag-line {
-    transform: skewY(-8deg) translateY(46px);
+@media only screen and (max-width: 550px) {
+  .resume-page .title {
+    transform: translateY(-40px);
+    transition: var(--speed);
   }
 
   .resume-content-container {
     padding: 0;
+    transition: var(--speed);
   }
 
-  .resume h1 {
-    padding: 0 0 20px 2px;
-    transform: translateY(8px);
+  .resume-content {
+    padding: 40px 10px;
+    border-left: none;
+    border-right: none;
+  }
+
+  .resume-content h1 {
+    font-size: 18px;
+  }
+
+  .resume-content h2,
+  .resume-content h3,
+  .resume-content h4,
+  .resume-content p,
+  .resume-content a,
+  .resume-content li {
+    font-size: 12px;
   }
 }

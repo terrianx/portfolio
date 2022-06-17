@@ -70,14 +70,6 @@
   grid: repeat(2, min-content) / 1fr;
 }
 
-.project-text-container p {
-  padding-bottom: 20px;
-}
-
-.project-text-container li {
-  padding-left: 20px;
-}
-
 /* ============== */
 /* responsiveness */
 /* ============== */

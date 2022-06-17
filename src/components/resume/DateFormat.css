@@ -1,0 +1,14 @@
+.date-format {
+  display: grid;
+  grid: min-content / auto auto;
+  width: 100%;
+  font-style: italic;
+}
+
+.date-format-title {
+  justify-self: left;
+}
+
+.date-format-date {
+  justify-self: right;
+}

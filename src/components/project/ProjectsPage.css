@@ -36,6 +36,10 @@
   transform: translateY(-25px);
 }
 
+.projects-page .features {
+  padding: 20px 0;
+}
+
 /* ============== */
 /* responsiveness */
 /* ============== */

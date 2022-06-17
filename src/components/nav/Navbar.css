@@ -162,7 +162,7 @@ nav .button-container {
 
   width: 22px;
 
-  transform: rotate(45deg) translate(0.5px, -1.5px);
+  transform: rotate(45deg) translate(0, -1.5px);
 }
 
 /* bot-left to top-right of 'x' icon */

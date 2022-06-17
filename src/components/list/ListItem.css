@@ -1,0 +1,9 @@
+.list-item {
+  display: grid;
+  grid: min-content / min-content auto;
+  padding: 0;
+}
+
+.bullet {
+  padding: 0 20px;
+}

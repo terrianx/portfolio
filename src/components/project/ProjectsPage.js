@@ -7,6 +7,7 @@
 
 import Project from './Project';
 import Button from '../button/Button';
+import ListItem from '../list/ListItem';
 
 import './ProjectsPage.css';
 
@@ -35,12 +36,12 @@ export default function ProjectsPage() {
             HTML and CSS. Later, I learned and added JS to improve
             functionality and interactivity.
         </p>
+        <p className="features">Features</p>
         <ul>
-          <p>Features</p>
-            <li>- &nbsp; Browser size responsiveness</li>
-            <li>- &nbsp; Customer review system</li>
-            <li>- &nbsp; Interactive menu with drinks, toppings, and options</li>
-            <li>- &nbsp; Cart system to store user order</li>
+          <ListItem>Browser size responsiveness</ListItem>
+          <ListItem>Customer review system</ListItem>
+          <ListItem>Interactive menu with drinks, toppings, and options</ListItem>
+          <ListItem>Cart system to store user order</ListItem>
         </ul>
       </Project>
 
@@ -61,11 +62,11 @@ export default function ProjectsPage() {
             principles in addition to JS tools such as
             intersection observer.
         </p>
+        <p className="features">Features</p>
         <ul>
-          <p>Features</p>
-            <li>- &nbsp; Animated links</li>
-            <li>- &nbsp; Fade in home page image</li>
-            <li>- &nbsp; Mobile responsiveness with hamburger menu</li>
+          <ListItem>Animated links</ListItem>
+          <ListItem>Fade in home page image</ListItem>
+          <ListItem>Mobile responsiveness with hamburger menu</ListItem>
         </ul>
       </Project>
 
