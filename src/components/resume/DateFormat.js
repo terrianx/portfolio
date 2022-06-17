@@ -1,3 +1,9 @@
+// ==========================================
+// COMPONENT: Date format
+// OVERVIEW:  Custom resume position and date format
+// USAGE:     ResumePage
+// ==========================================
+
 import './DateFormat.css';
 
 export default function DateFormat(props) {

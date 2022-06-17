@@ -1,3 +1,10 @@
+// ==========================================
+// COMPONENT: List item
+// OVERVIEW:  Custom bulleted list item
+// USAGE:     ProjectPage,
+//            ResumePage
+// ==========================================
+
 import './ListItem.css';
 
 export default function ListItem(props) {

@@ -1,3 +1,7 @@
+/* =========================== */
+/* List item component styling */
+/* =========================== */
+
 .list-item {
   display: grid;
   grid: min-content / min-content auto;

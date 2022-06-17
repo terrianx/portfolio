@@ -6,7 +6,7 @@ footer {
   justify-content: center;
   z-index: 3;
 
-  padding: 0 200px 100px 200px;
+  padding: 0 200px 60px 200px;
   margin: 0 auto;
   width: 100%;
   max-width: 1200px;
@@ -72,9 +72,10 @@ footer li:not(:last-child) {
 .copyright {
   grid-column: 1 / 5;
 
+  align-self: center;
   justify-self: center;
   
-  margin-top: 100px;
+  margin-top: 60px;
 }
 
 /* ============== */
@@ -118,11 +119,11 @@ footer li:not(:last-child) {
 /* list view of items */
 @media only screen and (max-width: 550px) {
   footer {
-    padding: 0 60px 100px 60px;
+    padding: 0 60px 60px 60px;
   }
 
   .footer-container {
-    grid: repeat(5, auto) / 1fr;
+    grid: repeat(5, min-content) / 1fr;
     grid-row-gap: 40px;
     justify-items: center;
   }
@@ -146,8 +147,10 @@ footer li:not(:last-child) {
     font-size: 16px;
   }
 
+  .copyright {
+    margin-top: 40px;
+  }
   .copyright p {
-    margin-top: 50px;
     font-size: 16px;
   }
 

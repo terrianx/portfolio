@@ -1,3 +1,7 @@
+/* =========================== */
+/* Span text component styling */
+/* =========================== */
+
 .span-text {
   display: grid;
   grid: min-content / repeat(3, auto);
