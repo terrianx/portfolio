@@ -1,6 +1,6 @@
 # My Portfolio Website
 
-## Intro - [Link to Website](https://yu-xiao-portfolio.netlify.app/)
+## Intro - [Link to Website](https://yuxiao.netlify.app/)
 Hi! This is my personal website that acts as a digital portfolio for all my projects, resume, and illustrations. I built this responsive multipage website from scratch using `React.js`, `HTML`, and `CSS`. Creating this was an amazing learning experience to develop my front end skills. Hosted by [Netlify](https://www.netlify.com/).
 
 
@@ -73,7 +73,7 @@ Hi! This is my personal website that acts as a digital portfolio for all my proj
 
 ## Website Pages
 
-### Home - [Link](https://yu-xiao-portfolio.netlify.app/)
+### Home - [Link](https://yuxiao.netlify.app/)
 * Features a header section with image randomizer
   * Click on the image to change
   * All accent colors change on click
@@ -81,18 +81,18 @@ Hi! This is my personal website that acts as a digital portfolio for all my proj
 * Contact section with click to copy information feature
   * Auto selects info for user on click as well in case clipboard is not available
 
-### Resume - [Link](https://yu-xiao-portfolio.netlify.app/resume)
+### Resume - [Link](https://yuxiao.netlify.app/resume)
 * Includes a PDF viewer of my resume
   * Responsive to browser resizing
   * View in Google Docs or download
 
-### Projects - [Link](https://yu-xiao-portfolio.netlify.app/projects)
+### Projects - [Link](https://yuxiao.netlify.app/projects)
 * Description and screenshots of my previous web projects
   * Uses custom built carousel component for project images
   * Responsive layout
   * Links to live sites and Github repository
 
-### Gallery - [Link](https://yu-xiao-portfolio.netlify.app/gallery)
+### Gallery - [Link](https://yuxiao.netlify.app/gallery)
 * Description and images of digital illustrations
   * Uses custom built carousel component for gallery images
   * Responsive layout
