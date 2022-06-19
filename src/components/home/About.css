@@ -2,27 +2,9 @@
 /* About component styling */
 /* ======================= */
 
-/* creates header fade effect */
-.fade-box {
-  display: block;
-
-  position: relative;
-  z-index: 3;
-
-  height: 350px;
-  width: 100%;
-
-  background-image: linear-gradient(var(--clear), var(--dark-gray));
-
-  transition: var(--speed);
-  -ms-transform: translate3d(0, 0, 0);
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-}
-
 .about {
   display: grid;
-  grid: repeat(3, min-content) / 1fr;
+  grid: repeat(4, min-content) / 1fr;
 
   position: relative;
   justify-content: center;
@@ -33,48 +15,82 @@
   transition: var(--speed);
   -ms-transform: translate3d(0, 0, 0);
   -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0) translateY(300px);
+}
+
+/* creates header fade effect */
+.fade-box {
+  display: block;
+
+  position: relative;
+
+  height: 250px;
+  width: 100%;
+
+  background-image: linear-gradient(var(--clear), var(--dark-gray));
+
+  pointer-events: none;
+
+  transition: var(--speed);
+  -ms-transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0) skewY(-8deg) translateY(-199px);
+}
+
+.cover-box {
+  position: relative;
+  height: 200px;
+  top: 340px;
+  background-color: var(--dark-gray);
 }
 
 .about .diag-line {
-  transform: skewY(-8deg) translateY(47px);
+  transform: skewY(-8deg) translateY(15px);
+}
+
+.about-skew-container {
+  display: grid;
+  background-color: var(--dark-gray);
+  padding-bottom: 200px;
+  transform: skewY(-8deg) translateY(-400px);
 }
 
 .about-container {
   display: grid;
-  grid: repeat(6, min-content) / 1fr;
-  row-gap: 20px;
+  grid: repeat(5, min-content) / 1fr;
 
   justify-items: center;
   justify-self: center;
   text-align: center;
 
-  padding: 0 0 200px 0;
   margin: 0 80px;
   width: 100%;
 
-  background-color: var(--dark-gray);;
+  transform: skewY(8deg);
 }
 
 .about h1 {
+  position: relative;
   z-index: 5;
 
-  padding: 0 0px 50px 5px;
+  padding: 0 0 70px 3px;
+  line-height: 0.6;
 
-  background-color: var(--dark-gray);;
+  background-color: var(--dark-gray);
 
   transition: var(--speed);
 }
 
 .about p {
-  padding-bottom: 20px;
+  padding: 20px 0;
   max-width: 500px;
 
   transition: var(--speed);
 }
 
-.about .button {
+.about .button-container {
   justify-self: center;
+  padding-top: 20px;
 }
 
 /* ============== */
@@ -82,12 +98,16 @@
 /* ============== */
 
 @media only screen and (max-width: 700px) {
-  .about .fade-box {
-    height: 300px;
+  .fade-box {
+    height: 200px;
+  }
+
+  .cover-box {
+    top: 320px;
   }
 
   .about .diag-line {
-    transform: skewY(-8deg) translateY(40px);
+    transform: skewY(-8deg) translateY(12px);
   }
 
   .about h1 {
@@ -106,15 +126,11 @@
 }
 
 @media only screen and (max-width: 550px) {
-  .about .fade-box {
-    height: 250px;
+  .fade-box {
+    height: 150px;
   }
 
   .about .diag-line {
-    transform: skewY(-8deg) translateY(37px);
-  }
-  
-  .about-container {
-    padding-bottom: 100px;
+    transform: skewY(-8deg) translateY(10px);
   }
 }
