@@ -22,13 +22,9 @@ export default function App() {
         <div className="box-container">
           <Switch>
             <Route exact path="/"><Home /></Route>
-
             <Route exact path="/resume"><Resume /></Route>
-
             <Route exact path="/projects"><Projects /></Route>
-
             <Route exact path="/gallery"><Gallery /></Route>
-
           </Switch>
         </div>
 

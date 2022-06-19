@@ -32,7 +32,7 @@ Hi! This is my personal website that acts as a digital portfolio for all my proj
 
 ### Google Lighthouse Optimizing
 * Performance
-  * 80 mobile / 90-100 desktop
+  * 89 mobile / 90-100 desktop
   * Maximum performance on wide screen
   * I optimized this by using a `.webp` format for images
   * Further improvements was using throttling from `lodash.throttle` for the navigation bar using an event listener
@@ -40,6 +40,7 @@ Hi! This is my personal website that acts as a digital portfolio for all my proj
 * Accessibility
   * 100 mobile / 100 desktop
   * Added `alt` properties for all images
+  * Use of semantic `HTML`
 * Best Practices
   * 100 mobile / 100 desktop
 * SEO
@@ -62,9 +63,9 @@ Hi! This is my personal website that acts as a digital portfolio for all my proj
   * Paired with hover effects
     * Translations or appearance of auxiliary elements are used to better indicate when an element is being hovered
     * Helps users with color blindness
-* PDF viewer incompatability messages
-  * View and download options allow user to view resume even when PDF viewer is not available
-  * Informative error message that leads users to other options when viewer unavailable
+* Resume viewer
+  * Custom built resume component vs PDF for better accessibility and responsiveness
+  * Easier to view and use on mobile than embedded PDF
 * Mobile design
   * Every page and component is optimized for mobile use on top of desktop use
   * Tighter spacing and appropriate font size for smaller screens
@@ -81,10 +82,15 @@ Hi! This is my personal website that acts as a digital portfolio for all my proj
 * Contact section with click to copy information feature
   * Auto selects info for user on click as well in case clipboard is not available
 
+![Screenshot of home page](./screenshots/home.png)
+
 ### Resume - [Link](https://yuxiao.netlify.app/resume)
-* Includes a PDF viewer of my resume
+* Includes a custom viewer of my resume
   * Responsive to browser resizing
+  * Accessible on any browser or device vs embedded PDF
   * View in Google Docs or download
+
+![Screenshot of resume page](./screenshots/resume.png)
 
 ### Projects - [Link](https://yuxiao.netlify.app/projects)
 * Description and screenshots of my previous web projects
@@ -92,10 +98,14 @@ Hi! This is my personal website that acts as a digital portfolio for all my proj
   * Responsive layout
   * Links to live sites and Github repository
 
+![Screenshot of projects page](./screenshots/projects.png)
+
 ### Gallery - [Link](https://yuxiao.netlify.app/gallery)
 * Description and images of digital illustrations
   * Uses custom built carousel component for gallery images
   * Responsive layout
+
+![Screenshot of gallery page](./screenshots/gallery.png)
 
 ---
 © Yu Xiao 2022. All rights reserved.

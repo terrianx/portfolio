@@ -22,13 +22,15 @@ export default function About() {
 
         <h1>About Me</h1>
 
-        <p>I'm a self-learner from Greater
-          Boston with a mindset of making the world 
-          a better place. I have experience in
-          programming, front-end development,
-          and graphic design studying computer
-          science at the University of Michigan
-          and doing independent projects.
+        <p>
+          I'm a computer science student studying
+          at the University of Michigan from the
+          Greater Boston area. My hope
+          is to make our world a safer and more
+          beautiful place to live in. I 
+          enjoy programming, illustrating,
+          board games, and hiking. Explore my 
+          projects and art at the links below.
         </p>
 
         <Button to="/projects#">Projects</Button>
