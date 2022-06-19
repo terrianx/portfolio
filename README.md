@@ -108,4 +108,4 @@ Hi! This is my personal website that acts as a digital portfolio for all my proj
 ![Screenshot of gallery page](./screenshots/gallery.png)
 
 ---
-© Yu Xiao 2022. All rights reserved.
+© Yu Xiao 2022. All rights reserved.  

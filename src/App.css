@@ -15,6 +15,7 @@ html {
   font-family: 'Red Hat Display', sans-serif;
 
   scroll-behavior: smooth;
+  scrollbar-color: hsl(220, 15%, 35%) hsl(220, 15%, 20%);
 }
 
 :root {
@@ -51,6 +52,23 @@ html {
 ::-moz-selection {
   background-color: var(--highlight);
   color: var(--light);
+}
+
+/* custom scrollbar */
+::-webkit-scrollbar {
+  background: var(--light);
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(220, 15%, 20%);
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(220, 15%, 35%);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(220, 15%, 45%);
 }
 
 ul {
