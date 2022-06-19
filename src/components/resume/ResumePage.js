@@ -50,7 +50,8 @@ export default function Resume() {
                 yuxiao.netlify.app
               </a>
               <p>&nbsp;-&nbsp;</p>
-              <a href="https://linkedin.com/in/yuxiao8" 
+              <a className="multi-word"
+                href="https://linkedin.com/in/yuxiao8" 
                 target="_blank"
                 rel="noreferrer">
                 linkedin.com/in/yuxiao8
