@@ -6,7 +6,7 @@ Hi! This is my personal website that acts as a digital portfolio for all my proj
 
 ## What I Learned
 
-### React.js
+### 1. React.js
 * `useState` and `useEffect`
   * I use these hooks in many components and learned how they are used in different contexts
   * Header section with random hero illustration
@@ -30,7 +30,7 @@ Hi! This is my personal website that acts as a digital portfolio for all my proj
   * I learned about exporting and importing different components - both custom and open source
   * Sometimes using an open source component did not have the customization that I wanted, leading me to create my own original ones
 
-### Google Lighthouse Optimizing
+### 2. Google Lighthouse Optimizing
 * Performance
   * 89 mobile / 90-100 desktop
   * Maximum performance on wide screen
@@ -46,7 +46,7 @@ Hi! This is my personal website that acts as a digital portfolio for all my proj
 * SEO
   * 100 mobile / 100 desktop
 
-### Dark Theme UI
+### 3. Dark Theme UI
 * Use of elevation
   * Added subtle drop shadows for better contrast and distinction of elements
   * 'Higher' elements are lighter, as if closer to a light source
@@ -55,7 +55,7 @@ Hi! This is my personal website that acts as a digital portfolio for all my proj
   * Avoided pure whites and pure blacks for better readability
   * Reduced brightness of saturated and vibrant colors to reduce eye strain
 
-### UX Principles
+### 4. UX Principles
 * Back to top buttons
   * Improves user navigation
 * Button interaction indicators
