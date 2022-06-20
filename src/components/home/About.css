@@ -13,9 +13,9 @@
   width: 100%;
 
   transition: var(--speed);
-  -ms-transform: translate3d(0, 0, 0);
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0) translateY(300px);
+  -ms-transform: translate3d(0, 300px, 0);
+  -webkit-transform: translate3d(0, 300px, 0);
+  transform: translate3d(0, 300px, 0);
 }
 
 /* creates header fade effect */
@@ -38,6 +38,7 @@
 }
 
 .cover-box {
+  display: block;
   position: relative;
   height: 200px;
   top: 340px;
