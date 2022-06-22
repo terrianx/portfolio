@@ -16,11 +16,9 @@ export default function About() {
       <div className="fade-box"></div>
       <div className="cover-box"></div>
 
-      <span className="anchor" id="about"></span>
-
       <div className="about-skew-container">
         <div className="about-container">
-          <span className="diag-line"></span>
+          <span className="diag-line" id="about"></span>
 
           <h1>About Me</h1>
 

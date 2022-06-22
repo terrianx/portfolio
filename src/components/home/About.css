@@ -4,7 +4,7 @@
 
 .about {
   display: grid;
-  grid: repeat(4, min-content) / 1fr;
+  grid: repeat(3, min-content) / 1fr;
 
   position: relative;
   justify-content: center;
@@ -31,7 +31,6 @@
 
   pointer-events: none;
 
-  transition: var(--speed);
   -ms-transform: translate3d(0, 0, 0);
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0) skewY(-8deg) translateY(-199px);
@@ -86,7 +85,6 @@
   padding: 20px 0;
   max-width: 500px;
 
-  transition: var(--speed);
 }
 
 .about .button-container {
@@ -104,7 +102,7 @@
   }
 
   .cover-box {
-    top: 320px;
+    top: 300px;
   }
 
   .about .diag-line {
@@ -115,7 +113,6 @@
     transition: var(--speed);
   }
 
-  .about p,
   .about .button,
   .about .outline {
     transition: var(--speed);
@@ -131,7 +128,21 @@
     height: 150px;
   }
 
+  .cover-box {
+    top: 220px;
+  }
+
+  .about-skew-container {
+    padding-bottom: 100px;
+  }
+
   .about .diag-line {
     transform: skewY(-8deg) translateY(10px);
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .cover-box {
+    top: 250px;
   }
 }
