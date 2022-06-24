@@ -6,7 +6,6 @@
   display: grid;
   grid: min-content / auto auto;
   width: 100%;
-  font-style: italic;
 }
 
 .date-format-title {

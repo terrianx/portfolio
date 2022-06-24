@@ -61,7 +61,7 @@
 
 .resume-content h2,
 .resume-content h3,
-.resume-content h4,
+.resume-content em,
 .resume-content p,
 .resume-content a,
 .resume-content li {
@@ -131,7 +131,7 @@
 
   .resume-content h2,
   .resume-content h3,
-  .resume-content h4,
+  .resume-content em,
   .resume-content p,
   .resume-content a,
   .resume-content li {
@@ -162,7 +162,7 @@
 
   .resume-content h2,
   .resume-content h3,
-  .resume-content h4,
+  .resume-content em,
   .resume-content p,
   .resume-content a,
   .resume-content li {
