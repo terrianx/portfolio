@@ -11,7 +11,7 @@ header {
   align-items: center;
   align-content: center;
   justify-self: center;
-  top: 20px;
+  top: 10px;
   z-index: 2;
 
   margin: 0 100px;
@@ -48,7 +48,7 @@ header {
 header figure {
   align-self: center;
   justify-self: right;
-  
+    
   background-color: var(--dark-gray);
   background: radial-gradient(circle, hsl(220, 5%, 5%) 0%, hsla(220, 15%, 7%, 0) 50%);
   filter: brightness(0.9);
@@ -134,10 +134,10 @@ header img {
 
 /* change to vertical layout */
 @media only screen and (max-width: 700px),
-            screen and (orientation: portrait)  {
+            screen and (orientation: portrait) {
   header {
-    grid: min-content min-content / 1fr;
-    padding-top: 40px;
+    grid: 50vh auto / 1fr;
+    padding-top: 60px;
   }
 
   header figure {
@@ -169,6 +169,11 @@ header img {
 }
 
 @media only screen and (max-width: 500px) {
+  header {
+    grid: min-content min-content / 1fr;
+    padding-top: 60px;
+  }
+
   header img {
     max-width: 320px;
     height: auto;
@@ -239,8 +244,7 @@ header img {
 @media only screen and (min-width: 600px)
                    and (min-height: 900px)
                    and (orientation: portrait) {
-  header {
-    margin: 100px;
-    transform: scale(1.2);
+  header img {
+    transform: scale(1.25);
   }
 }
