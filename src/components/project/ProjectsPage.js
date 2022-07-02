@@ -18,6 +18,33 @@ export default function ProjectsPage() {
 
       <h1 className="title">Projects</h1>
 
+      <Project title="Portfolio Website"
+                src="./assets/portfolio-0.webp"
+                width="700px"
+                height="auto"
+                alt="FreshTea Website page"
+                site="https://yuxiao.netlify.app/"
+                code="https://github.com/ytxpk/portfolio"
+                tech="React, HTML, CSS"
+                name="portfolio"
+                imgs="4">
+        <p>This is my personal website that acts as a digital 
+           portfolio for all my projects, resume, and illustrations. 
+           I built this responsive multipage website from scratch 
+           using React.js, HTML, and CSS. Creating this was an amazing 
+           learning experience to develop my front end skills. Read more
+           about what I learned in the README on my Github.
+        </p>
+        <p className="features">Features</p>
+        <ul>
+          <ListItem>Mobile, tablet, and browser responsiveness</ListItem>
+          <ListItem>Header section with image randomizer</ListItem>
+          <ListItem>Click to copy contact info</ListItem>
+          <ListItem>Custom resume viewer for enhanced mobile and tablet accessibility</ListItem>
+          <ListItem>Image carousel for projects and gallery</ListItem>
+        </ul>
+      </Project>
+
       <Project title="FreshTea Website"
                 src="./assets/fresh-tea-0.webp"
                 width="700px"

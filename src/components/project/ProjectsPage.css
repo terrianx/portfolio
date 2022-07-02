@@ -4,7 +4,7 @@
 
 .projects-page {
   display: grid;
-  grid: repeat(5, auto) / auto;
+  grid: repeat(6, auto) / auto;
 
   position: relative;
   justify-items: center;
