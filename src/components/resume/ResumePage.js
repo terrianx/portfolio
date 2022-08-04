@@ -17,11 +17,11 @@ export default function Resume() {
   const docsLink = "https://docs.google.com/document/d/1CpQL-_v7v3_YCdxQXRoP112ybwPCpTEqIaEqMFjr8qk/edit?usp=sharing";
   const degree = "Bachelor of Science in Engineering in Computer Science";
   const coursework = "Data Structures and Algorithms, "
-                   + "Applied Computational Machine Learning, "
-                   + "Introduction to Computer Organization, "
+                   + "Web Systems, "
+                   + "Computer Organization, "
                    + "Discrete Mathematics, "
                    + "Technical Communication, "
-                   + "Codepath";
+                   + "Codepath Software Engineering";
 
   return (
     <section className="resume-page">
@@ -80,9 +80,9 @@ export default function Resume() {
               <h3>Mathworks, Natick MA</h3>
               <DateFormat title="EDG Software Engineering Intern">May 2022 - August 2022</DateFormat>
               <ul>
-                <ListItem>Implemented [PROJECT] to improve runtime performance for MATLAB and SimuLink [PRODUCT] by XX% using C++</ListItem>
-                <ListItem>Designed custom unit tests to follow test driven development philosophy and ensure program effectiveness</ListItem>
-                <ListItem>Conducted unit, integration, and system tests to validate [PRODUCT] robustness and performance</ListItem>
+                <ListItem>Implemented compiler optimizations to improve runtime performance for MATLAB and SimuLink code generation by using C++</ListItem>
+                <ListItem>Designed custom unit tests to follow test driven development practices and ensure program effectiveness</ListItem>
+                <ListItem>Conducted unit, integration, and system tests to validate compiler transform robustness and performance</ListItem>
                 <ListItem>Communicated progress in biweekly team meetings using AGILE methodology to align and review project updates</ListItem>
               </ul>
             </div>
@@ -121,7 +121,7 @@ export default function Resume() {
 
             <div className="resume-content-block">
               <h3>Independent Front-end Development</h3>
-              <DateFormat title="Personal Website">November 2021 - Present</DateFormat>
+              <DateFormat title="Personal Website">November 2021 - July 2022</DateFormat>
               <ul>
                 <ListItem>Created multi-page responsive personal portfolio website with mobile friendly design using React, HTML, CSS</ListItem>
                 <ListItem>Constructed wireframes and mockups of interfaces to scope and design UI / UX using Affinity Designer</ListItem>
