@@ -24,6 +24,7 @@ footer {
 .footer-name h1 {
   font-size: 32px;
   margin-bottom: 20px;
+  width: min-content;
 }
 
 footer h2 {
@@ -109,6 +110,7 @@ footer li:not(:last-child) {
 
   .footer-name h1 {
     font-size: 28px;
+    width: max-content;
   }
 
   .copyright {

@@ -106,10 +106,6 @@ header img {
 }
 
 @media only screen and (max-width: 900px) {
-  .intro-container h1 {
-    min-width: 180px;
-  }
-
   header img {
     width: 380px;
     transition: var(--speed);

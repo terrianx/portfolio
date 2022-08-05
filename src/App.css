@@ -176,7 +176,7 @@ main {
 
 /* no line break */
 .multi-word {
-  width: max-content;
+  white-space: nowrap;
 }
 
 /* ========== */
