@@ -38,23 +38,23 @@ export default function Resume() {
       <div className="resume-content-container">
         <div className="resume-content">
           <section className="resume-content-head">
-            <h1>Yu Xiao</h1>
+            <h1>Terrian Xiao</h1>
 
             <p>978-888-8886 - txiaopk@gmail.com - Greater Boston, MA</p>
 
             <span>
               <a className="multi-word"
-                href="https://yuxiao.netlify.app" 
+                href="https://terrianx.netlify.app" 
                 target="_blank"
                 rel="noreferrer">
-                yuxiao.netlify.app
+                terrianx.netlify.app
               </a>
               <p>&nbsp;-&nbsp;</p>
               <a className="multi-word"
-                href="https://linkedin.com/in/yuxiao8" 
+                href="https://linkedin.com/in/terrianx" 
                 target="_blank"
                 rel="noreferrer">
-                linkedin.com/in/yuxiao8
+                linkedin.com/in/terrianx
               </a>
             </span>
           </section>

@@ -23,7 +23,7 @@ export default function ProjectsPage() {
                 width="700px"
                 height="auto"
                 alt="FreshTea Website page"
-                site="https://yuxiao.netlify.app/"
+                site="https://terrianx.netlify.app/"
                 code="https://github.com/ytxpk/portfolio"
                 tech="React, HTML, CSS"
                 name="portfolio"

@@ -24,7 +24,7 @@ export default function Social() {
 
       <div className="social-button">
         <a className="fa fa-linkedin"
-          href="https://www.linkedin.com/in/yuxiao8/" 
+          href="https://www.linkedin.com/in/terrianx/" 
           target="_blank"
           rel="noreferrer"
           aria-label="LinkedIn Link">

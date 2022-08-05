@@ -16,12 +16,12 @@ export default function Logo() {
         <Link to="/#">
           <div className="button-container">
             <img src="./assets/sig.webp" 
-                alt="Yu Xiao signature" 
+                alt="Terrian Xiao signature" 
                 height="20px"
                 width="40px" 
                 className="logo"/>
             <img src="./assets/sig.webp" 
-                alt="Yu Xiao signature outline" 
+                alt="Terrian Xiao signature outline" 
                 height="20px" 
                 width="40px"
                 className="outline logo-outline"/>

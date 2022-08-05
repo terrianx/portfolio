@@ -47,7 +47,7 @@ export default function Header() {
   return (
     <header>
       <div className="intro-container">
-        <h1>Hi, I'm Yu Xiao.</h1>
+        <h1>Hi, I'm Terrian Xiao.</h1>
 
         <p>
           A curious programmer and artist 

@@ -62,7 +62,7 @@ export default function Navbar() {
 
       <div className="nav-name-container">
         <Logo />
-        <Link to="/#" className="link name">Yu Xiao</Link>
+        <Link to="/#" className="link name">Terrian Xiao</Link>
       </div>
 
       <div className="nav-links-container">

@@ -17,7 +17,7 @@ export default function Footer() {
   return (
     <footer>
       <div className="footer-container">
-        <Link to="/#" className="footer-name"><h1>Yu Xiao</h1></Link>
+        <Link to="/#" className="footer-name"><h1>Terrian Xiao</h1></Link>
 
         <div className="footer-item">
           <h2>Links</h2>
@@ -37,7 +37,7 @@ export default function Footer() {
                    target="_blank"
                    rel="noreferrer"
                    className="link">GitHub</a></li>
-            <li><a href="https://www.linkedin.com/in/yuxiao8/" 
+            <li><a href="https://www.linkedin.com/in/terrianx/" 
                    target="_blank"
                    rel="noreferrer"
                    className="link">LinkedIn</a></li>
@@ -55,7 +55,7 @@ export default function Footer() {
           <ContactInfo />
         </div>
 
-        <p className="copyright">© Yu Xiao 2022. All rights reserved.</p>
+        <p className="copyright">© Terrian Xiao 2022. All rights reserved.</p>
 
       </div>
     </footer>
