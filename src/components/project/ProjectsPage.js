@@ -46,14 +46,14 @@ export default function ProjectsPage() {
       </Project>
 
       <Project title="FreshTea Website"
-                src="./assets/fresh-tea-0.webp"
+                src="./assets/freshtea-0.webp"
                 width="700px"
                 height="auto"
                 alt="FreshTea Website page"
                 site="https://freshtea.netlify.app/"
-                code="https://github.com/ytxpk/boba-website"
+                code="https://github.com/ytxpk/freshtea"
                 tech="HTML, CSS, JS"
-                name="fresh-tea"
+                name="freshtea"
                 imgs="4">
         <p>I created this mock boba tea website to 
             gain working knowledge of front end web 
@@ -73,14 +73,14 @@ export default function ProjectsPage() {
       </Project>
 
       <Project title="BlueAir Website"
-                src="./assets/blue-air-0.webp"
+                src="./assets/blueair-0.webp"
                 width="700px"
                 height="auto"
                 alt="Blue Website page"
                 site="https://blueair.netlify.app/"
-                code="https://github.com/ytxpk/blue-air-website"
+                code="https://github.com/ytxpk/blueair"
                 tech="HTML, CSS, JS"
-                name="blue-air"
+                name="blueair"
                 imgs="2">
         <p>A mock website meant for a business that delivers 
             fresh air. Elegance and mobile usability was 
