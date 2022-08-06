@@ -24,7 +24,7 @@ export default function ProjectsPage() {
                 height="auto"
                 alt="FreshTea Website page"
                 site="https://terrianx.netlify.app/"
-                code="https://github.com/ytxpk/portfolio"
+                code="https://github.com/terrianx/portfolio"
                 tech="React, HTML, CSS"
                 name="portfolio"
                 imgs="4">
@@ -51,7 +51,7 @@ export default function ProjectsPage() {
                 height="auto"
                 alt="FreshTea Website page"
                 site="https://freshtea.netlify.app/"
-                code="https://github.com/ytxpk/freshtea"
+                code="https://github.com/terrianx/freshtea"
                 tech="HTML, CSS, JS"
                 name="freshtea"
                 imgs="4">
@@ -78,7 +78,7 @@ export default function ProjectsPage() {
                 height="auto"
                 alt="Blue Website page"
                 site="https://blueair.netlify.app/"
-                code="https://github.com/ytxpk/blueair"
+                code="https://github.com/terrianx/blueair"
                 tech="HTML, CSS, JS"
                 name="blueair"
                 imgs="2">

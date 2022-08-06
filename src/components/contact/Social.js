@@ -13,7 +13,7 @@ export default function Social() {
     <div className="social-container">
       <div className="social-button">
         <a className="fa fa-github"
-          href="https://github.com/ytxpk" 
+          href="https://github.com/terrianx" 
           target="_blank"
           rel="noreferrer"
           aria-label="Github link">

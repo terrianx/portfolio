@@ -33,7 +33,7 @@ export default function Footer() {
         <div className="footer-item">
           <h2>Social</h2>
           <ul>
-            <li><a href="https://github.com/ytxpk" 
+            <li><a href="https://github.com/terrianx" 
                    target="_blank"
                    rel="noreferrer"
                    className="link">GitHub</a></li>
