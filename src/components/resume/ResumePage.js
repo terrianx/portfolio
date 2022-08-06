@@ -78,11 +78,11 @@ export default function Resume() {
             <h2>WORK EXPERIENCE</h2>
             <div className="resume-content-block">
               <h3>Mathworks, Natick MA</h3>
-              <DateFormat title="EDG Software Engineering Intern">May 2022 - August 2022</DateFormat>
+              <DateFormat title="Software Engineering Intern">May 2022 - August 2022</DateFormat>
               <ul>
-                <ListItem>Implemented compiler optimizations to improve runtime performance for MATLAB and SimuLink code generation by using C++</ListItem>
-                <ListItem>Designed custom unit tests to follow test driven development practices and ensure program effectiveness</ListItem>
-                <ListItem>Conducted unit, integration, and system tests to validate compiler transform robustness and performance</ListItem>
+                <ListItem>Engineered compiler optimization to improve performance of generated MATLAB and Simulink code using C++</ListItem>
+                <ListItem>Qualifed compiler transform robustness and speed by conducting unit, integration, and system tests</ListItem>
+                <ListItem>Created 85+ unit tests following test driven development practices to ensure code functionality</ListItem>
                 <ListItem>Communicated progress in biweekly team meetings using AGILE methodology to align and review project updates</ListItem>
               </ul>
             </div>
