@@ -82,7 +82,7 @@
 /* header */
 .resume-content-head span{
   display: grid;
-  grid: min-content / repeat(3, min-content);
+  grid: min-content / repeat(5, min-content);
   justify-content: center;
 }
 

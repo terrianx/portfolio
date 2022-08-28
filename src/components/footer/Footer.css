@@ -77,6 +77,8 @@ footer li:not(:last-child) {
   justify-self: center;
   
   margin-top: 60px;
+
+  text-align: center;
 }
 
 /* ============== */

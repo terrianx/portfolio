@@ -40,7 +40,7 @@ export default function Resume() {
           <section className="resume-content-head">
             <h1>Terrian Xiao</h1>
 
-            <p>978-888-8886 - txiaopk@gmail.com - Greater Boston, MA</p>
+            <p>978-888-8886 | txiaopk@gmail.com | Greater Boston, MA</p>
 
             <span>
               <a className="multi-word"
@@ -49,12 +49,19 @@ export default function Resume() {
                 rel="noreferrer">
                 terrianx.netlify.app
               </a>
-              <p>&nbsp;-&nbsp;</p>
+              <p>&nbsp;|&nbsp;</p>
               <a className="multi-word"
                 href="https://linkedin.com/in/terrianx" 
                 target="_blank"
                 rel="noreferrer">
                 linkedin.com/in/terrianx
+              </a>
+              <p>&nbsp;|&nbsp;</p>
+              <a className="multi-word"
+                href="https://github.com/terrianx" 
+                target="_blank"
+                rel="noreferrer">
+                github.com/terrianx
               </a>
             </span>
           </section>
@@ -89,10 +96,10 @@ export default function Resume() {
             
             <div className="resume-content-block">
               <h3>Graphic Design</h3>
-              <DateFormat title="Digital Artwork Freelancer">July 2016 - Present</DateFormat>
+              <DateFormat title="Digital Artwork Freelancer">July 2016 - August 2022</DateFormat>
               <ul>
                 <ListItem>Designed and sold 30+ custom decks of playing cards utilizing Affinity Designer and Adobe Illustrator</ListItem>
-                <ListItem>Created content for UM Asian Intervarsity as a Graphics Team Member to communicate events through social platforms</ListItem>
+                <ListItem>Produced content for 50+ Asian Intervarsity members as a Graphics Team Member to communicate events through social platforms</ListItem>
                 <ListItem>Negotiated contracts with clients to create illustrations, logos, posters utilizing Affinity Designer and Adobe Illustrator</ListItem>
               </ul>
             </div>
