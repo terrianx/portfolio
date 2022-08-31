@@ -44,55 +44,27 @@
   transition: var(--speed);
 }
 
-.skills h2 {
-  grid-row: 1 / 5;
-  grid-column: 1;
-
-  align-self: start;
-  text-align: start;
-
-  margin: 30px 0 0 20px;
-  width: min-content;
-
-  transition: var(--speed);
-}
-
 .skills-container {
   display: grid;
-  grid: auto auto auto / 1fr;
-  row-gap: 60px;
+  grid: repeat(4, auto) / 1fr;
+  row-gap: 50px;
 
   padding-top: 100px;
 }
 
-.proficient-container,
-.competent-container,
-.capable-container {
+.skills-category {
   display: grid;
-  grid: 1fr / repeat(4, 1fr);
-  column-gap: 10px;
+  grid: 1fr / 170px repeat(3, 1fr);
+  column-gap: 5px;
 
   align-items: end;
 
   padding-bottom: 20px;
-  margin: 0 20px;
 }
 
-.skills figure img {
-  filter: brightness(0.9);
-  
-  transition: var(--speed);
-  transform: scale(0.9);
-}
-
-.skills figcaption {
-  padding-top: 20px;
-
-  color: var(--light-gray);
-
-  font-size: 18px;
-
-  transition: var(--speed);
+.skills-category h2 {
+  justify-self: start;
+  padding-right: 20px;
 }
 
 /* ============== */
@@ -100,9 +72,7 @@
 /* ============== */
 
 @media only screen and (max-width: 800px) {
-  .proficient-container,
-  .competent-container,
-  .capable-container {
+  .skills-category {
     grid: 1fr / repeat(3, 1fr);
   }
 
@@ -110,10 +80,9 @@
     grid-row: 1;
     grid-column: 1 / 4;
 
-    margin: 0 0 20px 20px;
+    padding-bottom: 20px;
 
     transition: var(--speed);
-
   }
 }
 
@@ -127,19 +96,12 @@
     transition: var(--speed);
   }
 
-  .skills figure img {
-    transition: var(--speed);
-    transform: scale(0.8);
+  .skills h2 {
+    padding-bottom: 10px;
   }
 
   .skills p {
     margin: 0 40px;
-  }
-
-  .skills figcaption {
-    padding-top: 15px;
-    font-size: 16px;
-    transition: var(--speed);
   }
 }
 
@@ -153,19 +115,8 @@
     row-gap: 40px;
   }
 
-  .proficient-container,
-  .competent-container,
-  .capable-container {
+  .skills-category {
     column-gap: 0;
-  }
-
-  .skills h2 {
-    margin: 0 0 10px 20px;
-  }
-
-  .skills figure img {
-    transition: var(--speed);
-    transform: scale(0.7);
   }
 }
 
@@ -176,16 +127,6 @@
 
   .skills h1 {
     padding: 0 3px 50px 3px;
-    transition: var(--speed);
-  }
-
-  .skills figure img {
-    transition: var(--speed);
-    transform: scale(0.7);
-  }
-
-  .skills figcaption {
-    padding-top: 5px;
     transition: var(--speed);
   }
 }

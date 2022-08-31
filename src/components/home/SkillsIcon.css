@@ -1,0 +1,50 @@
+/* ============================= */
+/* Skills Icon component styling */
+/* ============================= */
+
+.skills-icon {
+  display: grid;
+  grid: 50px / 50px min-content;
+}
+
+.skills-icon img {
+  align-self: end;
+  justify-self: center;
+
+  transition: var(--speed);
+}
+
+.skills-icon figcaption {
+  align-self: end;
+
+  padding-bottom: 4px;
+
+  color: var(--light-gray);
+
+  font-size: 18px;
+
+  transition: var(--speed);
+}
+
+@media only screen and (max-width: 700px) {
+  .skills-icon {
+    grid: 50px / 40px min-content;
+  }
+
+  .skills-icon img {
+    transition: var(--speed);
+    transform: scale(0.9);
+  }
+
+  .skills-icon figcaption {
+    font-size: 16px;
+    transition: var(--speed);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .skills-icon img {
+    transition: var(--speed);
+    transform: scale(0.8);
+  }
+}

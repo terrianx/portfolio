@@ -5,6 +5,7 @@
 // ==========================================
 
 import Button from '../button/Button';
+import SkillsIcon from './SkillsIcon';
 
 import './Skills.css';
 
@@ -24,80 +25,32 @@ export default function Skills() {
       <Button to="/resume#">Resume</Button>
 
       <div className="skills-container">
-        <div className="proficient-container">
-          <h2>Proficient</h2>
-
-          <figure>
-              <img src="./assets/icons/icon-cpp.webp"
-                  alt="c/c++ icon"
-                  width="70"/>
-              <figcaption>C/C++</figcaption>
-          </figure>
-
-          <figure>
-            <img src="./assets/icons/icon-html.webp"
-                alt="html icon"
-                width="70"/>
-            <figcaption>HTML</figcaption>
-          </figure>
-
-          <figure>
-            <img src="./assets/icons/icon-affinity.webp"
-                alt="affinity designer icon"
-                width="80"/>
-            <figcaption className="multi-word">
-                        Affinity Designer
-            </figcaption>
-          </figure>
-
+        <div className="skills-category">
+          <h2>Languages</h2>
+          <SkillsIcon file="cpp" width="30">C/C++</SkillsIcon>
+          <SkillsIcon file="python" width="30">Python</SkillsIcon>
+          <SkillsIcon file="js" width="30">Javascript</SkillsIcon>
         </div>
 
-        <div className="competent-container">
-          <h2>Competent</h2>
-
-          <figure>
-            <img src="./assets/icons/icon-react.webp"
-                alt="react icon"
-                width="80"/>
-            <figcaption>React</figcaption>
-          </figure>
-
-          <figure>
-            <img src="./assets/icons/icon-css.webp"
-                alt="css icon"
-                width="70"/>
-            <figcaption>CSS</figcaption>
-          </figure>
-
-          <figure>
-            <img src="./assets/icons/icon-js.webp"
-                alt="javascript icon"
-                width="80"/>
-            <figcaption>Javascript</figcaption>
-          </figure>
-
+        <div className="skills-category">
+          <h2>Web</h2>
+          <SkillsIcon file="react" width="35">React</SkillsIcon>
+          <SkillsIcon file="html" width="30">HTML</SkillsIcon>
+          <SkillsIcon file="css" width="30">CSS</SkillsIcon>
         </div>
 
-        <div className="capable-container">
-          <h2>Capable</h2>
-
-          <figure>
-            <img src="./assets/icons/icon-python.webp"
-                alt="python icon"
-                width="80"/>
-            <figcaption>Python</figcaption>
-          </figure>
-
-          <figure>
-            <img src="./assets/icons/icon-illustrator.webp"
-                alt="adobe illustrator icon"
-                width="80"/>
-            <figcaption className="multi-word">
-                        Adobe Illustrator
-            </figcaption>
-          </figure>
+        <div className="skills-category">
+          <h2>Tools</h2>
+          <SkillsIcon file="git" width="30">Git</SkillsIcon>
+          <SkillsIcon file="figma" width="25">Figma</SkillsIcon>
+          <SkillsIcon file="jira" width="30">Jira</SkillsIcon>
         </div>
 
+        <div className="skills-category">
+          <h2>Design</h2>
+          <SkillsIcon file="designer" width="30">Designer</SkillsIcon>
+          <SkillsIcon file="illustrator" width="30">Illustrator</SkillsIcon>
+        </div>
       </div>
 
     </section>

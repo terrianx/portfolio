@@ -10,6 +10,8 @@ footer {
   margin: 0 auto;
   width: 100%;
   max-width: 1200px;
+
+  background-color: var(--black-gray);
   
   transition: var(--speed);
 }
@@ -123,7 +125,7 @@ footer li:not(:last-child) {
 /* list view of items */
 @media only screen and (max-width: 550px) {
   footer {
-    padding: 0 60px 60px 60px;
+    padding: 0 40px 60px 40px;
   }
 
   .footer-container {

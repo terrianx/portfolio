@@ -55,7 +55,7 @@ export default function Footer() {
           <ContactInfo />
         </div>
 
-        <p className="copyright">© Terrian Xiao 2022. All rights reserved.</p>
+        <p className="copyright multi-word">© Terrian Xiao 2022. All rights reserved.</p>
 
       </div>
     </footer>

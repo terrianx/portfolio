@@ -40,7 +40,7 @@ export default function Resume() {
           <section className="resume-content-head">
             <h1>Terrian Xiao</h1>
 
-            <p>978-888-8886 | txiaopk@gmail.com | Greater Boston, MA</p>
+            <p>978-888-8886 | txiaopk@gmail.com | Westford, MA</p>
 
             <span>
               <a className="multi-word"
@@ -76,21 +76,21 @@ export default function Resume() {
 
           <section className="resume-content-section">
             <h2>SKILLS</h2>
-            <SpanText title="Proficient">C/C++, HTML, Affinity Designer</SpanText>
-            <SpanText title="Competent">React, CSS, JavaScript, Java, Git</SpanText>
-            <SpanText title="Capable">Python, MATLAB, Adobe Illustrator</SpanText>
+            <SpanText title="Languages">C/C++, Python, Javascript</SpanText>
+            <SpanText title="Web">React, HTML, CSS</SpanText>
+            <SpanText title="Tools">Git, Jira, Figma, Adobe Illustrator</SpanText>
           </section>
 
           <section className="resume-content-section">
             <h2>WORK EXPERIENCE</h2>
             <div className="resume-content-block">
               <h3>Mathworks, Natick MA</h3>
-              <DateFormat title="Software Engineering Intern">May 2022 - August 2022</DateFormat>
+              <DateFormat title="Software Engineer Intern">May 2022 - August 2022</DateFormat>
               <ul>
-                <ListItem>Engineered compiler optimization to improve performance of generated MATLAB and Simulink code using C++</ListItem>
-                <ListItem>Qualifed compiler transform robustness and speed by conducting unit, integration, and system tests</ListItem>
-                <ListItem>Created 85+ unit tests following test driven development practices to ensure code functionality</ListItem>
-                <ListItem>Communicated progress in biweekly team meetings using AGILE methodology to align and review project updates</ListItem>
+                <ListItem>Engineered dead code elimination compiler optimization to improve performance of generated MATLAB and Simulink code using C++</ListItem>
+                <ListItem>Qualifed compiler transform robustness and speed by conducting 20,000+ unit, integration, and system tests using automated testing frameworks</ListItem>
+                <ListItem>Developed 85+ unit tests following test driven development practices to ensure code functionality</ListItem>
+                <ListItem>Communicated progress in biweekly meetings in an agile software development environment methodology to align and review project updates</ListItem>
               </ul>
             </div>
             
@@ -98,9 +98,9 @@ export default function Resume() {
               <h3>Graphic Design</h3>
               <DateFormat title="Digital Artwork Freelancer">July 2016 - August 2022</DateFormat>
               <ul>
-                <ListItem>Designed and sold 30+ custom decks of playing cards utilizing Affinity Designer and Adobe Illustrator</ListItem>
+                <ListItem>Designed and distributed 30+ custom decks of playing cards utilizing Adobe Illustrator</ListItem>
                 <ListItem>Produced content for 50+ Asian Intervarsity members as a Graphics Team Member to communicate events through social platforms</ListItem>
-                <ListItem>Negotiated contracts with clients to create illustrations, logos, posters utilizing Affinity Designer and Adobe Illustrator</ListItem>
+                <ListItem>Negotiated contracts with clients to create illustrations, logos, posters utilizing Adobe Illustrator</ListItem>
               </ul>
             </div>
           </section>
@@ -127,11 +127,12 @@ export default function Resume() {
             </div>
 
             <div className="resume-content-block">
-              <h3>Independent Front-end Development</h3>
-              <DateFormat title="Personal Website">November 2021 - July 2022</DateFormat>
+              <h3>Front-end Development</h3>
+              <DateFormat title="Portfolio Website">November 2021 - July 2022</DateFormat>
               <ul>
-                <ListItem>Created multi-page responsive personal portfolio website with mobile friendly design using React, HTML, CSS</ListItem>
-                <ListItem>Constructed wireframes and mockups of interfaces to scope and design UI / UX using Affinity Designer</ListItem>
+                <ListItem>Created 4 page responsive personal portfolio website with mobile friendly design using React, HTML, CSS</ListItem>
+                <ListItem>Constructed wireframes and mockups of interfaces to scope and design user interfaces using Figma</ListItem>
+                <ListItem>Developed 10 reusable components to streamline development process using React</ListItem>
                 <ListItem>Enhanced performance for 90+ Google Lighthouse audit and 100 for accessibility, best practices, and SEO</ListItem>
               </ul>
             </div>            

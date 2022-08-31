@@ -3,6 +3,7 @@
 /* ======================== */
 
 html {
+  display: grid;
   -webkit-text-size-adjust: 100%;
 }
 
@@ -119,6 +120,7 @@ body {
 main {
   display: grid;
 
+  justify-self: center;
   justify-items: center;
 
   width: 100%;
