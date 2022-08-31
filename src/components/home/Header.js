@@ -13,7 +13,7 @@ import './Header.css';
 
 export default function Header() {
   // image to button color mapping 
-  const imgMap = new Map();
+  let imgMap = new Map();
   imgMap.set(0, [182, 47, 58]);  // samurai
   imgMap.set(1, [200, 75, 50]);  // owl
   imgMap.set(2, [162, 85, 40]);  // deer
@@ -42,6 +42,7 @@ export default function Header() {
                              + color[1] + '%, ' 
                              + color[2] + '%, '
                              + '75%)');
+  // eslint-disable-next-line
   }, [imgShow]);
 
   return (
