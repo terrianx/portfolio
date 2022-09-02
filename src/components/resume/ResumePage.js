@@ -14,7 +14,7 @@ import ListItem from '../list/ListItem';
 import './ResumePage.css';
 
 export default function Resume() {
-  const docsLink = "https://docs.google.com/document/d/19_BpMIEFXLK6_WU0xqv1wacj5jYhcIgFCqtd1FKF5yM/edit?usp=sharing";
+  const docsLink = "https://docs.google.com/document/d/1dzezVXBeR3F51SwQakOBWzYdLGJzYSBoqBi2qi53aLs/edit?usp=sharing";
   const degree = "Bachelor of Science in Engineering in Computer Science";
   const coursework = "Data Structures and Algorithms, "
                    + "Web Systems, "
@@ -30,8 +30,8 @@ export default function Resume() {
       <h1 className="title">Resume</h1>
 
       <ButtonAnchor to={docsLink}>View in Docs</ButtonAnchor>
-      <ButtonAnchor to="./assets/resume/TerrianXiaoResume.pdf"
-                    download="TerrianXiaoResume">
+      <ButtonAnchor to="./assets/resume/Terrian_Xiao_Resume.pdf"
+                    download="Terrian_Xiao_Resume">
                     Download
       </ButtonAnchor>
 
