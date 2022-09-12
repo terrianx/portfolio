@@ -18,7 +18,7 @@ export default function Resume() {
   const degree = "Bachelor of Science in Engineering in Computer Science";
   const coursework = "Data Structures and Algorithms, "
                    + "Web Systems, "
-                   + "Computer Organization, "
+                   + "Compiler Construction, "
                    + "Discrete Mathematics, "
                    + "Technical Communication, "
                    + "Codepath Software Engineering";
