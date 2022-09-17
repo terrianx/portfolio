@@ -77,7 +77,7 @@ export default function Resume() {
           <section className="resume-content-section">
             <h2>SKILLS</h2>
             <SpanText title="Languages">C/C++, Python, Javascript</SpanText>
-            <SpanText title="Web">React, HTML, CSS</SpanText>
+            <SpanText title="Web">React, HTML, CSS, SQL</SpanText>
             <SpanText title="Tools">Git, Jira, Figma, Adobe Illustrator</SpanText>
           </section>
 
@@ -127,7 +127,7 @@ export default function Resume() {
             </div>
 
             <div className="resume-content-block">
-              <h3>Front-end Development</h3>
+              <h3>Front End Development</h3>
               <DateFormat title="Portfolio Website">November 2021 - July 2022</DateFormat>
               <ul>
                 <ListItem>Created 4 page responsive personal portfolio website with mobile friendly design using React, HTML, CSS</ListItem>
