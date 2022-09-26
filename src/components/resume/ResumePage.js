@@ -90,7 +90,7 @@ export default function Resume() {
                 <ListItem>Engineered dead code elimination compiler optimization to improve performance of generated MATLAB and Simulink code using C++</ListItem>
                 <ListItem>Qualifed compiler transform robustness and speed by conducting 20,000+ unit, integration, and system tests using automated testing frameworks</ListItem>
                 <ListItem>Developed 85+ unit tests following test driven development practices to ensure code functionality</ListItem>
-                <ListItem>Communicated progress in biweekly meetings in an agile software development environment methodology to align and review project updates</ListItem>
+                <ListItem>Communicated progress in biweekly meetings in an agile software development environment methodology to align and review project updates using Jira</ListItem>
               </ul>
             </div>
             
