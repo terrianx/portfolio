@@ -77,7 +77,7 @@ export default function Resume() {
           <section className="resume-content-section">
             <h2>SKILLS</h2>
             <SpanText title="Languages">C/C++, Python, Javascript</SpanText>
-            <SpanText title="Web">React, HTML, CSS, SQL</SpanText>
+            <SpanText title="Web">React, HTML, CSS, Flask, SQL</SpanText>
             <SpanText title="Tools">Git, Jira, Figma, Adobe Illustrator</SpanText>
           </section>
 
@@ -109,19 +109,19 @@ export default function Resume() {
             <h2>PROJECTS</h2>
             <div className="resume-content-block">
               <h3>Technical Course Projects</h3>
-              <DateFormat title="Log Entries Manager">October 2021 - November 2021</DateFormat>
+              <DateFormat title="Serverside Instagram Clone">September 2022</DateFormat>
               <ul>
-                <ListItem>Created log management system utilizing hash maps to perform sorting, appending, deleting, searching on log entries using object oriented programming in C++</ListItem>
-                <ListItem>Implemented keyword search feature to efficiently filter entries by category and search words using hash map</ListItem>
-                <ListItem>Designed custom functors to manage entries of log objects using STL functions</ListItem>
-                <ListItem>Utilized test driven development and Makefiles to automate testing and running software</ListItem>
+                <ListItem>Created serverside dynamic instagram clone using Python Flask backend and SQL database to serve templated HTML login, feed, accounts, posts, and users pages</ListItem>
+                <ListItem>Implemented interactive account creation, following, liking, and commenting features to enhance user experience</ListItem>
+                <ListItem>Composed bash scripts to automate testing, SQL database management, and local server hosting</ListItem>
+                <ListItem>Collaborated with software engineering team of 3 utilizing Git version control</ListItem>
               </ul>
             </div>
 
             <div className="resume-content-block">
-              <DateFormat title="Air Quality Monitor">January 2021 - April 2021</DateFormat>
+              <DateFormat title="Air Quality Monitor">March 2021</DateFormat>
               <ul>
-                <ListItem>Collaborated with engineering team of 6 to prototype and develop 5 level air quality monitor using C++ and Arduino components</ListItem>
+                <ListItem>Collaborated with engineering team of 6 to prototype and develop 5 level air quality monitor using C++ and hardware components</ListItem>
                 <ListItem>Communicated progress and design updates in weekly presentations to peers and supervisors</ListItem>
               </ul>
             </div>
