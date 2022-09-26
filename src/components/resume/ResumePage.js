@@ -14,7 +14,7 @@ import ListItem from '../list/ListItem';
 import './ResumePage.css';
 
 export default function Resume() {
-  const docsLink = "https://docs.google.com/document/d/1dzezVXBeR3F51SwQakOBWzYdLGJzYSBoqBi2qi53aLs/edit?usp=sharing";
+  const docsLink = "https://docs.google.com/document/d/1nbQazofCaG4IDDKqkxuGsQwWesm8ukUOMQkvfN5GGk8/edit?usp=sharing";
   const degree = "Bachelor of Science in Engineering in Computer Science";
   const coursework = "Data Structures and Algorithms, "
                    + "Web Systems, "
