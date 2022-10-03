@@ -17,7 +17,7 @@ export default function Skills() {
       <h1>My Skills</h1>
       
       <p>
-        Skills I gained from education
+        Skills I gained from industry, education, 
         and independent projects. Check out my resume
         to see how I learned and honed each skill.
       </p>
@@ -27,7 +27,7 @@ export default function Skills() {
       <div className="skills-container">
         <div className="skills-category">
           <h2>Languages</h2>
-          <SkillsIcon file="cpp" width="30">C/C++</SkillsIcon>
+          <SkillsIcon file="cpp" width="30">C++</SkillsIcon>
           <SkillsIcon file="python" width="30">Python</SkillsIcon>
           <SkillsIcon file="js" width="30">Javascript</SkillsIcon>
         </div>

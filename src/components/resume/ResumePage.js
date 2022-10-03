@@ -71,7 +71,7 @@ export default function Resume() {
 
           <section className="resume-content-section">
             <h2>SKILLS</h2>
-            <SpanText title="Languages">C/C++, Python, Javascript, Rust</SpanText>
+            <SpanText title="Languages">C++, Python, Javascript, Rust</SpanText>
             <SpanText title="Web">React, HTML, CSS, Flask, SQL</SpanText>
             <SpanText title="Tools">Git, Jira, Figma, Adobe Illustrator</SpanText>
           </section>
