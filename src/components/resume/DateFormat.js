@@ -9,8 +9,8 @@ import './DateFormat.css';
 export default function DateFormat(props) {
   return (
     <span className="date-format">
-      <em className="date-format-title">{props.title}</em>
-      <em className="date-format-date">{props.children}</em>
+      <p className="date-format-title">{props.title}</p>
+      <p className="date-format-date">{props.children}</p>
     </span>
   );
 }

@@ -16,7 +16,7 @@ import './ResumePage.css';
 export default function Resume() {
   const docsLink = "https://docs.google.com/document/d/1nbQazofCaG4IDDKqkxuGsQwWesm8ukUOMQkvfN5GGk8/edit?usp=sharing";
   const degree = "Bachelor of Science in Engineering in Computer Science";
-  const coursework = "Data Structures and Algorithms, Web Systems, Compiler Construction, Codepath Software Engineering";
+  const coursework = "Data Structures and Algorithms, Web Systems, Compiler Construction, Computer Organization";
 
   return (
     <section className="resume-page">
@@ -85,10 +85,10 @@ export default function Resume() {
                 <ListItem>Engineered dead code elimination compiler optimization to improve performance of generated MATLAB and Simulink code using C++</ListItem>
                 <ListItem>Qualifed compiler transform robustness and speed by conducting 20,000+ unit, integration, and system tests using automated testing frameworks</ListItem>
                 <ListItem>Developed 85+ unit tests following test driven development practices to ensure code functionality</ListItem>
-                <ListItem>Communicated progress in biweekly meetings in an agile software development environment methodology to align and review project updates using Jira</ListItem>
+                <ListItem>Communicated progress in agile software development environment to align and review project updates using Jira</ListItem>
               </ul>
             </div>
-            
+
             <div className="resume-content-block">
               <h3>Freelance</h3>
               <DateFormat title="Graphic Designer">July 2016 - August 2022</DateFormat>
@@ -101,30 +101,24 @@ export default function Resume() {
 
           <section className="resume-content-section">
             <h2>PROJECTS</h2>
+
             <div className="resume-content-block">
               <h3>Technical Course Projects</h3>
+              <DateFormat title="Fullstack Instagram Clone">September 2022 - October 2022</DateFormat>
+              <ul>
+                <ListItem>Created fullstack Instagram application using React front end, Python Flask backend, and SQL database to serve and render login, feed, accounts, posts, and users pages</ListItem>
+                <ListItem>Built client side dynamic pages using REST API and asynchronous programming to manage requests using HTTP</ListItem>
+                <ListItem>Implemented interactive account, posting, liking, and commenting features to enhance user experience</ListItem>
+                <ListItem>Collaborated with software engineering team of 3 using Git version control</ListItem>
+              </ul>
+            </div>
+
+            <div className="resume-content-block">
               <DateFormat title="Cobra Compiler">September 2022 - October 2022</DateFormat>
               <ul>
-                <ListItem>Designed compiler to generate x86 assembly from custom Cobra programming language using Rust</ListItem>
-                <ListItem>Constructed compile time error functions to check for unbounded variables, duplicate bindings, and type errors</ListItem>
-                <ListItem>Implemented expression evaluation algorithms featuring conditionals, scoping, variables, operations, and types</ListItem>
-              </ul>
-            </div>
-
-            <div className="resume-content-block">
-              <DateFormat title="Serverside Instagram Clone">September 2022</DateFormat>
-              <ul>
-                <ListItem>Created serverside dynamic instagram clone using Python Flask backend and SQL database to serve templated HTML login, feed, accounts, posts, and users pages</ListItem>
-                <ListItem>Implemented interactive account creation, following, liking, and commenting features to enhance user experience</ListItem>
-                <ListItem>Collaborated with software engineering team of 3 utilizing Git version control</ListItem>
-              </ul>
-            </div>
-
-            <div className="resume-content-block">
-              <DateFormat title="Air Quality Monitor">March 2021</DateFormat>
-              <ul>
-                <ListItem>Collaborated with engineering team of 6 to prototype and develop 5 level air quality monitor using C++ and hardware components</ListItem>
-                <ListItem>Communicated progress and design updates in weekly presentations to peers and supervisors</ListItem>
+                <ListItem>Designed compiler to generate x64 assembly from functional like programming language using Rust</ListItem>
+                <ListItem>Constructed compile and run time error checks for unbounded variables, duplicate bindings, and type mismatches</ListItem>
+                <ListItem>Implemented expression evaluation algorithms featuring conditionals, scoping, variables, binary operations, and types</ListItem>
               </ul>
             </div>
 
@@ -134,7 +128,7 @@ export default function Resume() {
               <ul>
                 <ListItem>Created 4 page responsive personal portfolio website with mobile friendly design using React, HTML, CSS</ListItem>
                 <ListItem>Constructed wireframes and mockups of interfaces to scope and design user interfaces using Figma</ListItem>
-                <ListItem>Enhanced performance for 90+ Google Lighthouse audit and 100 for accessibility, best practices, and SEO</ListItem>
+                <ListItem>Enhanced performance, accessibility, best practices, and search engine optimization to achieve 90-100 on Google Lighthouse benchmark tests</ListItem>
               </ul>
             </div>            
           </section>
