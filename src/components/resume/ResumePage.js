@@ -83,7 +83,7 @@ export default function Resume() {
               <DateFormat title="Software Engineer Intern">May 2022 - August 2022</DateFormat>
               <ul>
                 <ListItem>Engineered dead code elimination compiler optimization to improve performance of generated MATLAB and Simulink code using C++</ListItem>
-                <ListItem>Qualifed compiler transform robustness and speed by conducting 20,000+ unit, integration, and system tests using automated testing frameworks</ListItem>
+                <ListItem>Qualified compiler transform robustness and speed by conducting 20,000+ unit, integration, and system tests using automated testing frameworks</ListItem>
                 <ListItem>Developed 85+ unit tests following test driven development practices to ensure code functionality</ListItem>
                 <ListItem>Communicated progress in agile software development environment to align and review project updates using Jira</ListItem>
               </ul>
