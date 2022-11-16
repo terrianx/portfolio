@@ -56,6 +56,9 @@ Hi! This is my personal website that acts as a digital portfolio for all my proj
   * Reduced brightness of saturated and vibrant colors to reduce eye strain
 
 ### 4. UX Principles
+* Skip to main content
+  * Improves website accessibility
+  * Allows for complete navigation using keyboard
 * Back to top buttons
   * Improves user navigation
 * Button interaction indicators

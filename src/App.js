@@ -4,6 +4,7 @@
 
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import SkipToMain from './components/accessibility/skipToMain';
 import Navbar from './components/nav/Navbar';
 import Home from './components/home/HomePage';
 import Resume from './components/resume/ResumePage';
@@ -17,9 +18,10 @@ export default function App() {
   return (
     <Router>
       <main>
+        <SkipToMain />
         <Navbar />
 
-        <div className="box-container">
+        <div className="box-container" id="main-content">
           <Switch>
             <Route exact path="/"><Home /></Route>
             <Route exact path="/resume"><Resume /></Route>
