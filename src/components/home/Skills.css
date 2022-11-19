@@ -46,7 +46,7 @@
 
 .skills-container {
   display: grid;
-  grid: repeat(4, auto) / 1fr;
+  grid: repeat(5, auto) / 1fr;
   row-gap: 50px;
 
   padding-top: 100px;

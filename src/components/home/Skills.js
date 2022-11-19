@@ -28,15 +28,21 @@ export default function Skills() {
         <div className="skills-category">
           <h2>Languages</h2>
           <SkillsIcon file="cpp" width="30">C++</SkillsIcon>
+          <SkillsIcon file="rust" width="40">Rust</SkillsIcon>
           <SkillsIcon file="python" width="30">Python</SkillsIcon>
-          <SkillsIcon file="js" width="30">Javascript</SkillsIcon>
         </div>
 
         <div className="skills-category">
-          <h2>Web</h2>
+          <h2>Frontend</h2>
           <SkillsIcon file="react" width="35">React</SkillsIcon>
           <SkillsIcon file="html" width="30">HTML</SkillsIcon>
           <SkillsIcon file="css" width="30">CSS</SkillsIcon>
+        </div>
+
+        <div className="skills-category">
+          <h2>Backend</h2>
+          <SkillsIcon file="flask" width="30">Flask</SkillsIcon>
+          <SkillsIcon file="sql" width="25">SQL</SkillsIcon>
         </div>
 
         <div className="skills-category">

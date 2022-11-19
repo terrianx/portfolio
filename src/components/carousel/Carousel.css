@@ -38,14 +38,15 @@
   height: min-content;
 
   background-color: hsla(220, 15%, 10%, 60%);
-  color: white;
+  color: var(--white-gray);
   border-radius: 40px;
-  box-shadow: 1px 1px 5px 0px var(--shadow);
+  border: 1px solid var(--white-gray);
+  box-shadow: 1px 1px 3px 0px var(--shadow);
   opacity: 0;
-  
+
   font-size: 36px;
   line-height: 100%;
-  
+
   transition: var(--speed);
   user-select: none;
 }
