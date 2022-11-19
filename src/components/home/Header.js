@@ -18,7 +18,7 @@ export default function Header() {
   imgMap.set(1, [200, 75, 50]);  // owl
   imgMap.set(2, [162, 85, 40]);  // deer
   imgMap.set(3, [15, 80, 65]);   // whale
-  imgMap.set(4, [325, 65, 75]);  // koi
+  imgMap.set(4, [330, 70, 80]);  // koi
   imgMap.set(5, [205, 70, 50]);  // jelly
 
   const imgNum = getRandInt(0, 5);
