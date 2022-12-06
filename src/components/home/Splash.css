@@ -1,8 +1,8 @@
 /* ======================== */
-/* Header component styling */
+/* Splash component styling */
 /* ======================== */
 
-header {
+.splash {
   display: grid;
   grid: 100vh / 1fr 1fr;
 
@@ -45,7 +45,7 @@ header {
   justify-self: left;
 }
 
-header figure {
+.splash figure {
   align-self: center;
   justify-self: right;
     
@@ -60,31 +60,31 @@ header figure {
 }
 
 /* image fade on switch */
-header figure:active {
+.splash figure:active {
   animation: fadeIn var(--fade-speed);
   -webkit-animation: fadeIn var(--fade-speed);
 } 
 
-header figure:active {
+.splash figure:active {
   animation: none;
   -webkit-animation: none;
 }
 
 /* remove effect for mobile */
 @media (pointer: coarse) {
-  header figure,
-  header figure:active {
+  .splash figure,
+  .splash figure:active {
     animation: none;
     -webkit-animation: none;
   }
 }
 
-header figure:hover {
+.splash figure:hover {
   filter: brightness(1);
   transition: var(--speed);
 }
 
-header img {
+.splash img {
   width: 500px;
   transition: var(--speed);
 }
@@ -94,30 +94,30 @@ header img {
 /* ============== */
 
 @media only screen and (max-width: 1020px) {
-  header {
+  .splash {
     grid: 100vh / 1fr 1fr;
     margin: 0 60px;
   }
 
-  header img {
+  .splash img {
     width: 450px;
     transition: var(--speed);
   }
 }
 
 @media only screen and (max-width: 900px) {
-  header img {
+  .splash img {
     width: 380px;
     transition: var(--speed);
   }
 }
 
 @media only screen and (max-width: 820px) {
-  header {
+  .splash {
     margin: 0 30px;
   }
 
-  header img {
+  .splash img {
     width: 350px;
     transition: var(--speed);
   }
@@ -131,17 +131,17 @@ header img {
 /* change to vertical layout */
 @media only screen and (max-width: 700px),
             screen and (orientation: portrait) {
-  header {
+  .splash {
     grid: 50vh auto / 1fr;
     padding-top: 60px;
   }
 
-  header figure {
+  .splash figure {
     grid-row: 1;
     justify-self: center;
   }
 
-  header img {
+  .splash img {
     max-width: 350px;
     height: auto;
     transition: var(--speed);
@@ -165,12 +165,12 @@ header img {
 }
 
 @media only screen and (max-width: 500px) {
-  header {
+  .splash {
     grid: min-content min-content / 1fr;
     padding-top: 60px;
   }
 
-  header img {
+  .splash img {
     max-width: 320px;
     height: auto;
     transition: var(--speed);
@@ -178,12 +178,12 @@ header img {
 }
 
 @media only screen and (max-width: 400px) {
-  header {
+  .splash {
     position: sticky;
     margin: 0 10px;
   }
 
-  header img {
+  .splash img {
     width: auto;
     max-height: 42vh;
     transition: var(--speed);
@@ -200,7 +200,7 @@ header img {
                    and (max-height: 720px),
             screen and (min-width: 700px) 
                    and (max-height: 400px) {
-  header {
+  .splash {
     position: relative;
     height: auto;
   }
@@ -209,18 +209,18 @@ header img {
 /* ignore relative on smaller mobile devices */
 @media only screen and (max-width: 400px) 
                    and (max-height: 720px) {
-  header {
+  .splash {
     position: sticky;
   }
 }
 
 @media only screen and (min-width: 900px) 
                    and (max-height: 680px) {
-  header figure {
+  .splash figure {
     justify-self: center;
   }
 
-  header img {
+  .splash img {
     width: 380px;
     height: auto;
     transition: var(--speed);
@@ -229,18 +229,18 @@ header img {
 
 @media only screen and (min-width: 820px) 
                    and (max-height: 600px) {
-  header img {
+  .splash img {
     width: 300px;
     height: auto;
     transition: var(--speed);
   }
 }
 
-/* tablet portrait, header appears larger */
+/* tablet portrait, .splash appears larger */
 @media only screen and (min-width: 600px)
                    and (min-height: 900px)
                    and (orientation: portrait) {
-  header img {
+  .splash img {
     transform: scale(1.25);
   }
 }

@@ -1,6 +1,6 @@
 // ==========================================
 // COMPONENT: About section
-// OVERVIEW:  Fades header on scroll,
+// OVERVIEW:  Fades splash on scroll,
 //            About me description,
 //            Internal resume, project links,
 // USAGE:     HomePage

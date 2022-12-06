@@ -1,10 +1,10 @@
 // ==========================================
 // COMPONENT: Home page
-// OVERVIEW:  Header, about, contact wrapper
+// OVERVIEW:  Splash, about, contact wrapper
 // USAGE:     App
 // ==========================================
 
-import Header from './Header';
+import Splash from './Splash';
 import About from './About';
 import Skills from './Skills';
 import Contact from './Contact';
@@ -12,7 +12,7 @@ import Contact from './Contact';
 export default function Home() {
   return (
     <div className="home">
-      <Header />
+      <Splash />
       <About />
       <Skills />
       <Contact />

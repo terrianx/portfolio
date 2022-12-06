@@ -9,7 +9,7 @@ Hi! This is my personal website that acts as a digital portfolio for all my proj
 ### 1. React.js
 * `useState` and `useEffect`
   * I use these hooks in many components and learned how they are used in different contexts
-  * Header section with random hero illustration
+  * Splash section with random hero illustration
     * An integer tracks which illustration is live and accent colors change accordingly
     * A mapping of image number to the main hsl values is used
   * Mobile navigation bar
@@ -78,7 +78,7 @@ Hi! This is my personal website that acts as a digital portfolio for all my proj
 ## Website Pages
 
 ### Home - [Link](https://terrianx.netlify.app/)
-* Features a header section with image randomizer
+* Features a splash section with image randomizer
   * Click on the image to change
   * All accent colors change on click
 * Internal and external links to other pages and social media

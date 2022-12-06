@@ -38,7 +38,7 @@ export default function ProjectsPage() {
         <p className="features">Features</p>
         <ul>
           <ListItem>Mobile, tablet, and browser responsiveness</ListItem>
-          <ListItem>Header section with image randomizer</ListItem>
+          <ListItem>Splash section with image randomizer</ListItem>
           <ListItem>Click to copy contact info</ListItem>
           <ListItem>Custom resume viewer for enhanced mobile and tablet accessibility</ListItem>
           <ListItem>Image carousel for projects and gallery</ListItem>

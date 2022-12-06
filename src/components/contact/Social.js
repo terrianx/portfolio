@@ -2,7 +2,7 @@
 // COMPONENT: Social media icons
 // OVERVIEW:  Link to social media
 // USAGE:     Navbar, 
-//            HomePage/Header,
+//            HomePage/Splash,
 //            HomePage/Contact
 // ==========================================
 

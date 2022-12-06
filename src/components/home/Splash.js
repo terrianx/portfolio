@@ -1,6 +1,6 @@
 // ==========================================
-// COMPONENT: Header
-// OVERVIEW:  Random header art on click,
+// COMPONENT: Splash
+// OVERVIEW:  Random splash art on click,
 //            Link to social media
 // USAGE:     HomePage
 // ==========================================
@@ -9,9 +9,9 @@ import { useState, useEffect } from 'react';
 import Social from '../contact/Social';
 import Button from '../button/Button';
 
-import './Header.css';
+import './Splash.css';
 
-export default function Header() {
+export default function Splash() {
   // image to button color mapping 
   let imgMap = new Map();
   imgMap.set(0, [182, 47, 58]);  // samurai
@@ -46,7 +46,7 @@ export default function Header() {
   }, [imgShow]);
 
   return (
-    <header>
+    <div className="splash">
       <div className="intro-container">
         <h1>Hi, I'm <span className="multi-word">Terrian Xiao.</span></h1>
 
@@ -63,13 +63,13 @@ export default function Header() {
 
       <figure onClick={() => {
           setImgShow((getRandInt(0, 5) + imgShow) % 6)}}>
-        <img src={"./assets/header/header-" + imgShow + ".webp"} 
+        <img src={"./assets/splash/splash-" + imgShow + ".webp"} 
               alt="Illustration"
               width="500px"
               height="auto"/>
       </figure>
 
-    </header>
+    </div>
   );
 }
 
