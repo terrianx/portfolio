@@ -1,0 +1,78 @@
+/* ============================== */
+/* Gallery page component styling */
+/* ============================== */
+
+.gallery-page {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  padding: 200px 0;
+  width: 100%;
+
+  transition: var(--fade-speed);
+  animation: fadeIn var(--fade-speed);
+  -webkit-animation: fadeIn var(--fade-speed);
+}
+
+.gallery-intro {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-items: center;
+
+  padding-bottom: 100px;
+  width: 100%;
+}
+
+.gallery-intro .diag-line {
+  transform: skewY(8deg);
+}
+
+.gallery-intro h1 {
+  z-index: 5;
+
+  padding-left: 5px;
+
+  background-color: var(--dark-gray);
+
+  transform: translateY(-30px);
+}
+
+.gallery-intro p {
+  padding-top: 50px;
+  max-width: 500px;
+
+  text-align: center;
+}
+
+.gallery-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 100px;
+}
+
+.gallery-page .button-container {
+  margin-top: 100px;
+}
+
+/* ============== */
+/* responsiveness */
+/* ============== */
+
+@media only screen and (max-width: 700px) {
+  .gallery-intro .diag-line {
+    transform: skewY(8deg) translateY(-5px);
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .gallery-intro .diag-line {
+    transform: skewY(8deg) translateY(-10px);
+  }
+
+  .gallery-intro h1 {
+    padding-left: 0 0 0 2px;
+  }
+}

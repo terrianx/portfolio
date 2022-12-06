@@ -7,7 +7,7 @@
 import Art from './Art';
 import Button from '../button/Button';
 
-import './GalleryPage.css';
+import './SIGalleryPage.css';
 
 export default function GalleryPage() {
   return (
@@ -39,8 +39,8 @@ export default function GalleryPage() {
             spanning the length of 1.5 years
             from brainstorming to distribution
             and taking nearly 300 hours to complete.
-            Contact me at txiaopk@gmail.com to
-            purchase a physical deck.
+            I have sold 30+ physical decks and there
+            are currently none in stock.
         </Art>
 
         <Art name="jelly"

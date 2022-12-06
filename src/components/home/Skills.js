@@ -7,7 +7,7 @@
 import Button from '../button/Button';
 import SkillsIcon from './SkillsIcon';
 
-import './Skills.css';
+import './SISkills.css';
 
 export default function Skills() {
   return(
@@ -15,7 +15,7 @@ export default function Skills() {
       <span className="diag-line"></span>
 
       <h1>My Skills</h1>
-      
+
       <p>
         Skills I gained from industry, education, 
         and independent projects. Check out my resume

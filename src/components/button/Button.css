@@ -4,6 +4,7 @@
 
 .button-container { 
   display: grid;
+  grid: 1fr / 1fr;
 }
 
 .button,
