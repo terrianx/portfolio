@@ -213,7 +213,7 @@ nav .link:active {
 }
 
 /* name disappears */
-@media only screen and (max-width: 950px) {
+@media only screen and (max-width: 980px) {
   nav {
     grid: 60px / auto min-content min-content;
     column-gap: 20px;
