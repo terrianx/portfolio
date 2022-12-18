@@ -12,6 +12,7 @@
   z-index: 12;
 
   top: 80px;
+  justify-self: center;
 
   background-color: var(--med-gray);
   box-shadow: 2px 2px 5px 1px var(--shadow);

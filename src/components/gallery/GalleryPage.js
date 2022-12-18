@@ -7,7 +7,7 @@
 import Art from './Art';
 import Button from '../button/Button';
 
-import './SIGalleryPage.css';
+import './GalleryPage.css';
 
 export default function GalleryPage() {
   return (

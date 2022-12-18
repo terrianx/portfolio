@@ -129,9 +129,10 @@ main {
 }
 
 header {
-  width: 50%;
-  background-color: green;
+  display: grid;
+  width: 100%;
 }
+
 
 /* ======================= */
 /* Custom elements styling */

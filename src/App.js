@@ -5,7 +5,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import SkipToMain from './components/accessibility/skipToMain';
-import SINavbar from './components/nav/SINavbar';
+import Navbar from './components/nav/Navbar';
 import Home from './components/home/HomePage';
 import Resume from './components/resume/ResumePage';
 import Projects from './components/project/ProjectsPage';
@@ -18,12 +18,10 @@ export default function App() {
   return (
     <Router>
       <main>
-        {/* SI move header */}
         <header>
           <SkipToMain />
         </header>
-        {/* SI navbar */}
-        <SINavbar />
+        <Navbar />
 
         <div className="box-container" id="main-content">
           <Switch>

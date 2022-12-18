@@ -7,7 +7,7 @@
 import Button from '../button/Button';
 import SkillsIcon from './SkillsIcon';
 
-import './SISkills.css';
+import './Skills.css';
 
 export default function Skills() {
   return(
