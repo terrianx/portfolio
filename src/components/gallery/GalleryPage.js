@@ -21,6 +21,23 @@ export default function GalleryPage() {
       </div>
 
       <div className="gallery-container">
+      <Art name="moon"
+             imgs="2"
+             title="Moon and Lily"
+             alt="Moon and Lily illustration"
+             tools="Affinity Designer"
+             width="450px"
+             height="auto">
+            A crescent moon slowly dripping
+            its light onto a water lily.
+            I wanted to try a new style 
+            without line art to create a 
+            softer and brighter flower. 
+            Illustrating the moonlight dripping 
+            across and down the petals 
+            was a new and difficult challenge.
+        </Art>
+
         <Art name="astro"
              imgs="7"
              title="Astro Playing Cards"
