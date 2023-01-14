@@ -56,8 +56,9 @@ export default function GalleryPage() {
             spanning the length of 1.5 years
             from brainstorming to distribution
             and taking nearly 300 hours to complete.
-            I have sold 30+ physical decks and there
-            are currently none in stock.
+            I plan on creating another deck with
+            a different theme and will be selling
+            them in the later half of 2023!
         </Art>
 
         <Art name="jelly"

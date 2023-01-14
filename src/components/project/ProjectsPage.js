@@ -12,17 +12,45 @@ import ListItem from '../list/ListItem';
 import './ProjectsPage.css';
 
 export default function ProjectsPage() {
+  const imgWidth = "700px";
+  const imgHeight = "auto";
+
   return (
     <section className="projects-page">
       <span className="diag-line intro-diag"></span>
 
       <h1 className="title">Projects</h1>
 
+      <Project title="Holjjang Game"
+                src="./assets/holjjang-0.webp"
+                width={imgWidth}
+                height={imgHeight}
+                alt="Holjjang Game page"
+                site="https://holjjang.netlify.app/"
+                code="https://github.com/terrianx/holjjang"
+                tech="Vue, Typescript, SCSS"
+                name="holjjang"
+                imgs="6">
+        <p>A mini marble game commonly known as odds and evens. 
+          I created this to learn Vue, Typescript, and SCSS.
+          Check out the README on Github for this page to see 
+          what I learned about Vue.
+        </p>
+        <p className="features">Features</p>
+        <ul>
+          <ListItem>Bot player with built in betting strategy</ListItem>
+          <ListItem>Interactive game field</ListItem>
+          <ListItem>Responsive to window resizing</ListItem>
+          <ListItem>About section with origin and history of Holjjang</ListItem>
+          <ListItem>Organic curves using SVGs in background for enhanced visuals</ListItem>
+        </ul>
+      </Project>
+
       <Project title="Portfolio Website"
                 src="./assets/portfolio-0.webp"
-                width="700px"
-                height="auto"
-                alt="FreshTea Website page"
+                width={imgWidth}
+                height={imgHeight}
+                alt="Portfolio Website page"
                 site="https://terrianx.netlify.app/"
                 code="https://github.com/terrianx/portfolio"
                 tech="React, HTML, CSS"
@@ -47,8 +75,8 @@ export default function ProjectsPage() {
 
       <Project title="FreshTea Website"
                 src="./assets/freshtea-0.webp"
-                width="700px"
-                height="auto"
+                width={imgWidth}
+                height={imgHeight}
                 alt="FreshTea Website page"
                 site="https://freshtea.netlify.app/"
                 code="https://github.com/terrianx/freshtea"
@@ -74,8 +102,8 @@ export default function ProjectsPage() {
 
       <Project title="BlueAir Website"
                 src="./assets/blueair-0.webp"
-                width="700px"
-                height="auto"
+                width={imgWidth}
+                height={imgHeight}
                 alt="Blue Website page"
                 site="https://blueair.netlify.app/"
                 code="https://github.com/terrianx/blueair"
