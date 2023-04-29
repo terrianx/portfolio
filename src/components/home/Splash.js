@@ -52,8 +52,8 @@ export default function Splash() {
 
         <p>
           A curious programmer and artist 
-          with a heart to better the world 
-          through technology.
+          with a heart to make the world 
+          more beautiful.
         </p>
 
         <Social />
