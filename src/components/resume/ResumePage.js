@@ -96,7 +96,7 @@ export default function Resume() {
               <ul>
                 <ListItem>Engineered dead code elimination compiler optimization to enhance performance of generated MATLAB code using C++</ListItem>
                 <ListItem>Qualified compiler robustness by developing 85+ unit, integration, and system tests utilizing test driven development and automated testing frameworks</ListItem>
-                <ListItem>Communicated technical decisions and impact through presentations to stakeholders</ListItem>
+                <ListItem>Communicated technical decisions and impact through presentations to inform stakeholders</ListItem>
                 <ListItem>Collaborated with agile development focused software engineering team using Jira</ListItem>
               </ul>
             </div>
@@ -105,7 +105,7 @@ export default function Resume() {
               <h3>Freelance, Remote</h3>
               <DateFormat title="Graphic Designer">July 2016 - August 2022</DateFormat>
               <ul>
-                <ListItem>Negotiated contracts with clients to create products based on updating specifications, maintaining flexibility and clear communication</ListItem>
+                <ListItem>Negotiated with clients to create products based on updating specifications, maintaining flexibility and clear communication</ListItem>
                 <ListItem>Led 5 person team for graphic design initiative for community conference with 50+ participants</ListItem>
               </ul>
             </div>
@@ -115,7 +115,7 @@ export default function Resume() {
             <h2>PROJECTS</h2>
 
             <div className="resume-content-block">
-              <h3>Technical Projects</h3>
+              <h3>University of Michigan</h3>
               <DateFormat title="Network File Server">March 2023 - April 2023</DateFormat>
               <ul>
                 <ListItem>Architected multi-threaded network file system for users to store, write, and read files using C++</ListItem>
@@ -134,7 +134,7 @@ export default function Resume() {
             </div>
 
             <div className="resume-content-block">
-              <h3>Front End Development</h3>
+              <h3>Personal</h3>
               <DateFormat title="Portfolio Website">November 2021 - July 2022</DateFormat>
               <ul>
                 <ListItem>Created 4 page responsive website with mobile friendly design using React.js, HTML, and CSS</ListItem>
