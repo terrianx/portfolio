@@ -58,7 +58,7 @@ export default function GalleryPage() {
             and taking nearly 300 hours to complete.
             I plan on creating another deck with
             a different theme and will be selling
-            them in the later half of 2023!
+            them in 2024!
         </Art>
 
         <Art name="jelly"
